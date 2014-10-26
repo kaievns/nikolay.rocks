@@ -3,34 +3,36 @@ var fs = require("fs");
 var port = 8888;
 
 http.createServer(function(req, res) {
-  print(req.method + " "+ req.url);
-
   if (req.method === "GET") {
-    if (req.url === "/application.js") {
-      return send(res, 'text/javascript', 'application.js');
-    } else if (req.url === "/application.css") {
-      return send(res, 'text/css', 'application.css');
+    if (req.url === "/assets/application.js") {
+      return send(req, res, 'text/javascript', 'assets/application.js');
+    } else if (req.url === "/assets/application.css") {
+      return send(req, res, 'text/css', 'assets/application.css');
     } else if (req.url.indexOf(".") === -1) {
-      return send(res, 'text/html', '404.html');
+      return send(req, res, 'text/html', '404.html');
     }
   }
 
-  print("\t-> 404 Not Found :(");
-  res.writeHead(404);
-  res.end("");
+  send_not_found(req, res);
 
 }).listen(port, function() {
-  print("Listening: http://localhost:"+port+"\n\n");
+  console.log("Listening: http://localhost:"+port+"\n");
 });
 
-function send(res, mimetype, filename) {
-  res.writeHead(200, {'Content-Type': mimetype});
+function send(req, res, mimetype, filename) {
   fs.readFile(filename, function(err, content) {
-    res.end(content);
-    print("\t-> 200 "+ mimetype +": "+ filename + "\n");
+    if (!err) {
+      console.log(req.method + " "+ req.url, "\t-> 200 "+ mimetype +": "+ filename);
+      res.writeHead(200, {'Content-Type': mimetype});
+      res.end(content);
+    } else {
+      send_not_found(req, res);
+    }
   });
 }
 
-function print(text) {
-  process.stdout.write(text);
+function send_not_found(req, res) {
+  console.log(req.method + " "+ req.url, "\t-> 404 Not Found :(");
+  res.writeHead(404);
+  res.end("");
 }
