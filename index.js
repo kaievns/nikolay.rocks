@@ -1,1 +1,12 @@
-var App=React.createClass({displayName:"App",render:function(){return React.createElement("html",null,React.createElement("head",null,React.createElement("title",null,"Hello"),React.createElement("meta",{name:"viewport",content:"width=device-width, initial-scale=1"})),React.createElement("body",null,React.createElement("h1",null,"Oh, hi there!")))}});React.render(React.createElement(App,null),document.documentElement);
+var document_text = document.body.innerText;
+
+document.write(
+  '<!doctype html>' +
+  '<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.min.js"></script>' +
+  '<script src="./app/build.js" type="text/javascript"></script>'
+);
+
+if (location.hostname == 'localhost') {
+  console.log("livereload")
+  document.write('<script src="//localhost:35729/livereload.js?snipver=1"></script>');
+}

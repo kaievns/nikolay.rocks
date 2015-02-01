@@ -3,14 +3,14 @@ module.exports = function(grunt) {
     react: {
       development: {
         files: {
-          'index.js' : ['app/*.jsx']
+          'app/build.js' : ['app/*.jsx']
         }
       }
     },
     uglify: {
       js: {
-        src: ['./index.js'],
-        dest: './index.js'
+        src: ['app/build.js'],
+        dest: 'app/build.js'
       }
     },
     watch: {
@@ -19,8 +19,8 @@ module.exports = function(grunt) {
         spawn: false
       },
       react: {
-        files: ["./**/*.jsx"],
-        tasks: ["react", "uglify"]
+        files: ["./app/*.jsx"],
+        tasks: ["react:development", "uglify"]
       },
       // markdown: {
       //   files: ["./**/*.md"]
@@ -44,5 +44,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['react', 'uglify', 'connect', 'watch']);
+  grunt.registerTask('build', ['react', 'uglify']);
+  grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
