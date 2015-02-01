@@ -1,6 +1,9 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     react: {
+      options: {
+        harmony: true
+      },
       development: {
         files: {
           'app/build.js' : ['app/*.jsx']
@@ -13,6 +16,31 @@ module.exports = function(grunt) {
         dest: 'app/build.js'
       }
     },
+    less: {
+      development: {
+        options: {
+          paths: ["./app", "./bower_components/pain.less.css/src"]
+        },
+        files: {
+          "./application.css": "./app/style.less"
+        }
+      }
+    },
+    autoprefixer: {
+      options: {
+        browsers: ["last 2 versions"]
+      },
+      development: {
+        src: "./application.css"
+      }
+    },
+    cssmin: {
+      dist: {
+        files: {
+          './application.css' : ['./application.css']
+        }
+      }
+    },
     watch: {
       options: {
         livereload: true,
@@ -21,6 +49,10 @@ module.exports = function(grunt) {
       react: {
         files: ["./app/*.jsx"],
         tasks: ["react:development", "uglify"]
+      },
+      less: {
+        files: ["./app/*.less"],
+        tasks: ["less:development", "autoprefixer:development", "cssmin"],
       },
       // markdown: {
       //   files: ["./**/*.md"]
@@ -44,6 +76,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('build', ['react', 'uglify']);
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+  grunt.registerTask('build', ['react', 'uglify', "less:development", "autoprefixer:development", "cssmin"]);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
