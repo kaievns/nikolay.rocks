@@ -1,5 +1,3 @@
-var document_text = ""; // document.body.innerText;
-
 document.write(
   '<!DOCTYPE html>' +
   '<html>' +

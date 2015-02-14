@@ -1,3 +1,5 @@
+var document_text = "post text";
+
 var App = React.createClass({
   render() {
     return (

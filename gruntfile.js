@@ -54,9 +54,10 @@ module.exports = function(grunt) {
         files: ["./app/*.less"],
         tasks: ["less:development", "autoprefixer:development", "cssmin"],
       },
-      // markdown: {
-      //   files: ["./**/*.md"]
-      // },
+      markdown: {
+        files: ["./**/*.md"],
+        tasks: ["reindex"]
+      },
       html: {
         files: ["./*.html"]
       }
@@ -80,6 +81,27 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('build', ['react', 'uglify', "less:development", "autoprefixer:development", "cssmin"]);
+  grunt.registerTask('build', ['react', 'uglify', "less:development", "autoprefixer:development", "cssmin", "reindex"]);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
+
+
+  grunt.registerTask('reindex', 'Rebuilds the pages index', function() {
+    var done = this.async();
+    var glob = require("glob");
+    var fs   = require("fs");
+
+    glob("pages/**/*.md", null, function(err, files) {
+      err && console.log(err);
+
+      var pages = files.map(function(filename) {
+        var data = fs.readFileSync(filename).toString();
+        var name = filename.replace(/\.md$/, "").split('/').pop().split("-");
+        var date = new Date(name.shift(), name.shift()-1, name.shift());
+
+        console.log("Found: ", filename, date, name.join("-"));
+      });
+
+      done();
+    });
+  });
 };
