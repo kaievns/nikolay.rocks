@@ -86,22 +86,29 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('reindex', 'Rebuilds the pages index', function() {
-    var done = this.async();
-    var glob = require("glob");
-    var fs   = require("fs");
+    var done  = this.async();
+    var fs    = require("fs");
+    var glob  = require("glob");
+    var index = require("./app/indexer");
 
     glob("pages/**/*.md", null, function(err, files) {
       err && console.log(err);
 
-      var pages = files.map(function(filename) {
-        var data = fs.readFileSync(filename).toString();
-        var name = filename.replace(/\.md$/, "").split('/').pop().split("-");
-        var date = new Date(name.shift(), name.shift()-1, name.shift());
-
-        console.log("Found: ", filename, date, name.join("-"));
+      var pages = files.map(function(file) {
+        return index(file);
       });
 
-      done();
+      var build_file = "./app/build.js";
+      fs.readFile(build_file, function(err, data) {
+        err && console.log(err);
+        data = data.toString().replace(/^var pages_index.+?\n/m, "");
+        data = "var pages_index="+ JSON.stringify(pages) + ";\n" + data.toString();
+
+        fs.writeFile(build_file, data, function(err) {
+          err && console.log(err);
+          done();
+        });
+      });
     });
   });
 };
