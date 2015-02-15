@@ -1,12 +1,20 @@
 module.exports = function(grunt) {
+
   grunt.initConfig({
-    react: {
-      development: {
+    browserify: {
+      app: {
         options: {
-          harmony: true
+          transform: [ function(filename, options) {
+            options = options || {};
+            options.harmony = true;
+            return require('grunt-react').browserify(filename, options);
+          } ],
+          browserifyOptions: {
+            extensions: ['.js', '.jsx']
+          }
         },
         files: {
-          'app/build.js' : ['app/*/*.jsx', 'app/app.jsx']
+          'app/build.js': ['app/app.jsx']
         }
       }
     },
@@ -48,7 +56,7 @@ module.exports = function(grunt) {
       },
       react: {
         files: ["./app/**/*.jsx"],
-        tasks: ["react:development", "uglify"]
+        tasks: ["browserify", "uglify"]
       },
       less: {
         files: ["./app/*.less"],
@@ -72,7 +80,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-react');
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
@@ -81,7 +89,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('build', ['react', 'uglify', "less:development", "autoprefixer:development", "cssmin", "reindex"]);
+  grunt.registerTask('build', ['browserify', 'uglify', "less:development", "autoprefixer:development", "cssmin", "reindex"]);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 
 
@@ -98,8 +106,7 @@ module.exports = function(grunt) {
         return index(file);
       });
 
-      var build_file = "./index.json";
-      fs.writeFile(build_file, JSON.stringify(pages), function(err) {
+      fs.writeFile("./index.json", JSON.stringify(pages), function(err) {
         err && console.log(err);
         done();
       });

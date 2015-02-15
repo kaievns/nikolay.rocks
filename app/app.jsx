@@ -1,11 +1,14 @@
-var document_text = "post text";
+var Layout = require("./components/layout");
+var PostStore = require("./stores/post_store");
+
+var posts = new PostStore();
 
 var App = React.createClass({
   getInitialState() {
     return {
       title:   "Hello",
       author:  "Nikolay Nemshilov",
-      body:    document_text,
+      body:    "blah blah blah",
       sidebar: "blah"
     }
   },
