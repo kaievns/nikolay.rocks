@@ -12,6 +12,7 @@ module.exports = function(filename) {
   var name     = filename.replace(/\.md$/, "").split('/').pop();
 
   return {
+    path:     filename,
     slug:     build_slug(name),
     date:     figure_date(name),
     title:    get_title(data),

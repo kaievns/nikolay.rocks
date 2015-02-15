@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     react: {
-      options: {
-        harmony: true
-      },
       development: {
+        options: {
+          harmony: true
+        },
         files: {
-          'app/build.js' : ['app/*.jsx']
+          'app/build.js' : ['app/*/*.jsx', 'app/app.jsx']
         }
       }
     },
@@ -47,8 +47,8 @@ module.exports = function(grunt) {
         spawn: false
       },
       react: {
-        files: ["./app/*.jsx"],
-        tasks: ["react:development", "uglify"]
+        files: ["./app/**/*.jsx"],
+        tasks: ["react:development", "uglify", "reindex"]
       },
       less: {
         files: ["./app/*.less"],
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
     var done  = this.async();
     var fs    = require("fs");
     var glob  = require("glob");
-    var index = require("./app/indexer");
+    var index = require("./app/utils/indexer");
 
     glob("pages/**/*.md", null, function(err, files) {
       err && console.log(err);

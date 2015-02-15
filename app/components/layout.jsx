@@ -1,6 +1,4 @@
-var document_text = "post text";
-
-var App = React.createClass({
+var Layout = React.createClass({
   render() {
     return (
       <html>
@@ -18,11 +16,11 @@ var App = React.createClass({
           <main>
             <div className="paddings">
               <article>
-                <h1>Oh, hi there!</h1>
-                <p>
-                  {document_text}
-                </p>
+                {this.props.body}
               </article>
+              <aside>
+                {this.props.sidebar}
+              </aside>
             </div>
           </main>
 
@@ -33,8 +31,6 @@ var App = React.createClass({
           </footer>
         </body>
       </html>
-    )
+    );
   }
 });
-
-React.render(<App></App>, document.documentElement);
