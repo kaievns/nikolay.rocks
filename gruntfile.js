@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       },
       react: {
         files: ["./app/**/*.jsx"],
-        tasks: ["react:development", "uglify", "reindex"]
+        tasks: ["react:development", "uglify"]
       },
       less: {
         files: ["./app/*.less"],
@@ -98,16 +98,10 @@ module.exports = function(grunt) {
         return index(file);
       });
 
-      var build_file = "./app/build.js";
-      fs.readFile(build_file, function(err, data) {
+      var build_file = "./index.json";
+      fs.writeFile(build_file, JSON.stringify(pages), function(err) {
         err && console.log(err);
-        data = data.toString().replace(/^var pages_index.+?\n/m, "");
-        data = "var pages_index="+ JSON.stringify(pages) + ";\n" + data.toString();
-
-        fs.writeFile(build_file, data, function(err) {
-          err && console.log(err);
-          done();
-        });
+        done();
       });
     });
   });
