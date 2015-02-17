@@ -1,10 +1,15 @@
+var Request = require("../utils/request");
+
 module.exports = class PostStore {
   constructor() {
     this.posts = [];
-    console.log("loading...")
+    this.all();
   }
 
   all() {
-    return this.posts;
+    var request = new Request("./index.json");
+    request.getJSON(function(data) {
+      console.log("data: ", data);
+    });
   }
 }

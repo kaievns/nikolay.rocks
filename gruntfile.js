@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: true,
+        // livereload: true,
         spawn: false
       },
       react: {
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           base: "./",
-          livereload: true
+          livereload: false
         }
       }
     }
@@ -90,6 +90,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('build', ['browserify', 'uglify', "less:development", "autoprefixer:development", "cssmin", "reindex"]);
+
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 
 

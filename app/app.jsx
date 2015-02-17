@@ -1,6 +1,5 @@
 var Layout = require("./components/layout");
 var PostStore = require("./stores/post_store");
-
 var posts = new PostStore();
 
 var App = React.createClass({

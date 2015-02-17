@@ -34,3 +34,5 @@ var Layout = React.createClass({
     );
   }
 });
+
+module.exports = Layout;
