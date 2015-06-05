@@ -5,7 +5,7 @@ export default class Layout extends React.Component {
         <head>
           <title>Hello</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="stylesheet" type="text/css" href="./application.css" />
+          <link rel="stylesheet" type="text/css" href="/application.css" />
         </head>
         <body>
           <header>

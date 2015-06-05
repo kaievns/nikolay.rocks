@@ -1,11 +1,14 @@
-var gulp       = require("gulp");
-var browserify = require("browserify");
-var babelify   = require("babelify");
-var sourcemaps = require("gulp-sourcemaps");
-var source     = require("vinyl-source-stream");
-var connect    = require("gulp-connect");
-var uglify     = require('gulp-uglify');
-var buffer     = require('vinyl-buffer');
+var gulp         = require("gulp");
+var browserify   = require("browserify");
+var babelify     = require("babelify");
+var sourcemaps   = require("gulp-sourcemaps");
+var source       = require("vinyl-source-stream");
+var connect      = require("gulp-connect");
+var uglify       = require('gulp-uglify');
+var buffer       = require('vinyl-buffer');
+var less         = require("gulp-less");
+var autoprefixer = require("gulp-autoprefixer");
+var minifyCss    = require('gulp-minify-css');
 
 gulp.task("scripts", function() {
   browserify({
@@ -19,8 +22,18 @@ gulp.task("scripts", function() {
     .pipe(buffer())
     .pipe(sourcemaps.init({initMaps: true}))
     .pipe(uglify())
-    .pipe(sourcemaps.write("./"))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./'));
+});
+
+gulp.task("stylesheets", function() {
+  gulp.src("app/application.less")
+    .pipe(sourcemaps.init())
+    .pipe(less({paths: ["./app", "./bower_components/pain.less.css/src"]}))
+    .pipe(autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(minifyCss())
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task("watch", function() {
@@ -45,5 +58,5 @@ gulp.task("connect", function() {
   });
 });
 
-gulp.task("build", ["scripts"]);
+gulp.task("build", ["scripts", "stylesheets"]);
 gulp.task("default", ["build", "connect", "watch"]);
