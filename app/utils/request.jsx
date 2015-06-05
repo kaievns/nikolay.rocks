@@ -1,7 +1,7 @@
 /**
  * A dumb simple XHR.get thing
  */
-module.exports = class Request {
+export default class Request {
   constructor(url) {
     this.url = url;
   }

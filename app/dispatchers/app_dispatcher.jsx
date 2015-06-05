@@ -1,3 +1,3 @@
-class AppDispatcher {
-  
+export default class AppDispatcher {
+
 }

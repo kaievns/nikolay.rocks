@@ -1,4 +1,4 @@
-var Layout = React.createClass({
+export default class Layout extends React.Component {
   render() {
     return (
       <html>
@@ -33,6 +33,4 @@ var Layout = React.createClass({
       </html>
     );
   }
-});
-
-module.exports = Layout;
+}

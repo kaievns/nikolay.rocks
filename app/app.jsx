@@ -1,16 +1,15 @@
-var Layout = require("./components/layout");
-var PostStore = require("./stores/post_store");
-var posts = new PostStore();
+import Layout from "./components/layout";
+import PostStore from "./stores/post_store";
 
-var App = React.createClass({
+class App extends React.Component {
   getInitialState() {
     return {
       title:   "Hello",
       author:  "Nikolay Nemshilov",
       body:    "blah blah blah",
       sidebar: "blah"
-    }
-  },
+    };
+  }
 
   render() {
     return (
@@ -22,6 +21,6 @@ var App = React.createClass({
       ></Layout>
     );
   }
-});
+}
 
-React.render(<App></App>, document.documentElement);
+React.render('<App></App>', document.documentElement);

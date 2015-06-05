@@ -1,6 +1,6 @@
-var Request = require("../utils/request");
+import Request from "../utils/request";
 
-module.exports = class PostStore {
+export default class PostStore {
   constructor() {
     this.posts = [];
     this.all();
