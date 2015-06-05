@@ -1,8 +1,9 @@
 {
   "name": "nikolay.theosom.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "Awesome blog",
   "author": "Nikolay Nemshilov",
+  "license": "NONE",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +18,11 @@
   "homepage": "https://github.com/MadRabbit/nikolay.theosom.com",
   "dependencies": {
     "babelify": "^6.1.2",
-    "browserify": "^9.0.3",
+    "browserify": "^9.0.8",
     "glob": "^4.3.5",
     "react": "^0.13.3",
     "slug": "^0.8.0",
+    "gulp": "^3.9.0",
     "vinyl-source-stream": "^1.1.0"
   }
 }
