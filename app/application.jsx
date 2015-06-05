@@ -2,16 +2,21 @@ import Layout from "./components/layout";
 import PostStore from "./stores/post_store";
 
 class App extends React.Component {
-  getInitialState() {
-    return {
+  state: {
+    title:   "Hello",
+    author:  "Nikolay Nemshilov",
+    body:    "blah blah blah",
+    sidebar: "blah"
+  }
+
+  render() {
+    this.state = {
       title:   "Hello",
       author:  "Nikolay Nemshilov",
       body:    "blah blah blah",
       sidebar: "blah"
     };
-  }
 
-  render() {
     return (
       <Layout
         title={this.state.title}
@@ -23,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-React.render('<App></App>', document.documentElement);
+React.render(<App></App>, document.documentElement);

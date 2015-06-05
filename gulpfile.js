@@ -5,11 +5,22 @@ var source     = require("vinyl-source-stream");
 var connect    = require("gulp-connect");
 
 gulp.task("scripts", function() {
-  browserify({entries: ["./app/app.jsx"], extensions: [".js", ".jsx"]})
+  browserify({
+      entries: ["./app/application.jsx"],
+      extensions: [".js", ".jsx"]
+    })
     .transform(babelify)
     .bundle()
-    .pipe(source('build.js'))
-    .pipe(gulp.dest('app/'));
+    .pipe(source('application.js'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task("watch", function() {
+  gulp.watch("./app/*.js"       , ["scripts"]);
+  gulp.watch("./app/*.jsx"      , ["scripts"]);
+  gulp.watch("./application.js" , ["livereload"]);
+  gulp.watch("./application.css", ["livereload"]);
+  gulp.watch("./*.html"         , ["livereload"]);
 });
 
 gulp.task("livereload", function() {
@@ -17,15 +28,9 @@ gulp.task("livereload", function() {
     .pipe(connect.reload());
 });
 
-gulp.task("watch", function() {
-  gulp.watch("./app/*.js",  ["scripts"]);
-  gulp.watch("./app/*.jsx", ["scripts"]);
-  gulp.watch("./*.html",    ["livereload"]);
-});
-
 gulp.task("connect", function() {
   connect.server({
-    root:       "./public",
+    root:       "./",
     port:       process.env.PORT || 8080,
     livereload: process.env.NODE_ENV != "production",
     fallback:   "404.html"
