@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Awesome blog",
   "author": "Nikolay Nemshilov",
-  "license": "NONE",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,9 +20,12 @@
     "babelify": "^6.1.2",
     "browserify": "^9.0.8",
     "glob": "^4.3.5",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
     "react": "^0.13.3",
     "slug": "^0.8.0",
-    "gulp": "^3.9.0",
+    "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
 }

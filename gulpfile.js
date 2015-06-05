@@ -1,17 +1,25 @@
 var gulp       = require("gulp");
 var browserify = require("browserify");
 var babelify   = require("babelify");
+var sourcemaps = require("gulp-sourcemaps");
 var source     = require("vinyl-source-stream");
 var connect    = require("gulp-connect");
+var uglify     = require('gulp-uglify');
+var buffer     = require('vinyl-buffer');
 
 gulp.task("scripts", function() {
   browserify({
       entries: ["./app/application.jsx"],
-      extensions: [".js", ".jsx"]
+      extensions: [".js", ".jsx"],
+      debug: true
     })
     .transform(babelify)
     .bundle()
     .pipe(source('application.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({initMaps: true}))
+    .pipe(uglify())
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest('./'));
 });
 
