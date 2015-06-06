@@ -3,20 +3,19 @@
  *
  */
 
-var fs     = require("fs");
 var slug   = require("slug");
 var tagger = require("./tagger");
 
-module.exports = function(filename) {
-  var data     = fs.readFileSync(filename).toString();
-  var name     = filename.replace(/\.md$/, "").split('/').pop();
+module.exports = function(filename, data) {
+  var file = filename.replace(process.cwd(), "");
+  var name = file.replace(/\.(md|html)$/, "").split('/').pop();
 
   return {
-    path:     filename,
+    path:     file,
     slug:     build_slug(name),
     date:     figure_date(name),
     title:    get_title(data),
-    category: get_category(filename),
+    category: get_category(file),
     tags:     find_tags(data),
     extract:  get_extract(data, 100)
   };
@@ -32,7 +31,7 @@ function get_title(text) {
 }
 
 function get_category(filename) {
-  var m = filename.match(/^pages\/([^\/]+?)\//);
+  var m = filename.match(/^\/?pages\/([^\/]+?)\//);
   return m && m[1];
 }
 

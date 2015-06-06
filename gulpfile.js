@@ -9,6 +9,7 @@ var buffer       = require('vinyl-buffer');
 var less         = require("gulp-less");
 var autoprefixer = require("gulp-autoprefixer");
 var minifyCss    = require('gulp-minify-css');
+var sitemap      = require('./app/utils/sitemap');
 
 gulp.task("scripts", function() {
   browserify({
@@ -36,12 +37,21 @@ gulp.task("stylesheets", function() {
     .pipe(gulp.dest("./"));
 });
 
+gulp.task("sitemap", function() {
+  gulp.src(['./pages/**/*.md'])
+    .pipe(sitemap("http://nikolay.theosom.com"))
+    .pipe(gulp.dest("./"));
+});
+
 gulp.task("watch", function() {
-  gulp.watch("./app/*.js"       , ["scripts"]);
-  gulp.watch("./app/*.jsx"      , ["scripts"]);
-  gulp.watch("./application.js" , ["livereload"]);
-  gulp.watch("./application.css", ["livereload"]);
-  gulp.watch("./*.html"         , ["livereload"]);
+  gulp.watch("./app/**/*.js"         , ["scripts"]);
+  gulp.watch("./app/**/*.jsx"        , ["scripts"]);
+  gulp.watch("./app/application.less", ["stylesheets"]);
+  gulp.watch("./pages/**/*.md"       , ["sitemap"]);
+  gulp.watch("./application.js"      , ["livereload"]);
+  gulp.watch("./application.css"     , ["livereload"]);
+  gulp.watch("./sitemap.xml"         , ["livereload"]);
+  gulp.watch("./*.html"              , ["livereload"]);
 });
 
 gulp.task("livereload", function() {
@@ -58,5 +68,5 @@ gulp.task("connect", function() {
   });
 });
 
-gulp.task("build", ["scripts", "stylesheets"]);
+gulp.task("build", ["scripts", "stylesheets", "sitemap"]);
 gulp.task("default", ["build", "connect", "watch"]);
