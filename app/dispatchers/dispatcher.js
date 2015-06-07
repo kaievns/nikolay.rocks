@@ -5,7 +5,10 @@ export default class Dispatcher {
   }
 
   dispatch(payload) {
-    callbacks.forEach( (callback)-> addPromise(callback, payload); );
+    callbacks.forEach(function(callback) {
+      addPromise(callback, payload);
+    });
+    
     Promise.all(promises).then(clearPromises);
   }
 }

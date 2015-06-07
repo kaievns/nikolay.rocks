@@ -41,7 +41,7 @@ Sitemap.prototype.push = function(index) {
   this.content += "\n    <lastmod>"+ JSON.stringify(index.date).replace(/"/g, "") +"</lastmod>";
   this.content += "\n    <fileloc>"+ index.path +"</fileloc>";
   this.content += "\n    <category>"+ index.category +"</category>";
-  this.content += "\n    <category>"+ index.tags.join(",") +"</category>";
+  this.content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
   this.content += "\n  </url>";
 };
 

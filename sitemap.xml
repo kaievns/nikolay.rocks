@@ -5,20 +5,20 @@
     <lastmod>null</lastmod>
     <fileloc>/pages/index.md</fileloc>
     <category>null</category>
-    <category></category>
+    <tags></tags>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2014-02-06-some-awesome-stuff</loc>
     <lastmod>2014-02-05T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mind Fucks/2014-02-06-some-awesome-stuff.md</fileloc>
     <category>Mind Fucks</category>
-    <category>ruby on rails,tdd</category>
+    <tags>ruby on rails,tdd</tags>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2015-02-14-my-sweet-valentine</loc>
     <lastmod>2015-02-13T13:00:00.000Z</lastmod>
     <fileloc>/pages/В Поисках Дома/2015-02-14-my-sweet-valentine.md</fileloc>
     <category>В Поисках Дома</category>
-    <category>nodejs</category>
+    <tags>nodejs</tags>
   </url>
 </urlset>
