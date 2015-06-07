@@ -1,6 +1,8 @@
 import Layout from "./components/layout";
 import PostStore from "./stores/post_store";
 
+var posts = new PostStore();
+
 class App extends React.Component {
   state: {
     title:   "Hello",
@@ -28,4 +30,4 @@ class App extends React.Component {
   }
 }
 
-React.render(<App></App>, document.documentElement);
+React.render(<App></App>, document.body);

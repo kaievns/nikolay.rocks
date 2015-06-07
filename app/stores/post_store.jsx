@@ -7,9 +7,19 @@ export default class PostStore {
   }
 
   all() {
-    var request = new Request("./index.json");
-    request.getJSON(function(data) {
-      console.log("data: ", data);
-    });
+    var request = new Request("/sitemap.xml");
+    request.get(function(data, xhr) {
+      var urls = xhr.responseXML.querySelectorAll("url");
+      this.posts = [].slice.call(urls).map(function(url) {
+        return new Post(url);
+      });
+    }.bind(this));
+  }
+}
+
+
+class Post {
+  constructor(url) {
+    
   }
 }

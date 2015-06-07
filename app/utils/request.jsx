@@ -11,8 +11,8 @@ export default class Request {
     xhr.open("GET", this.url, true);
 
     xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        callback(this.responseText);
+      if (this.readyState == 4 && this.status > 200 && this.status < 300) {
+        callback(this.responseText, this);
       }
     };
 

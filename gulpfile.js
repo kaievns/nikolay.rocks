@@ -64,7 +64,7 @@ gulp.task("connect", function() {
     root:       "./",
     port:       process.env.PORT || 8080,
     livereload: process.env.NODE_ENV != "production",
-    fallback:   "404.html"
+    fallback:   "index.html"
   });
 });
 
