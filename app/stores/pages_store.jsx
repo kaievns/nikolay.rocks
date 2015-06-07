@@ -1,6 +1,6 @@
 import Request from "../utils/request";
 
-export default class PostStore {
+export default class PagesStore {
   constructor() {
     this.posts = [];
     this.all();
@@ -20,6 +20,6 @@ export default class PostStore {
 
 class Post {
   constructor(url) {
-    
+
   }
 }

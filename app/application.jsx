@@ -1,7 +1,7 @@
 import Layout from "./components/layout";
-import PostStore from "./stores/post_store";
+import PagesStore from "./stores/pages_store";
 
-var posts = new PostStore();
+var pages = new PagesStore();
 
 class App extends React.Component {
   state: {
