@@ -24,7 +24,6 @@ export default class Layout extends React.Component {
         <main>
           <div className="paddings">
             <article>
-              <h1>{this.state.title}</h1>
               <Router.Handler />
             </article>
             <aside>

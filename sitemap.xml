@@ -6,6 +6,8 @@
     <fileloc>/pages/index.md</fileloc>
     <category>null</category>
     <tags></tags>
+    <title>Oh, Hi there!</title>
+    <extract></extract>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2014-02-06-some-awesome-stuff</loc>
@@ -13,6 +15,8 @@
     <fileloc>/pages/Mind Fucks/2014-02-06-some-awesome-stuff.md</fileloc>
     <category>Mind Fucks</category>
     <tags>ruby on rails,tdd</tags>
+    <title>Oh, no!</title>
+    <extract>asdfasdfasdf #ruby-on-rails #TDD</extract>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2015-02-14-my-sweet-valentine</loc>
@@ -20,5 +24,7 @@
     <fileloc>/pages/В Поисках Дома/2015-02-14-my-sweet-valentine.md</fileloc>
     <category>В Поисках Дома</category>
     <tags>nodejs</tags>
+    <title>bla bla bla</title>
+    <extract>Oh, hi there #nodejs</extract>
   </url>
 </urlset>

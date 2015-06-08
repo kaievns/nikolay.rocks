@@ -42,6 +42,8 @@ Sitemap.prototype.push = function(index) {
   this.content += "\n    <fileloc>"+ index.path +"</fileloc>";
   this.content += "\n    <category>"+ index.category +"</category>";
   this.content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
+  this.content += "\n    <title>"+ index.title +"</title>";
+  this.content += "\n    <extract>"+ index.extract +"</extract>";
   this.content += "\n  </url>";
 };
 
