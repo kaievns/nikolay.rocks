@@ -1,5 +1,6 @@
-import PagesStore from "./stores/pages_store";
+import Router from "./components/router";
 import Layout from "./components/layout";
+import PagesStore from "./stores/pages_store";
 
 var pages_store = new PagesStore();
 
@@ -13,6 +14,5 @@ class App extends React.Component {
 
 // waiting for the index to load
 pages_store.on("change", function() {
-  document.body.className = "";
-  React.render(<App></App>, document.body);
+  Router.connect(App);
 });

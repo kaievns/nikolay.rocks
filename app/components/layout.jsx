@@ -1,5 +1,7 @@
+import Router from "./router";
 import SettingsStore from "../stores/settings_store";
 
+var RouteHandler = Router.Handler;
 var settings = new SettingsStore();
 
 export default class Layout extends React.Component {
@@ -26,7 +28,7 @@ export default class Layout extends React.Component {
           <div className="paddings">
             <article>
               <h1>{this.state.title}</h1>
-              {this.props.body}
+              {RouteHandler}
             </article>
             <aside>
               {this.props.sidebar}
