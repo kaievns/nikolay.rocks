@@ -17,7 +17,6 @@ export default class Layout extends React.Component {
             </aside>
           </div>
         </main>
-
         <footer>
           <div className="paddings">
             <p>Copyright (C) 2012-{new Date().getFullYear()} Nikolay Nemshilov</p>

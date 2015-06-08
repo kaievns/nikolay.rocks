@@ -3,6 +3,7 @@ import AppDispatcher from "../dispatchers/app_dispatcher";
 import {EventEmitter} from "events";
 
 var app_dispatcher = new AppDispatcher();
+var pages = null;
 
 export default class PagesStore extends EventEmitter {
   constructor() {
@@ -13,11 +14,15 @@ export default class PagesStore extends EventEmitter {
   load() {
     new Request("/sitemap.xml").get(function(data, xhr) {
       var urls = xhr.responseXML.querySelectorAll("url");
-      this.pages = [].slice.call(urls).map(function(url) {
+      pages = [].slice.call(urls).map(function(url) {
         return new Page(url);
       });
       this.emit("change");
     }.bind(this));
+  }
+
+  allPages() {
+    return pages;
   }
 }
 
