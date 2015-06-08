@@ -1,28 +1,26 @@
-import Request from "../utils/request";
-import AppDispatcher from "../dispatchers/app_dispatcher";
 import {EventEmitter} from "events";
-
-var app_dispatcher = new AppDispatcher();
-var pages = null;
+import Request from "../utils/request";
 
 export default class PagesStore extends EventEmitter {
+  static inst() {
+    !this._inst && (this._inst = new PagesStore());
+    return this._inst;
+  }
+
   constructor() {
     super();
+    this.pages = null;
     this.load();
   }
 
   load() {
     new Request("/sitemap.xml").get(function(data, xhr) {
       var urls = xhr.responseXML.querySelectorAll("url");
-      pages = [].slice.call(urls).map(function(url) {
+      this.pages = [].slice.call(urls).map(function(url) {
         return new Page(url);
       });
       this.emit("change");
     }.bind(this));
-  }
-
-  allPages() {
-    return pages;
   }
 }
 

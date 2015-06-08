@@ -1,11 +1,16 @@
-var Router = ReactRouter;
-var Route  = Router.Route;
+var Router       = ReactRouter;
+var Route        = Router.Route;
+var DefaultRoute = Router.DefaultRoute;
+
+import PagesIndex from "./index"
+import PageView from "./page"
 
 export default {
   connect: function(App) {
     var routes = (
       <Route handler={App} path="/">
-
+        <Route path="/" handler={PagesIndex} />
+        <Route path="*" handler={PageView} />
       </Route>
     );
 
@@ -15,5 +20,5 @@ export default {
     });
   },
 
-  Handler: Router.Handler
+  Handler: ReactRouter.RouteHandler
 };
