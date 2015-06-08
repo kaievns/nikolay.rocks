@@ -21,3 +21,13 @@ export default {
 
   Handler: Router.RouteHandler
 };
+
+document.addEventListener("click", function(event) {
+  var link = event.target, url = link.getAttribute("href");
+  var meta_key = event.metaKey || event.altKey || event.ctrlKey || event.shiftKey;
+
+  if (event.button === 0 && !meta_key && link.tagName === "A" && url[0] === "/") {
+    event.preventDefault();
+    Router.HistoryLocation.push(url);
+  }
+}, false);

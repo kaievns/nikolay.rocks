@@ -21,7 +21,7 @@ export default class PagesIndex extends React.Component {
   renderPreviews() {
     return this.recentPages().map(function(page) {
       return <PagePreview page={page} />;
-    })
+    });
   }
 
   recentPages() {
