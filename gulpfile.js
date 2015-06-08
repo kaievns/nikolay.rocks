@@ -64,7 +64,21 @@ gulp.task("connect", function() {
     root:       "./",
     port:       process.env.PORT || 8080,
     livereload: process.env.NODE_ENV != "production",
-    fallback:   "index.html"
+    middleware: function() {
+      return [
+        function(req, res, next) {
+          if (!/.+?\.[a-z]+$/.test(req.url)) {
+            res.setHeader("Content-type", "text/html");
+            require('fs').createReadStream("index.html").pipe(res);
+          } else if (req.url === '/favicon.ico') {
+            res.writeHead(404, {'Content-Type': 'image/x-icon'} );
+            res.end();
+          } else {
+            next();
+          }
+        }
+      ]
+    }
   });
 });
 
