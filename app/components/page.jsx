@@ -18,16 +18,13 @@ export default class PageView extends React.Component {
 
   render() {
     var page = this.state.page;
+    var body = page.body || page.extract;
 
     return (
       <div className="page">
-        <h2 className="title">
-          <PostDate date={page.createdAt}/>
-          {page.title}
-        </h2>
-        <p>
-          {page.body || page.extract}
-        </p>
+        <PostDate date={page.createdAt}/>
+
+        <div dangerouslySetInnerHTML={{__html: body}}></div>
 
         {!page.body && <Locker/>}
       </div>

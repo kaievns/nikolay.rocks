@@ -47,12 +47,14 @@ body.loading {
 }
 
 div.page {
-  .title {
-    margin-top: 0;
-
-    .date {
-      float: right;
+  h1, h2 {
+    &:first-of-type {
+      margin-top: 0;
     }
+  }
+
+  .date {
+    float: right;
   }
 
   &:not(.last-child) {

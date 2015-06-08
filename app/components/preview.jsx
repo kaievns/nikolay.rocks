@@ -6,13 +6,11 @@ export default class PagePreview extends React.Component {
 
     return (
       <div className="page preview">
-        <h2 className="title">
-          <PostDate date={page.createdAt}/>
-          <a href={page.path}>{page.title}</a>
-        </h2>
-        <p>
-          {page.extract}
-        </p>
+        <PostDate date={page.createdAt}/>
+        
+        <h2><a href={page.path}>{page.title}</a></h2>
+
+        <div dangerouslySetInnerHTML={{__html: page.extract}}></div>
       </div>
     );
   }
