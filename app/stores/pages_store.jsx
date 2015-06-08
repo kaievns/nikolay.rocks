@@ -8,6 +8,12 @@ export default class PagesStore extends EventEmitter {
     return this._inst;
   }
 
+  static find(path) {
+    return this.inst().pages.filter(function(page) {
+      return page.path == path;
+    })[0];
+  }
+
   constructor() {
     super();
     this.pages = null;
@@ -20,7 +26,7 @@ export default class PagesStore extends EventEmitter {
       this.pages = [].slice.call(urls).map(function(url) {
         return new Page(this.extractData(url));
       }.bind(this));
-      this.emit("change");
+      this.emit("load");
     }.bind(this));
   }
 

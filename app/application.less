@@ -16,13 +16,17 @@ body.loading {
   background: rgba(0,0,0,0.25);
   justify-content: center;
   align-items: center;
+
+  .spinner {
+    font-size: 2em;
+  }
 }
 
 .spinner {
   text-indent: -999em;
-  width: 2em;
-  height: 2em;
-  border: .4em solid rgba(0,0,0,0.2);
+  width:  1em;
+  height: 1em;
+  border: .2em solid rgba(0,0,0,0.2);
   border-radius: 50%;
   border-top-color:  rgba(0,0,0,0.5);
   animation: spin 1s ease-in-out infinite;
@@ -33,7 +37,16 @@ body.loading {
   100% { transform: rotate(360deg); }
 }
 
-div.post {
+.locker {
+  background: rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2em;
+  height: 3em;
+}
+
+div.page {
   .title {
     margin-top: 0;
 

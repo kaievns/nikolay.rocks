@@ -5,7 +5,7 @@ export default class PagePreview extends React.Component {
     var page = this.props.page;
 
     return (
-      <div className="post preview">
+      <div className="page preview">
         <h2 className="title">
           <PostDate date={page.createdAt}/>
           <a href={page.path}>{page.title}</a>

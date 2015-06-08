@@ -11,6 +11,6 @@ class App extends React.Component {
 }
 
 // waiting for the index to load
-PagesStore.inst().on("change", function() {
+PagesStore.inst().on("load", function() {
   Router.connect(App);
 });
