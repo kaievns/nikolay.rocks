@@ -1,5 +1,6 @@
 import {EventEmitter} from "events";
 import Request from "../utils/request";
+import Page from "./page";
 
 export default class PagesStore extends EventEmitter {
   static inst() {
@@ -17,23 +18,24 @@ export default class PagesStore extends EventEmitter {
     new Request("/sitemap.xml").get(function(data, xhr) {
       var urls = xhr.responseXML.querySelectorAll("url");
       this.pages = [].slice.call(urls).map(function(url) {
-        return new Page(url);
-      });
+        return new Page(this.extractData(url));
+      }.bind(this));
       this.emit("change");
     }.bind(this));
   }
-}
 
+  extractData(url) {
+    var data = {
+      path:      (url.querySelector("loc")      || {}).textContent,
+      createdAt: (url.querySelector("lastmod")  || {}).textContent,
+      file:      (url.querySelector("fileloc")  || {}).textContent,
+      category:  (url.querySelector("category") || {}).textContent,
+      tags:      (url.querySelector("tags")     || {}).textContent
+    };
 
-class Page {
-  constructor(url) {
-    this.path      = (url.querySelector("loc")      || {}).textContent;
-    this.createdAt = (url.querySelector("lastmod")  || {}).textContent;
-    this.file      = (url.querySelector("fileloc")  || {}).textContent;
-    this.category  = (url.querySelector("category") || {}).textContent;
-    this.tags      = (url.querySelector("tags")     || {}).textContent;
+    try { data.tags = data.tags.split(","); } catch(e) {}
+    try { data.createdAt = JSON.parse('"'+data.createdAt+'"'); } catch(e) {}
 
-    try { this.tags = this.tags.split(","); } catch(e) {}
-    try { this.createdAt = JSON.parse('"'+this.createdAt+'"'); } catch(e) {}
+    return data;
   }
 }

@@ -1,7 +1,5 @@
 import Router from "./router";
-import SettingsStore from "../stores/settings_store";
-
-var settings = new SettingsStore();
+import settings from "../stores/settings";
 
 export default class Layout extends React.Component {
   constructor() {
@@ -20,7 +18,7 @@ export default class Layout extends React.Component {
       <body>
         <header>
           <div className="paddings">
-            <a href="./" className="logo">Nikolay.TheOsom</a>
+            <a href="/" className="logo">{settings.title}</a>
           </div>
         </header>
         <main>
@@ -36,7 +34,7 @@ export default class Layout extends React.Component {
         </main>
         <footer>
           <div className="paddings">
-            <p>Copyright (C) 2012-{new Date().getFullYear()} {this.state.author}</p>
+            <p>Copyright (C) 2012-{new Date().getFullYear()} {settings.author}</p>
           </div>
         </footer>
       </body>
