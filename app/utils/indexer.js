@@ -41,16 +41,22 @@ function figure_date(filename) {
 }
 
 function get_extract(text, size) {
-  var body   = text.replace(/\r\n/g, "\n").replace(/\n\s+\n/g, "\n").replace(/\n+/g, "\n").trim();
-  var blocks = body.split("\n").slice(1); // without the header
+  var body   = text.replace(/\r\n/g, "\n").replace(/\n\s+\n/g, "\n\n").replace(/\n\n+/g, "\n\n").trim();
+  var blocks = body.split("\n\n").slice(1); // without the header
   var head   = "";
+  var in_code_block = false;
 
-  while (head.length < size && blocks.length > 0) {
+  while (blocks.length > 0 && (head.length < size || in_code_block)) {
     if (blocks[0].match(/^#+\s*.+?/)) { // subheader
       break;
     }
 
-    head += blocks.shift() + "\n";
+    var next_block = blocks.shift();
+
+    next_block.substr(0,3) == "```" && (in_code_block = true);
+    next_block.substr(-3)  == "```" && (in_code_block = false);
+
+    head += next_block + "\n\n";
   }
 
   return head.trim();

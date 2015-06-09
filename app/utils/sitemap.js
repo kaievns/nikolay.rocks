@@ -27,29 +27,11 @@ module.exports = function(hostname, options) {
 
 function Sitemap(hostname) {
   this.hostname = hostname;
-  this.content  = '<?xml version="1.0" encoding="UTF-8"?>'+"\n";
-  this.content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+  this.pages    = [];
 }
 
 Sitemap.prototype.push = function(index) {
-  var url = this.hostname;
-
-  index.slug != "index" && (url += "/"+ index.slug);
-
-  this.content += "\n  <url>";
-  this.content += "\n    <loc>"+ url +"</loc>";
-  this.content += "\n    <lastmod>"+ JSON.stringify(index.date).replace(/"/g, "") +"</lastmod>";
-  this.content += "\n    <fileloc>"+ index.path +"</fileloc>";
-  if (index.tags.length > 0) {
-    this.content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
-  }
-  this.content += "\n    <title>"+ index.title +"</title>";
-  this.content += "\n    <extract><![CDATA["+ index.extract +"]]></extract>";
-  this.content += "\n  </url>";
-};
-
-Sitemap.prototype.toString = function() {
-  return this.content + "\n</urlset>";
+  this.pages.push(index);
 };
 
 Sitemap.prototype.toFile = function() {
@@ -57,5 +39,41 @@ Sitemap.prototype.toFile = function() {
     base:     __dirname,
     path:     path.join(__dirname, './sitemap.xml'),
     contents: new Buffer(this.toString(), "utf-8")
+  });
+};
+
+Sitemap.prototype.toString = function() {
+  var content  = '<?xml version="1.0" encoding="UTF-8"?>'+"\n";
+  content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+
+  content += this.urlBlocks().join("");
+
+  return content + "\n</urlset>";
+};
+
+Sitemap.prototype.urlBlocks = function() {
+  return this.pagesInOrder().map(function(index) {
+    var url = this.hostname, content = "";
+
+    index.slug != "index" && (url += "/"+ index.slug);
+
+    content += "\n  <url>";
+    content += "\n    <loc>"+ url +"</loc>";
+    content += "\n    <lastmod>"+ JSON.stringify(index.date).replace(/"/g, "") +"</lastmod>";
+    content += "\n    <fileloc>"+ index.path +"</fileloc>";
+    if (index.tags.length > 0) {
+      content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
+    }
+    content += "\n    <title>"+ index.title +"</title>";
+    content += "\n    <extract><![CDATA["+ index.extract +"]]></extract>";
+    content += "\n  </url>";
+
+    return content;
+  }.bind(this));
+};
+
+Sitemap.prototype.pagesInOrder = function() {
+  return this.pages.sort(function(a, b) {
+    return a.date > b.date ? -1 : 1;
   });
 };
