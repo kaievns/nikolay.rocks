@@ -40,10 +40,11 @@ Sitemap.prototype.push = function(index) {
   this.content += "\n    <loc>"+ url +"</loc>";
   this.content += "\n    <lastmod>"+ JSON.stringify(index.date).replace(/"/g, "") +"</lastmod>";
   this.content += "\n    <fileloc>"+ index.path +"</fileloc>";
-  this.content += "\n    <category>"+ index.category +"</category>";
-  this.content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
+  if (index.tags.length > 0) {
+    this.content += "\n    <tags>"+ index.tags.join(",") +"</tags>";
+  }
   this.content += "\n    <title>"+ index.title +"</title>";
-  this.content += "\n    <extract>"+ index.extract +"</extract>";
+  this.content += "\n    <extract><![CDATA["+ index.extract +"]]></extract>";
   this.content += "\n  </url>";
 };
 
