@@ -14,6 +14,10 @@ export default class PagesStore extends EventEmitter {
     })[0];
   }
 
+  static currentPage() {
+    return this.find(document.location.pathname);
+  }
+
   constructor() {
     super();
     this.pages = null;
@@ -35,7 +39,6 @@ export default class PagesStore extends EventEmitter {
       path:      (url.querySelector("loc")      || {}).textContent,
       createdAt: (url.querySelector("lastmod")  || {}).textContent,
       file:      (url.querySelector("fileloc")  || {}).textContent,
-      category:  (url.querySelector("category") || {}).textContent,
       tags:      (url.querySelector("tags")     || {}).textContent,
       title:     (url.querySelector("title")    || {}).textContent,
       extract:   (url.querySelector("extract")  || {}).textContent
@@ -44,6 +47,7 @@ export default class PagesStore extends EventEmitter {
     try { data.path = data.path.split(".com").pop(); } catch(e) {}
     try { data.tags = data.tags.split(","); } catch(e) {}
     try { data.createdAt = new Date(data.createdAt); } catch(e) {}
+    try { data.category = data.file.match(/\/pages\/(.+?)\//)[1]; } catch(e) {}
 
     return data;
   }

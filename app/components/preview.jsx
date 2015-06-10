@@ -6,13 +6,13 @@ export default class PagePreview extends React.Component {
     var page = this.props.page;
 
     return (
-      <div className="page preview">
+      <section className="page preview">
         <PostDate date={page.createdAt}/>
 
         <h2><a href={page.path}>{page.title}</a></h2>
 
         <PostContent body={page.extract} />
-      </div>
+      </section>
     );
   }
 }

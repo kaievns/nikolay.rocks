@@ -7,7 +7,7 @@ export default class PageView extends React.Component {
   constructor() {
     super();
 
-    var current_page = PagesStore.find(document.location.pathname);
+    var current_page = PagesStore.currentPage();
     current_page.on("load", this._pageLoaded.bind(this));
     current_page.load();
 
@@ -18,12 +18,12 @@ export default class PageView extends React.Component {
     var page = this.state.page;
 
     return (
-      <div className="page">
+      <article className="page">
         <PostDate date={page.createdAt}/>
         <PostContent body={page.body||page.extract} />
 
         {!page.body && <Locker/>}
-      </div>
+      </article>
     )
   }
 

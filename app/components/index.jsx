@@ -12,9 +12,9 @@ export default class PagesIndex extends React.Component {
 
   render() {
     return (
-      <div id="pages">
+      <article className="pages">
         {this.renderPreviews()}
-      </div>
+      </article>
     );
   }
 
