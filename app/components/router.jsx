@@ -27,6 +27,12 @@ document.addEventListener("click", function(event) {
   var meta_key = event.metaKey || event.altKey || event.ctrlKey || event.shiftKey;
 
   if (event.button === 0 && !meta_key && link.tagName === "A" && url[0] === "/") {
+    // HACK because the componentWillUnmount is not firing
+    window._scrollers_hack.forEach(function(instance) {
+      instance.detachScrollListener();
+    });
+    window._scrollers_hack = [];
+
     event.preventDefault();
     Router.HistoryLocation.push(url);
   }

@@ -1,5 +1,5 @@
 import PagesStore from "../stores/pages_store";
-import PagePreview from "./preview";
+import PagesList from "./pages";
 
 export default class PagesIndex extends React.Component {
   constructor() {
@@ -7,26 +7,14 @@ export default class PagesIndex extends React.Component {
 
     this.state = {
       pages: PagesStore.inst().pages
-    };
+    }
   }
 
   render() {
     return (
       <article className="pages">
-        {this.renderPreviews()}
+        <PagesList pages={this.state.pages} />
       </article>
     );
-  }
-
-  renderPreviews() {
-    return this.recentPages().map(function(page) {
-      return <PagePreview page={page} />;
-    });
-  }
-
-  recentPages() {
-    return this.state.pages.sort(function(a,b) {
-      return a.createdAt > b.createdAt ? -1 : 1;
-    });
   }
 }

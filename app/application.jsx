@@ -5,7 +5,7 @@ import PagesStore from "./stores/pages_store";
 class App extends React.Component {
   render() {
     return(
-      <Layout sidebar="Sidebar"></Layout>
+      <Layout></Layout>
     );
   }
 }

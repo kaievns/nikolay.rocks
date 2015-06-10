@@ -23,7 +23,7 @@ gulp.task("scripts", function() {
     .pipe(buffer())
     .pipe(sourcemaps.init({initMaps: true}))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest('./'));
 });
 
@@ -39,7 +39,7 @@ gulp.task("stylesheets", function() {
 
 gulp.task("sitemap", function() {
   gulp.src(['./pages/**/*.md'])
-    .pipe(sitemap("http://nikolay.theosom.com"))
+    .pipe(sitemap("http://nikolay.rocks"))
     .pipe(gulp.dest("./"));
 });
 

@@ -44,7 +44,7 @@ export default class PagesStore extends EventEmitter {
       extract:   (url.querySelector("extract")  || {}).textContent
     };
 
-    try { data.path = data.path.split(".com").pop(); } catch(e) {}
+    try { data.path = data.path.split("nikolay.rocks").pop(); } catch(e) {}
     try { data.tags = data.tags.split(","); } catch(e) {}
     try { data.createdAt = new Date(data.createdAt); } catch(e) {}
     try { data.category = data.file.match(/\/pages\/(.+?)\//)[1]; } catch(e) {}
