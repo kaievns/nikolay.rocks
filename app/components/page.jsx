@@ -23,6 +23,10 @@ export default class PageView extends React.Component {
         <PostContent body={page.body||page.extract} />
 
         {!page.body && <Locker/>}
+
+        <p>
+          <a href="/">&lt;- Other posts</a>
+        </p>
       </article>
     )
   }
