@@ -582,20 +582,20 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <extract><![CDATA[Наверное пора уже немного написать про поездку в Барселону. Ибо как бы несколько месяцев уже прошло и память моя понемногу тает.]]></extract>
   </url>
   <url>
-    <loc>http://nikolay.theosom.com/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome</loc>
-    <lastmod>2012-04-05T14:00:00.000Z</lastmod>
-    <fileloc>/pages/Mighty Hacks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome.md</fileloc>
-    <tags>javascript,oop,javascript,jquery,rightjs,jquery,javascript</tags>
-    <title>What Are OO DOM-Wrappers And Why Are They So Awesome</title>
-    <extract><![CDATA[This post is more for youngsters and intermediate #JavaScript developers. To get it you'll need to know how #OOP in #JavaScript works and what [prototype-based programming](http://en.wikipedia.org/wiki/Prototype-based_programming) is.]]></extract>
-  </url>
-  <url>
     <loc>http://nikolay.theosom.com/2012-04-06-converting-numbers-to-currency-in-javascript</loc>
     <lastmod>2012-04-05T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-04-06-converting-numbers-to-currency-in-javascript.md</fileloc>
     <tags>how to,javascript</tags>
     <title>Converting Numbers To Currency In JavaScript</title>
     <extract><![CDATA[Just so I didn't forget it later on, here is a quick tip #how-to convert numbers into currencies in #JavaScript]]></extract>
+  </url>
+  <url>
+    <loc>http://nikolay.theosom.com/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome</loc>
+    <lastmod>2012-04-05T14:00:00.000Z</lastmod>
+    <fileloc>/pages/Mighty Hacks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome.md</fileloc>
+    <tags>javascript,oop,javascript,jquery,rightjs,jquery,javascript</tags>
+    <title>What Are OO DOM-Wrappers And Why Are They So Awesome</title>
+    <extract><![CDATA[This post is more for youngsters and intermediate #JavaScript developers. To get it you'll need to know how #OOP in #JavaScript works and what [prototype-based programming](http://en.wikipedia.org/wiki/Prototype-based_programming) is.]]></extract>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2012-03-29-css3-gradient-buttons-the-right-way</loc>

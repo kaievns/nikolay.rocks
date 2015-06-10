@@ -1,6 +1,7 @@
 import Router from "./router";
 import settings from "../stores/settings";
 import PagesStore from "../stores/pages_store";
+import Sidebar from "./sidebar";
 
 export default class Layout extends React.Component {
   constructor() {
@@ -28,9 +29,7 @@ export default class Layout extends React.Component {
         <main>
           <div className="paddings">
             <Router.Handler />
-            <aside>
-              {this.props.sidebar}
-            </aside>
+            <Sidebar />
           </div>
         </main>
         <footer>

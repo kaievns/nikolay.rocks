@@ -41,7 +41,14 @@ body {
       text-transform: uppercase;
       text-align: center;
       position: relative;
-      margin-top: 19%;
+      margin-top: 18%;
+      line-height: 1.4em;
+    }
+  }
+
+  > main {
+    aside {
+      .hide-on-phones;
     }
   }
 }
@@ -95,5 +102,15 @@ body.loading {
 
   &:not(.last-child) {
     margin-bottom: 2em;
+  }
+}
+
+section.about {
+  > h3 {
+    margin-top: 1.5em;
+  }
+
+  img.author {
+    width: 100%;
   }
 }
