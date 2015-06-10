@@ -7,6 +7,8 @@
 @font-weight: 300;
 @font-size: 16px;
 
+@large-width: 1200px;
+
 body {
   transition: background 1s;
 
@@ -68,6 +70,10 @@ body.loading {
   }
 }
 
+code {
+  background: #FDF7D8;
+}
+
 .spinner {
   text-indent: -999em;
   width:  1em;
@@ -103,16 +109,49 @@ body.loading {
     display: block;
     font-size: 80%;
     opacity: 0.6;
+
+    @media (min-width: @large-width) {
+      position: absolute;
+      width: 8em;
+      text-align: right;
+      margin-left: -9em;
+    }
+
   }
 
   &:not(.last-child) {
     margin-bottom: 2em;
+  }
+
+  figure {
+    position: relative;
+    margin: 1em 0;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: @phone-width) {
+      margin-left: -1em;
+      width: ~"calc(100% + 2em)";
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    figcaption {
+      opacity: 0.6;
+      font-style: italic;
+    }
   }
 }
 
 section.about {
   > h3 {
     margin-top: 1.5em;
+
+    @media (min-width: @large-width) {
+      margin-top: 0em;
+    }
   }
 
   img.author {

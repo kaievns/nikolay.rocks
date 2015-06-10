@@ -160,20 +160,20 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <extract><![CDATA[To demonstrate the problem I'd like to start with a little rant. There is a very common and very simple task of formatting dates, which people, lets not point the fingers, tend to solve in all sorts of different ways. Say like that]]></extract>
   </url>
   <url>
-    <loc>http://nikolay.theosom.com/2013-08-25-programmers-happiness</loc>
-    <lastmod>2013-08-24T14:00:00.000Z</lastmod>
-    <fileloc>/pages/Mind Fucks/2013-08-25-programmers-happiness.md</fileloc>
-    <tags>ruby,javascript</tags>
-    <title>Programmers Happiness</title>
-    <extract><![CDATA[Happiness is an elusive topic, but mechanics of it can be explained through memory. See you have two types of memory, sensorial memory, which handles things like touching, tasting, sense of spacial orientation, etc., and conscious memory which basically handles memories of events, places you've been, people you've met.]]></extract>
-  </url>
-  <url>
     <loc>http://nikolay.theosom.com/2013-08-25-searching-through-non-activerecord-data</loc>
     <lastmod>2013-08-24T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2013-08-25-searching-through-non-activerecord-data.md</fileloc>
     <tags>rails,activerecord,ruby,activerecord</tags>
     <title>Searching Through Non ActiveRecord Data</title>
     <extract><![CDATA[So, here is a situation many young developers are struggling with when working with #rails and #activerecord. Say you have a `User` model that has a status field. And the actual data in the status filed is mapped to a hash, like so.]]></extract>
+  </url>
+  <url>
+    <loc>http://nikolay.theosom.com/2013-08-25-programmers-happiness</loc>
+    <lastmod>2013-08-24T14:00:00.000Z</lastmod>
+    <fileloc>/pages/Mind Fucks/2013-08-25-programmers-happiness.md</fileloc>
+    <tags>ruby,javascript</tags>
+    <title>Programmers Happiness</title>
+    <extract><![CDATA[Happiness is an elusive topic, but mechanics of it can be explained through memory. See you have two types of memory, sensorial memory, which handles things like touching, tasting, sense of spacial orientation, etc., and conscious memory which basically handles memories of events, places you've been, people you've met.]]></extract>
   </url>
   <url>
     <loc>http://nikolay.theosom.com/2013-08-19-why-stories-are-important</loc>

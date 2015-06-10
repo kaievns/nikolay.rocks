@@ -15,6 +15,7 @@ export default class Layout extends React.Component {
 
   render() {
     var page = PagesStore.currentPage();
+    var intro = (page && page.category) || settings.title.replace(".", " . ");
 
     document.title = this.state.title;
 
@@ -23,7 +24,7 @@ export default class Layout extends React.Component {
         <header>
           <div className="paddings">
             <a href="/" className="logo">{settings.title}</a>
-            <h1 className="intro">{(page && page.category) || settings.title}</h1>
+            <h1 className="intro">{intro}</h1>
           </div>
         </header>
         <main>
