@@ -63,7 +63,7 @@
     <loc>http://nikolay.rocks/2014-04-07-faster-tests-under-mysql</loc>
     <lastmod>2014-04-06T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2014-04-07-faster-tests-under-mysql.md</fileloc>
-    <tags>ruby on rails,mysql,mysql,postgresql,rspec,activerecord,mysql</tags>
+    <tags>ruby on rails,mysql,postgresql,rspec,activerecord</tags>
     <title>Faster Tests Under MySQL</title>
     <extract><![CDATA[So, here's a quick and rebellious one. If you have a large project in #ruby-on-rails that is still under #mysql and your tests are painfully slow, chances are you're using the [database_cleaner](https://github.com/bmabey/database_cleaner) gem, and I can help you to make your life easier.]]></extract>
   </url>
@@ -160,20 +160,20 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <extract><![CDATA[To demonstrate the problem I'd like to start with a little rant. There is a very common and very simple task of formatting dates, which people, lets not point the fingers, tend to solve in all sorts of different ways. Say like that]]></extract>
   </url>
   <url>
-    <loc>http://nikolay.rocks/2013-08-25-searching-through-non-activerecord-data</loc>
-    <lastmod>2013-08-24T14:00:00.000Z</lastmod>
-    <fileloc>/pages/Mighty Hacks/2013-08-25-searching-through-non-activerecord-data.md</fileloc>
-    <tags>rails,activerecord,ruby,activerecord</tags>
-    <title>Searching Through Non ActiveRecord Data</title>
-    <extract><![CDATA[So, here is a situation many young developers are struggling with when working with #rails and #activerecord. Say you have a `User` model that has a status field. And the actual data in the status filed is mapped to a hash, like so.]]></extract>
-  </url>
-  <url>
     <loc>http://nikolay.rocks/2013-08-25-programmers-happiness</loc>
     <lastmod>2013-08-24T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mind Fucks/2013-08-25-programmers-happiness.md</fileloc>
     <tags>ruby,javascript</tags>
     <title>Programmers Happiness</title>
     <extract><![CDATA[Happiness is an elusive topic, but mechanics of it can be explained through memory. See you have two types of memory, sensorial memory, which handles things like touching, tasting, sense of spacial orientation, etc., and conscious memory which basically handles memories of events, places you've been, people you've met.]]></extract>
+  </url>
+  <url>
+    <loc>http://nikolay.rocks/2013-08-25-searching-through-non-activerecord-data</loc>
+    <lastmod>2013-08-24T14:00:00.000Z</lastmod>
+    <fileloc>/pages/Mighty Hacks/2013-08-25-searching-through-non-activerecord-data.md</fileloc>
+    <tags>rails,activerecord,ruby</tags>
+    <title>Searching Through Non ActiveRecord Data</title>
+    <extract><![CDATA[So, here is a situation many young developers are struggling with when working with #rails and #activerecord. Say you have a `User` model that has a status field. And the actual data in the status filed is mapped to a hash, like so.]]></extract>
   </url>
   <url>
     <loc>http://nikolay.rocks/2013-08-19-why-stories-are-important</loc>
@@ -238,7 +238,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <loc>http://nikolay.rocks/2013-02-09-lovelyio-kicks-ass</loc>
     <lastmod>2013-02-08T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2013-02-09-lovelyio-kicks-ass.md</fileloc>
-    <tags>javascript,lovelyio,rightjs,rightjs,rightjs,jquery</tags>
+    <tags>javascript,lovelyio,rightjs,jquery</tags>
     <title>LovelyIO Kicks Ass</title>
     <extract><![CDATA[In case you're not up to date with what's going on here. [lovely.io](http://lovely.io) is an HTML5/CSS3 centric fork of the [rightjs](http://rightjs.org) project, which is basically a #javascript library that was aiming for speed and novelty.]]></extract>
   </url>
@@ -246,7 +246,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <loc>http://nikolay.rocks/2013-02-04-ruby-is-an-establishment</loc>
     <lastmod>2013-02-03T13:00:00.000Z</lastmod>
     <fileloc>/pages/Silly Thoughts/2013-02-04-ruby-is-an-establishment.md</fileloc>
-    <tags>nodejs,ruby,rails,javascript,nodejs,javascript,ruby,nodejs</tags>
+    <tags>nodejs,ruby,rails,javascript</tags>
     <title>Ruby Is an Establishment</title>
     <extract><![CDATA[If you're young ambitious web-developer and you want to do it for long time, you should contribute to #nodejs, not to #ruby or #rails.]]></extract>
   </url>
@@ -314,7 +314,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <loc>http://nikolay.rocks/2012-11-22-modular-framework-is-a-reality</loc>
     <lastmod>2012-11-21T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-11-22-modular-framework-is-a-reality.md</fileloc>
-    <tags>javascript,cloudfront,jquery,rightjs,lovelyio,lovelyio,lovelyio,javascript</tags>
+    <tags>javascript,cloudfront,jquery,rightjs,lovelyio</tags>
     <title>Modular Framework Is A Reality!</title>
     <extract><![CDATA[So, here is the thing. I'm happy with this little thing called [lovely.io](http://lovely.io) it's a fully modular #javascript framework that uses a #cloudfront based CDN as a centralised packages repository. In an essence it looks kinda like that]]></extract>
   </url>
@@ -322,7 +322,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <loc>http://nikolay.rocks/2012-10-08-caching-friendly-authentication</loc>
     <lastmod>2012-10-07T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-10-08-caching-friendly-authentication.md</fileloc>
-    <tags>rails,lovelyio,rails,html,css,nodejs,ajax,rails,javascript,login form,userbar,userbar</tags>
+    <tags>rails,lovelyio,html,css,nodejs,ajax,javascript,login form,userbar</tags>
     <title>Caching Friendly Authentication</title>
     <extract><![CDATA[Today's post is about authentication, giving a user access to control elements and doing so in caching efficient way. I'll use #rails and #lovelyio as examples, but the principle should be applicable to any platform/framework.]]></extract>
   </url>
@@ -415,7 +415,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-06-20-vertical-align-in-pure-css</loc>
     <lastmod>2012-06-19T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-06-20-vertical-align-in-pure-css.md</fileloc>
-    <tags>css,wrapper,wrapper,content</tags>
+    <tags>css,wrapper,content</tags>
     <title>Vertical Align In Pure CSS</title>
     <extract><![CDATA[Okay, one more take on the old as the world problem. How to align one block inside of another one with pure #CSS?]]></extract>
   </url>
@@ -439,7 +439,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-05-29-awesomize-your-app-with-font-awesome</loc>
     <lastmod>2012-05-28T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-05-29-awesomize-your-app-with-font-awesome.md</fileloc>
-    <tags>css,css</tags>
+    <tags>css</tags>
     <title>Awesomize Your App With Font Awesome</title>
     <extract><![CDATA[In case you haven't heard, raster-graphic sucks, png sucks, png icons suck in particular. Yeah, I know, deep down we all have a soft sport for [glyph icons](http://glyphicons.com) because of their uberglorious black and white colors. But things have changed.]]></extract>
   </url>
@@ -472,7 +472,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-05-07-getting-help-with-lovelyio</loc>
     <lastmod>2012-05-06T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-05-07-getting-help-with-lovelyio.md</fileloc>
-    <tags>lovelyio,html5,javascript,my stuff,html,the help,javascript,rightjs</tags>
+    <tags>lovelyio,html5,javascript,my stuff,html,the help,rightjs</tags>
     <title>Getting Help With Lovely.IO</title>
     <extract><![CDATA[I'd like to share a bit of the [lovely.io](http://lovely.io) practical awesomeness. #LovelyIO is my pet project, on which I've been working for the last year. In simple words, it's a modern, async and #html5 centric version of the [RightJS](http://rightjs.org) library.]]></extract>
   </url>
@@ -480,7 +480,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-05-03-webkit-transform-is-useful</loc>
     <lastmod>2012-05-02T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-05-03--webkit-transform-is-useful.md</fileloc>
-    <tags>css,thailand,css,css,keyframe</tags>
+    <tags>css,thailand,keyframe</tags>
     <title>-webkit-transform is useful!</title>
     <extract><![CDATA[The `-webkit-transform` option is hardly a news for people who deal with #css on daily basis. But developers tend to think about it more like a toy "yeah, I can rotate and skew stuff, so what?". Meanwhile, there is one awesome thing in `-webkit-transorm` that can be really useful in everyday life of a front-side developer.]]></extract>
   </url>
@@ -527,7 +527,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-04-27-pointer-events-is-awesome</loc>
     <lastmod>2012-04-26T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-04-27-pointer-events-is-awesome.md</fileloc>
-    <tags>css,css</tags>
+    <tags>css</tags>
     <title>Pointer Events Is Awesome</title>
     <extract><![CDATA[While I have the urge to share this little #css trick. Lets say you have a list of stuff, and by `stuff` I mean a list of mixed content entries. Sorta like this one]]></extract>
   </url>
@@ -585,7 +585,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome</loc>
     <lastmod>2012-04-05T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome.md</fileloc>
-    <tags>javascript,oop,javascript,jquery,rightjs,jquery,javascript</tags>
+    <tags>javascript,oop,jquery,rightjs</tags>
     <title>What Are OO DOM-Wrappers And Why Are They So Awesome</title>
     <extract><![CDATA[This post is more for youngsters and intermediate #JavaScript developers. To get it you'll need to know how #OOP in #JavaScript works and what [prototype-based programming](http://en.wikipedia.org/wiki/Prototype-based_programming) is.]]></extract>
   </url>
@@ -601,7 +601,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-03-29-css3-gradient-buttons-the-right-way</loc>
     <lastmod>2012-03-28T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-03-29-css3-gradient-buttons-the-right-way.md</fileloc>
-    <tags>css,eee,ecc,cce,cec,css</tags>
+    <tags>css,eee,ecc,cce,cec</tags>
     <title>CSS3 Gradient Buttons The Right Way</title>
     <extract><![CDATA[Do you like the picture below? Do you want to know how to make those things in pure #CSS the right and reusable way?]]></extract>
   </url>
@@ -625,7 +625,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-03-15-lightweight-redirects-with-rack-in-rails</loc>
     <lastmod>2012-03-14T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-03-15-lightweight-redirects-with-rack-in-rails.md</fileloc>
-    <tags>ruby on rails,ruby on rails,rack,call</tags>
+    <tags>ruby on rails,rack,call</tags>
     <title>Lightweight Redirects With Rack In Rails</title>
     <extract><![CDATA[Sometimes, when working with #ruby-on-rails, you need to do some permanent redirecting, say you might support some legacy routes, like]]></extract>
   </url>

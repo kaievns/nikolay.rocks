@@ -12,5 +12,8 @@ class App extends React.Component {
 
 // waiting for the index to load
 PagesStore.inst().on("load", function() {
-  Router.connect(App);
+  Router.connect(App, function(Handler) {
+    document.body.className = "";
+    React.render(<Handler/>, document.body);
+  });
 });

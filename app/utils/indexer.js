@@ -63,7 +63,13 @@ function get_extract(text, size) {
 }
 
 function find_tags(data) {
-  return tagger.extract(data).map(function(tag) {
-    return tagger.name(tag);
+  var tags = [];
+
+  tagger.extract(data).forEach(function(tag) {
+    var name = tagger.name(tag);
+
+    tags.indexOf(name) === -1 && tags.push(name);
   });
+
+  return tags;
 }

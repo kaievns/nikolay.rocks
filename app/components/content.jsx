@@ -1,3 +1,7 @@
+import Markdown from "../utils/markdown";
+import Tagger from "../utils/tagger";
+import TagLink from "./tag";
+
 export default class PostContent extends React.Component {
   componentDidMount() {
     this.highlightCode();
@@ -10,9 +14,18 @@ export default class PostContent extends React.Component {
   }
 
   render() {
+    var text = this.linkifyTags(this.props.body);
+    var html = Markdown.format(text);
+
     return (
-      <div dangerouslySetInnerHTML={{__html: this.props.body}}></div>
+      <div dangerouslySetInnerHTML={{__html: html}}></div>
     );
+  }
+
+  linkifyTags(text) {
+    return Tagger.replace(text, function(tag, name) {
+      return React.renderToString(<TagLink text={tag} name={name} />);
+    });
   }
 
   highlightCode() {
