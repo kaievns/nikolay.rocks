@@ -4,6 +4,7 @@ var Route  = Router.Route;
 import PagesIndex from "../components/index";
 import PageView from "../components/page";
 import TaggedPages from "../components/tagged";
+import CategoryPages from "../components/categorized";
 
 export default {
   connect: function(App, callback) {
@@ -11,6 +12,7 @@ export default {
       <Route handler={App} path="/">
         <Route path="/" handler={PagesIndex} />
         <Route path="/tags/:tag" handler={TaggedPages} />
+        <Route path="/categories/:category" handler={CategoryPages} />
         <Route path="*" handler={PageView} />
       </Route>
     );

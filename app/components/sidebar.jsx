@@ -1,5 +1,6 @@
 import TagsList from "./tags";
 import PagesStore from "../stores/pages_store";
+import CategoryLink from "./category";
 
 export default class Sidebar extends React.Component {
   render() {
@@ -22,6 +23,20 @@ export default class Sidebar extends React.Component {
             <a href="https://twitter.com/nemshilov" className="twitter" target="_blank">@nemshilov</a> <br/>
             <a href="https://github.com/MadRabbit" className="github" target="_blank">GitHub/MadRabbit</a>
           </p>
+        </section>
+
+        <section className="categories">
+          <h3>Categories</h3>
+
+          <ul>
+            {
+              this.allCategories().map(function(category, i) {
+                return <li>
+                  <CategoryLink name={category} key={i} />
+                </li>;
+              })
+            }
+          </ul>
         </section>
 
         <section className="tags">
@@ -54,6 +69,31 @@ export default class Sidebar extends React.Component {
 
     return weighted_tags.map(function(entry) {
       return entry.t;
+    });
+  }
+
+  allCategories() {
+    var category_counts     = {};
+    var weighted_categories = [];
+
+    PagesStore.inst().pages.forEach(function(page) {
+      if (!page.category) { return; }
+
+      var category = page.category;
+      !category_counts[category] && (category_counts[category] = 0);
+      category_counts[category] += 1;
+    });
+
+    for (var category in category_counts) {
+      weighted_categories.push({n: category, c: category_counts[category]});
+    }
+
+    weighted_categories.sort(function(a, b) {
+      return a.c > b.c ? -1 : a.c === b.c ? 0 : 1;
+    });
+
+    return weighted_categories.map(function(entry) {
+      return entry.n;
     });
   }
 }

@@ -2,6 +2,7 @@ import Router from "../dispatchers/router";
 import settings from "../stores/settings";
 import PagesStore from "../stores/pages_store";
 import Sidebar from "./sidebar";
+import CategoryLink from "./category";
 
 export default class Layout extends React.Component {
   constructor() {
@@ -14,10 +15,14 @@ export default class Layout extends React.Component {
   }
 
   render() {
-    var page = PagesStore.currentPage();
-    var intro = (page && page.category) || settings.title.replace(".", " . ");
-
     document.title = this.state.title;
+
+    var page  = PagesStore.currentPage();
+    var intro = settings.title.replace(".", " . ");
+
+    if (page && page.category) {
+      intro = <CategoryLink name={page.category} />;
+    }
 
     return (
       <body>
