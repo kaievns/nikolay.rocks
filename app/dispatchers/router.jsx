@@ -5,12 +5,14 @@ import PagesIndex from "../components/index";
 import PageView from "../components/page";
 import TaggedPages from "../components/tagged";
 import CategoryPages from "../components/categorized";
+import LegacyPage from "../components/legacy";
 
 export default {
   connect: function(App, callback) {
     var routes = (
       <Route handler={App} path="/">
         <Route path="/" handler={PagesIndex} />
+        <Route path="/p/:sha" handler={LegacyPage} />
         <Route path="/tags/:tag" handler={TaggedPages} />
         <Route path="/categories/:category" handler={CategoryPages} />
         <Route path="*" handler={PageView} />

@@ -3,32 +3,43 @@ import PostContent from "./content";
 import PostDate from "./date";
 import Locker from "./locker";
 import TagsList from "./tags";
+import NotFound from "./404";
 
 export default class PageView extends React.Component {
-  constructor() {
-    super();
 
-    var current_page = PagesStore.currentPage();
-    current_page.on("load", this._pageLoaded.bind(this));
-    current_page.load();
+  componentWillMount() {
+    var page = PagesStore.currentPage();
 
-    this.state = { page: current_page };
+    if (this.props.hasOwnProperty("page")) {
+      page = this.props.page;
+    }
+
+    if (page) {
+      page.on("load", this._pageLoaded.bind(this));
+      page.load();
+    }
+
+    this.setState({page: page});
   }
 
   render() {
     var page = this.state.page;
 
-    return (
-      <article className="page">
-        <PostDate date={page.createdAt}/>
-        <PostContent body={page.body||page.extract} />
+    if (page) {
+      return (
+        <article className="page">
+          <PostDate date={page.createdAt}/>
+          <PostContent body={page.body||page.extract} />
 
-        {!page.body && <Locker/>}
+          {!page.body && <Locker/>}
 
-        <a href="/">&lt;- Other posts</a>
-        <TagsList tags={page.tags} />
-      </article>
-    )
+          <a href="/">&lt;- Other posts</a>
+          <TagsList tags={page.tags} />
+        </article>
+      );
+    } else {
+      return <NotFound />;
+    }
   }
 
   _pageLoaded() {
