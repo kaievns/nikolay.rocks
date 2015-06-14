@@ -2,18 +2,12 @@ import PagesStore from "../stores/pages_store";
 import PagesList from "./pages";
 
 export default class PagesIndex extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      pages: PagesStore.inst().pages
-    }
-  }
-
   render() {
+    var pages = PagesStore.inst().pages;
+
     return (
       <article className="pages">
-        <PagesList pages={this.state.pages} />
+        <PagesList pages={pages} />
       </article>
     );
   }

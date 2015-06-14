@@ -1,3 +1,6 @@
+import TagsList from "./tags";
+import PagesStore from "../stores/pages_store";
+
 export default class Sidebar extends React.Component {
   render() {
     return (
@@ -20,7 +23,37 @@ export default class Sidebar extends React.Component {
             <a href="https://github.com/MadRabbit" className="github" target="_blank">GitHub/MadRabbit</a>
           </p>
         </section>
+
+        <section className="tags">
+          <h3>Tags</h3>
+
+          <TagsList tags={this.allTags().slice(0, 25)} />
+        </section>
       </aside>
     );
+  }
+
+  allTags() {
+    var tag_counts    = {};
+    var weighted_tags = [];
+
+    PagesStore.inst().pages.forEach(function(page) {
+      page.tags.forEach(function(tag) {
+        !tag_counts[tag] && (tag_counts[tag] = 0);
+        tag_counts[tag] += 1;
+      });
+    });
+
+    for (var tag in tag_counts) {
+      weighted_tags.push({t: tag, c: tag_counts[tag]});
+    }
+
+    weighted_tags.sort(function(a, b) {
+      return a.c > b.c ? -1 : a.c === b.c ? 0 : 1;
+    });
+
+    return weighted_tags.map(function(entry) {
+      return entry.t;
+    });
   }
 }

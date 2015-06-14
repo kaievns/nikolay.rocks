@@ -1,4 +1,4 @@
-import Router from "./router";
+import Router from "../dispatchers/router";
 import settings from "../stores/settings";
 import PagesStore from "../stores/pages_store";
 import Sidebar from "./sidebar";

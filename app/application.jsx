@@ -1,4 +1,4 @@
-import Router from "./components/router";
+import Router from "./dispatchers/router";
 import Layout from "./components/layout";
 import PagesStore from "./stores/pages_store";
 

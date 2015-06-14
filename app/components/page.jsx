@@ -2,6 +2,7 @@ import PagesStore from "../stores/pages_store";
 import PostContent from "./content";
 import PostDate from "./date";
 import Locker from "./locker";
+import TagsList from "./tags";
 
 export default class PageView extends React.Component {
   constructor() {
@@ -24,9 +25,8 @@ export default class PageView extends React.Component {
 
         {!page.body && <Locker/>}
 
-        <p>
-          <a href="/">&lt;- Other posts</a>
-        </p>
+        <a href="/">&lt;- Other posts</a>
+        <TagsList tags={page.tags} />
       </article>
     )
   }

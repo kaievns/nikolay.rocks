@@ -160,20 +160,20 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <extract><![CDATA[To demonstrate the problem I'd like to start with a little rant. There is a very common and very simple task of formatting dates, which people, lets not point the fingers, tend to solve in all sorts of different ways. Say like that]]></extract>
   </url>
   <url>
-    <loc>http://nikolay.rocks/2013-08-25-programmers-happiness</loc>
-    <lastmod>2013-08-24T14:00:00.000Z</lastmod>
-    <fileloc>/pages/Mind Fucks/2013-08-25-programmers-happiness.md</fileloc>
-    <tags>ruby,javascript</tags>
-    <title>Programmers Happiness</title>
-    <extract><![CDATA[Happiness is an elusive topic, but mechanics of it can be explained through memory. See you have two types of memory, sensorial memory, which handles things like touching, tasting, sense of spacial orientation, etc., and conscious memory which basically handles memories of events, places you've been, people you've met.]]></extract>
-  </url>
-  <url>
     <loc>http://nikolay.rocks/2013-08-25-searching-through-non-activerecord-data</loc>
     <lastmod>2013-08-24T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2013-08-25-searching-through-non-activerecord-data.md</fileloc>
     <tags>rails,activerecord,ruby</tags>
     <title>Searching Through Non ActiveRecord Data</title>
     <extract><![CDATA[So, here is a situation many young developers are struggling with when working with #rails and #activerecord. Say you have a `User` model that has a status field. And the actual data in the status filed is mapped to a hash, like so.]]></extract>
+  </url>
+  <url>
+    <loc>http://nikolay.rocks/2013-08-24-programmers-happiness</loc>
+    <lastmod>2013-08-23T14:00:00.000Z</lastmod>
+    <fileloc>/pages/Mind Fucks/2013-08-24-programmers-happiness.md</fileloc>
+    <tags>ruby,javascript</tags>
+    <title>Programmers Happiness</title>
+    <extract><![CDATA[Happiness is an elusive topic, but mechanics of it can be explained through memory. See you have two types of memory, sensorial memory, which handles things like touching, tasting, sense of spacial orientation, etc., and conscious memory which basically handles memories of events, places you've been, people you've met.]]></extract>
   </url>
   <url>
     <loc>http://nikolay.rocks/2013-08-19-why-stories-are-important</loc>
@@ -322,7 +322,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <loc>http://nikolay.rocks/2012-10-08-caching-friendly-authentication</loc>
     <lastmod>2012-10-07T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-10-08-caching-friendly-authentication.md</fileloc>
-    <tags>rails,lovelyio,html,css,nodejs,ajax,javascript,login form,userbar</tags>
+    <tags>rails,lovelyio,html,css,nodejs,ajax,javascript</tags>
     <title>Caching Friendly Authentication</title>
     <extract><![CDATA[Today's post is about authentication, giving a user access to control elements and doing so in caching efficient way. I'll use #rails and #lovelyio as examples, but the principle should be applicable to any platform/framework.]]></extract>
   </url>
@@ -415,7 +415,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-06-20-vertical-align-in-pure-css</loc>
     <lastmod>2012-06-19T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-06-20-vertical-align-in-pure-css.md</fileloc>
-    <tags>css,wrapper,content</tags>
+    <tags>css</tags>
     <title>Vertical Align In Pure CSS</title>
     <extract><![CDATA[Okay, one more take on the old as the world problem. How to align one block inside of another one with pure #CSS?]]></extract>
   </url>
@@ -423,7 +423,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-06-14-lovelyio-ui-20-whats-new</loc>
     <lastmod>2012-06-13T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-06-14-lovelyio-ui-20-whats-new.md</fileloc>
-    <tags>lovelyio,html5,rightjs,javascript,some element,input,something</tags>
+    <tags>lovelyio,html5,rightjs,javascript</tags>
     <title>Lovely.IO UI 2.0 Whats New?</title>
     <extract><![CDATA[I finally published the [lovely.io ui-core 2.0](http://lovely.io/packages/ui/changelog) today, time to reflect a bit on what's going on in there.]]></extract>
   </url>
@@ -447,7 +447,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-05-28-can-you-draw-a-triangle-in-pure-css</loc>
     <lastmod>2012-05-27T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-05-28-can-you-draw-a-triangle-in-pure-css.md</fileloc>
-    <tags>css,triangle</tags>
+    <tags>css</tags>
     <title>Can You Draw A Triangle In Pure CSS?</title>
     <extract><![CDATA[That's a fun trick, you can draw a triangle figure with pure #css without using CSS3 magic with `transform: rotate`. More of that it will work everywhere, even in IE6. Well, sort of :)]]></extract>
   </url>
@@ -472,7 +472,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-05-07-getting-help-with-lovelyio</loc>
     <lastmod>2012-05-06T14:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-05-07-getting-help-with-lovelyio.md</fileloc>
-    <tags>lovelyio,html5,javascript,my stuff,html,the help,rightjs</tags>
+    <tags>lovelyio,html5,javascript,html,rightjs</tags>
     <title>Getting Help With Lovely.IO</title>
     <extract><![CDATA[I'd like to share a bit of the [lovely.io](http://lovely.io) practical awesomeness. #LovelyIO is my pet project, on which I've been working for the last year. In simple words, it's a modern, async and #html5 centric version of the [RightJS](http://rightjs.org) library.]]></extract>
   </url>
@@ -601,7 +601,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-03-29-css3-gradient-buttons-the-right-way</loc>
     <lastmod>2012-03-28T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-03-29-css3-gradient-buttons-the-right-way.md</fileloc>
-    <tags>css,eee,ecc,cce,cec</tags>
+    <tags>css</tags>
     <title>CSS3 Gradient Buttons The Right Way</title>
     <extract><![CDATA[Do you like the picture below? Do you want to know how to make those things in pure #CSS the right and reusable way?]]></extract>
   </url>
@@ -625,7 +625,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-03-15-lightweight-redirects-with-rack-in-rails</loc>
     <lastmod>2012-03-14T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-03-15-lightweight-redirects-with-rack-in-rails.md</fileloc>
-    <tags>ruby on rails,rack,call</tags>
+    <tags>ruby on rails,rack</tags>
     <title>Lightweight Redirects With Rack In Rails</title>
     <extract><![CDATA[Sometimes, when working with #ruby-on-rails, you need to do some permanent redirecting, say you might support some legacy routes, like]]></extract>
   </url>
@@ -641,7 +641,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-02-16-how-to-customize-file-upload-field-with-css</loc>
     <lastmod>2012-02-15T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-02-16-how-to-customize-file-upload-field-with-css.md</fileloc>
-    <tags>css,ddd;,aaa;</tags>
+    <tags>css</tags>
     <title>How To Customize File Upload Field With CSS</title>
     <extract><![CDATA[You know what is the problem with the `input type="file"` fields. They are ugly. More of that, they are ugly differently in different browsers (yes, mozilla, I'm talking about you). But the worst part is that you can't really do much with them by using #CSS.]]></extract>
   </url>
@@ -657,7 +657,6 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <loc>http://nikolay.rocks/2012-02-08-how-to-make-auto-resizable-textarea</loc>
     <lastmod>2012-02-07T13:00:00.000Z</lastmod>
     <fileloc>/pages/Mighty Hacks/2012-02-08-how-to-make-auto-resizable-textarea.md</fileloc>
-    <tags>my textarea</tags>
     <title>How To Make Auto-Resizable Textarea</title>
     <extract><![CDATA[It seems that not everyone knows how to make a textarea element which will automatically resize itself so that the text fit into it without scrolling. The usual CSS hacks don't work in case of textareas and to make this feature work, you need to do some hackery around.]]></extract>
   </url>

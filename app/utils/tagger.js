@@ -14,7 +14,10 @@ exports.replace = function(text, callback) {
 };
 
 exports.extract = function(text) {
-  return text.match(tag_re) || [];
+  var code_blocks  = /(```[\s\S]+?```)|(`[^\n]+?`)/g;
+  var escaped_text = text.replace(code_blocks, "--- code block ---");
+
+  return escaped_text.match(tag_re) || [];
 };
 
 exports.name = function(tag) {
