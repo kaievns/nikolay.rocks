@@ -3,47 +3,64 @@ import PagesStore from "../stores/pages_store";
 import CategoryLink from "./category";
 
 export default class Sidebar extends React.Component {
+  constructor() {
+    super();
+
+    this.state       = { open: false };
+    this.toggleState = this.toggleState.bind(this);
+  }
+
+  toggleState(event) {
+    console.log(event);
+    event.preventDefault();
+
+    this.setState({open: !this.state.open});
+  }
+
   render() {
     return (
-      <aside>
-        <section className="about">
-          <h3>About the author</h3>
+      <aside className={this.state.open ? 'open' : null}>
+        <a href="#" className="toggler" onClick={this.toggleState}></a>
+        <div className="content">
+          <section className="about">
+            <h3>About the author</h3>
 
-          <img src="/app/assets/author.jpg" className="author" />
+            <img src="/app/assets/author.jpg" className="author" />
 
-          <p>
-            Nikolay Nemshilov
-          </p>
-        </section>
+            <p>
+              Nikolay Nemshilov
+            </p>
+          </section>
 
-        <section className="contacts">
-          <h3>Contacts</h3>
+          <section className="contacts">
+            <h3>Contacts</h3>
 
-          <p>
-            <a href="https://twitter.com/nemshilov" className="twitter" target="_blank">@nemshilov</a> <br/>
-            <a href="https://github.com/MadRabbit" className="github" target="_blank">GitHub/MadRabbit</a>
-          </p>
-        </section>
+            <p>
+              <a href="https://twitter.com/nemshilov" className="twitter" target="_blank">@nemshilov</a> <br/>
+              <a href="https://github.com/MadRabbit" className="github" target="_blank">GitHub/MadRabbit</a>
+            </p>
+          </section>
 
-        <section className="categories">
-          <h3>Categories</h3>
+          <section className="categories">
+            <h3>Categories</h3>
 
-          <ul>
-            {
-              this.allCategories().map(function(category, i) {
-                return <li>
-                  <CategoryLink name={category} key={i} />
-                </li>;
-              })
-            }
-          </ul>
-        </section>
+            <ul>
+              {
+                this.allCategories().map(function(category, i) {
+                  return <li>
+                    <CategoryLink name={category} key={i} />
+                  </li>;
+                })
+              }
+            </ul>
+          </section>
 
-        <section className="tags">
-          <h3>Tags</h3>
+          <section className="tags">
+            <h3>Tags</h3>
 
-          <TagsList tags={this.allTags().slice(0, 25)} />
-        </section>
+            <TagsList tags={this.allTags().slice(0, 25)} />
+          </section>
+        </div>
       </aside>
     );
   }
