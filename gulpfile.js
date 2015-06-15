@@ -9,7 +9,8 @@ var buffer       = require('vinyl-buffer');
 var less         = require("gulp-less");
 var autoprefixer = require("gulp-autoprefixer");
 var minifyCss    = require('gulp-minify-css');
-var sitemap      = require('./app/utils/sitemap');
+var atomfeed     = require('./app/utils/atomfeed');
+var settings     = require('./app/stores/settings');
 
 gulp.task("scripts", function() {
   browserify({
@@ -37,20 +38,21 @@ gulp.task("stylesheets", function() {
     .pipe(gulp.dest("./"));
 });
 
-gulp.task("sitemap", function() {
+gulp.task("atomfeed", function() {
   gulp.src(['./pages/**/*.md'])
-    .pipe(sitemap("http://nikolay.rocks"))
+    .pipe(atomfeed(settings))
     .pipe(gulp.dest("./"));
 });
+
 
 gulp.task("watch", function() {
   gulp.watch("./app/**/*.js"         , ["scripts"]);
   gulp.watch("./app/**/*.jsx"        , ["scripts"]);
   gulp.watch("./app/application.less", ["stylesheets"]);
-  gulp.watch("./pages/**/*.md"       , ["sitemap"]);
+  gulp.watch("./pages/**/*.md"       , ["atomfeed"]);
   gulp.watch("./application.js"      , ["livereload"]);
   gulp.watch("./application.css"     , ["livereload"]);
-  gulp.watch("./sitemap.xml"         , ["livereload"]);
+  gulp.watch("./atom.xml"            , ["livereload"]);
   gulp.watch("./*.html"              , ["livereload"]);
 });
 
@@ -82,5 +84,5 @@ gulp.task("connect", function() {
   });
 });
 
-gulp.task("build", ["scripts", "stylesheets", "sitemap"]);
+gulp.task("build", ["scripts", "stylesheets", "atomfeed"]);
 gulp.task("default", ["build", "connect", "watch"]);

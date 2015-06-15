@@ -25,8 +25,8 @@ export default class PagesStore extends EventEmitter {
   }
 
   load() {
-    new Request("/sitemap.xml").get(function(data, xhr) {
-      var urls = xhr.responseXML.querySelectorAll("url");
+    new Request("/atom.xml").get(function(data, xhr) {
+      var urls = xhr.responseXML.querySelectorAll("entry");
       this.pages = [].slice.call(urls).map(function(url) {
         return new Page(this.extractData(url));
       }.bind(this));
@@ -36,14 +36,15 @@ export default class PagesStore extends EventEmitter {
 
   extractData(url) {
     var data = {
-      path:      (url.querySelector("loc")      || {}).textContent,
-      createdAt: (url.querySelector("lastmod")  || {}).textContent,
-      file:      (url.querySelector("fileloc")  || {}).textContent,
-      tags:      (url.querySelector("tags")     || {}).textContent,
-      title:     (url.querySelector("title")    || {}).textContent,
-      extract:   (url.querySelector("extract")  || {}).textContent
+      path:      (url.querySelector("link")      || {}),
+      createdAt: (url.querySelector("published") || {}).textContent,
+      file:      (url.querySelector("file")      || {}).textContent,
+      tags:      (url.querySelector("tags")      || {}).textContent,
+      title:     (url.querySelector("title")     || {}).textContent,
+      extract:   (url.querySelector("summary")   || {}).textContent
     };
 
+    try { data.path = data.path.getAttribute("href"); } catch(e) {}
     try { data.path = data.path.split("nikolay.rocks").pop(); } catch(e) {}
     try { data.tags = data.tags.split(","); } catch(e) { data.tags = []; }
     try { data.createdAt = new Date(data.createdAt); } catch(e) {}

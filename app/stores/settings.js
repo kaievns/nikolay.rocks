@@ -1,4 +1,5 @@
-export default {
+module.exports = {
   title:  "Nikolay.TheOsom",
-  author: "Nikolay Nemshilov"
+  author: "Nikolay Nemshilov",
+  domain: "nikolay.rocks"
 };
