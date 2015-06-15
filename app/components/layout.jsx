@@ -10,6 +10,7 @@ export default class Layout extends React.Component {
 
     this.state = {
       title:  settings.title,
+      promo:  settings.promo,
       author: settings.author
     };
   }
@@ -18,7 +19,7 @@ export default class Layout extends React.Component {
     document.title = this.state.title;
 
     var page  = PagesStore.currentPage();
-    var intro = settings.title.replace(".", " . ");
+    var intro = this.state.promo;
 
     if (page && page.category) {
       intro = <CategoryLink name={page.category} />;

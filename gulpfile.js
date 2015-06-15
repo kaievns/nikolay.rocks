@@ -24,7 +24,7 @@ gulp.task("scripts", function() {
     .pipe(buffer())
     .pipe(sourcemaps.init({initMaps: true}))
     .pipe(uglify())
-    .pipe(sourcemaps.write("./"))
+    // .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest('./'));
 });
 
@@ -34,7 +34,7 @@ gulp.task("stylesheets", function() {
     .pipe(less({paths: ["./app", "./bower_components/pain.less.css/src"]}))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(minifyCss())
-    .pipe(sourcemaps.write("./"))
+    // .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./"));
 });
 

@@ -2,7 +2,7 @@
 
 As we all know #rails 4.2 have finally given birth to the `ActiveJob` component, which,
 allegedly, will congregate all the other background job queues under one unified API.
-While that is a totally awesome and long awaited development, there is one gray area
+While that is a totally awesome and long awaited feature, there is one gray area
 issue that you might run into. The arguments that an active job instance might take.
 
 ## The Problem
@@ -17,14 +17,14 @@ might happen; so they force you to use record ids as attributes.
 
 ## The Options
 
-But, some of us actually want to lead a dangerous life, and pass complex objects
+But, some of us actually want to lead a dangerous life and pass complex objects
 into background jobs. DANGER, DANGER!
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/2a4gyJsY0mc?rel=0&amp;controls=0&amp;showinfo=0&amp;t=92" frameborder="0" allowfullscreen></iframe>
 
 For example, I'm quite a fond of value objects when it comes to a complex business
 logic. They a simple throw away instances that incapsulate data and probably some
-smarts around it. Unfortunately the data in them is not persisted and not really
+smarts around it. Unfortunately, the data in them is not persisted and not really
 meant to.
 
 ## The Solution
@@ -59,7 +59,7 @@ data to sidekiq/redis.
 ## Final Notes
 
 I just wanted to add couple of personal notes. Firstly, I'm really pleased with the flexibility
-of `ActiveJob`; hail to rails core team they listened to the things the community was building
+of `ActiveJob`; hail to rails core team! They listened to the things the community was building
 for years and they didn't disappoint.
 
 Secondly, although the reasoning behind the limitations on the argument types is totally

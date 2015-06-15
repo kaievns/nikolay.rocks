@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Nikolay.TheOsom</title>
+  <title>Nikolay.Rocks</title>
+  <subtitle>Life of Wonder</subtitle>
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
@@ -12,7 +13,7 @@
     <published>2015-06-14T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[As we all know #rails 4.2 have finally given birth to the `ActiveJob` component, which,
 allegedly, will congregate all the other background job queues under one unified API.
-While that is a totally awesome and long awaited development, there is one gray area
+While that is a totally awesome and long awaited feature, there is one gray area
 issue that you might run into. The arguments that an active job instance might take.]]></summary>
     <tags>rails,ruby,activejob</tags>
     <file>/pages/Mighty Hacks/2015-06-15-marshalized-jobs.md</file>

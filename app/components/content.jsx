@@ -6,11 +6,13 @@ export default class PostContent extends React.Component {
   componentDidMount() {
     this.highlightCode();
     this.rewrapImages();
+    this.rewrapVideos();
   }
 
   componentDidUpdate() {
     this.highlightCode();
     this.rewrapImages();
+    this.rewrapVideos();
   }
 
   render() {
@@ -54,6 +56,19 @@ export default class PostContent extends React.Component {
         var figcaption = document.createElement("figcaption");
         figcaption.innerHTML = caption;
         figure.appendChild(figcaption);
+      }
+    });
+  }
+
+  rewrapVideos() {
+    this.forEvery("iframe", function(frame) {
+      var paragraph = frame.parentNode;
+
+      if (paragraph.className !== "video") {
+        var video = document.createElement("div");
+        video.className = "video";
+        paragraph.replaceChild(video, frame);
+        video.appendChild(frame);
       }
     });
   }

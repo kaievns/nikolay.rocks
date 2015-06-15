@@ -1,5 +1,6 @@
 module.exports = {
-  title:  "Nikolay.TheOsom",
+  title:  "Nikolay.Rocks",
+  promo:  "Life of Wonder",
   author: "Nikolay Nemshilov",
   domain: "nikolay.rocks"
 };

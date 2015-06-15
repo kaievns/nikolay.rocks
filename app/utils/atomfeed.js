@@ -52,6 +52,7 @@ Atomfeed.prototype.toString = function() {
     '<?xml version="1.0" encoding="utf-8"?>'     + "\n"+
     '<feed xmlns="http://www.w3.org/2005/Atom">' + "\n"+
     '  <title>'+ settings.title +'</title>'      + "\n"+
+    '  <subtitle>'+ settings.promo +'</subtitle>'+ "\n"+
     '  <link href="'+ hostname +'" />'           + "\n"+
     '  <id>tag:'+ settings.domain +'</id>'       + "\n"+
     '  <author><name>'+ settings.author +'</name></author>' +"\n"+
