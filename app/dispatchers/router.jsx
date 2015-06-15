@@ -36,6 +36,8 @@ document.addEventListener("click", function(event) {
     fix_scrollers();
     event.preventDefault();
     Router.HistoryLocation.push(url);
+
+    ga && ga('send', 'pageview', {page: url});
   }
 }, false);
 
