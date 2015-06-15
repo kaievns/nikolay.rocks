@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://nikolay.rocks/2015-06-15-marshalized-jobs</loc>
+    <lastmod>2015-06-14T14:00:00.000Z</lastmod>
+    <fileloc>/pages/Mighty Hacks/2015-06-15-marshalized-jobs.md</fileloc>
+    <tags>rails,ruby,activejob</tags>
+    <title>How To Marshalize ActiveJob Arguments</title>
+    <extract><![CDATA[As we all know #rails 4.2 have finally given birth to the `ActiveJob` component, which,
+allegedly, will congregate all the other background job queues under one unified API.
+While that is a totally awesome and long awaited development, there is one gray area
+issue that you might run into. The arguments that an active job instance might take.]]></extract>
+  </url>
+  <url>
     <loc>http://nikolay.rocks/2015-05-28-do-not-work-with-insecure-people</loc>
     <lastmod>2015-05-27T14:00:00.000Z</lastmod>
     <fileloc>/pages/Silly Thoughts/2015-05-28-do-not-work-with-insecure-people.md</fileloc>
