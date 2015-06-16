@@ -37,7 +37,7 @@ document.addEventListener("click", function(event) {
     event.preventDefault();
     Router.HistoryLocation.push(url);
 
-    ga && ga('send', 'pageview', {page: url});
+    window.ga && ga('send', 'pageview', {page: url});
   }
 }, false);
 

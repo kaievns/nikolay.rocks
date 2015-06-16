@@ -21,6 +21,7 @@
     "babelify": "^6.1.2",
     "browserify": "^9.0.8",
     "compression": "^1.5.0",
+    "connect-livereload": "^0.5.3",
     "glob": "^4.3.5",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
