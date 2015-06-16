@@ -4,6 +4,7 @@ var babelify     = require("babelify");
 var sourcemaps   = require("gulp-sourcemaps");
 var source       = require("vinyl-source-stream");
 var connect      = require("gulp-connect");
+var compression  = require('compression');
 var uglify       = require('gulp-uglify');
 var buffer       = require('vinyl-buffer');
 var less         = require("gulp-less");
@@ -68,6 +69,12 @@ gulp.task("connect", function() {
     livereload: process.env.NODE_ENV != "production",
     middleware: function() {
       return [
+        compression({
+          level:  9,
+          filter: function(req, res) {
+            return /\.(css|js|xml|json)$/.test(req.url);
+          }
+        }),
         function(req, res, next) {
           if (!/.+?\.[a-z]+$/.test(req.url)) {
             res.setHeader("Content-type", "text/html");
