@@ -1,5 +1,5 @@
 {
-  "name": "nikolay.theosom.com",
+  "name": "nikolay.rocks",
   "version": "1.0.0",
   "description": "Awesome blog",
   "author": "Nikolay Nemshilov",
@@ -7,6 +7,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production ./node_modules/.bin/gulp connect",
+    "postinstall": "NODE_ENV=production ./node_modules/.bin/gulp shaify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,8 @@
     "gulp-connect": "^2.2.0",
     "gulp-less": "^3.0.3",
     "gulp-minify-css": "^1.1.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.5",

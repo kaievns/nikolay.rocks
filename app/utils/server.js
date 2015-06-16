@@ -10,7 +10,12 @@ exports.start = function(options) {
       custom_fallback
     ];
 
-    options.livereload && pipes.unshift(require('connect-livereload')());
+    if (options.livereload) {
+      pipes.unshift(require('connect-livereload')());
+    } else {
+      // means we are in producion
+      pipes.unshift(production_caching);
+    }
 
     return pipes;
   };
@@ -44,4 +49,14 @@ function custom_fallback(req, res, next) {
   } else {
     next();
   }
+}
+
+
+function production_caching(req, res, next) {
+  var re = /(application-[a-z0-9]+\.(js|css))|(\.(jpg|jpeg|png|gif))/;
+  if (re.test(req.url)) {
+    res.setHeader('Cache-Control', 'public, max-age='+one_year);
+  }
+
+  next();
 }
