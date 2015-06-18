@@ -6,8 +6,8 @@ exports.start = function(options) {
   options.middleware = function() {
     var pipes = [
       compress_assets(/\.(css|js|xml|json)$/),
-      kill_favicon,
-      custom_fallback
+      custom_fallback(!options.livereload),
+      kill_favicon
     ];
 
     if (options.livereload) {
@@ -42,15 +42,26 @@ function kill_favicon(req, res, next) {
   }
 }
 
-function custom_fallback(req, res, next) {
-  if (!/.+?\.[a-z]+$/.test(req.url)) {
-    res.setHeader("Content-type", "text/html");
-    require('fs').createReadStream("index.html").pipe(res);
-  } else {
-    next();
+function custom_fallback(production) {
+  var data = production ? require("fs").readFileSync("index.html") : null;
+
+  return function(req, res, next) {
+    if (!/.+?\.[a-z]+$/.test(req.url)) {
+      res.setHeader("Content-type", "text/html");
+
+      if (production) {
+        res.write(data);
+        res.end();
+      } else {
+        data = require('fs').readFileSync("./index.html").toString();
+        res.write(data.replace('</html>', '<script src="//localhost:35729/livereload.js?snipver=1"><\/script>\n</html>'));
+        res.end();
+      }
+    } else {
+      next();
+    }
   }
 }
-
 
 function production_caching(req, res, next) {
   var re = /(application-[a-z0-9]+\.(js|css))|(\.(jpg|jpeg|png|gif))/;

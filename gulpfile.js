@@ -49,16 +49,14 @@ gulp.task("atomfeed", function() {
 
 
 gulp.task("watch", function() {
-  window.setTimeout(function() {
-    gulp.watch("./app/**/*.js"         , ["scripts"]);
-    gulp.watch("./app/**/*.jsx"        , ["scripts"]);
-    gulp.watch("./app/application.less", ["stylesheets"]);
-    gulp.watch("./pages/**/*.md"       , ["atomfeed"]);
-    gulp.watch("./application.js"      , ["livereload"]);
-    gulp.watch("./application.css"     , ["livereload"]);
-    gulp.watch("./atom.xml"            , ["livereload"]);
-    gulp.watch("./*.html"              , ["livereload"]);
-  }, 1000); // waiting for the initial compile
+  gulp.watch("./app/**/*.js"         , ["scripts"]);
+  gulp.watch("./app/**/*.jsx"        , ["scripts"]);
+  gulp.watch("./app/application.less", ["stylesheets"]);
+  gulp.watch("./pages/**/*.md"       , ["atomfeed"]);
+  gulp.watch("./application.js"      , ["livereload"]);
+  gulp.watch("./application.css"     , ["livereload"]);
+  gulp.watch("./atom.xml"            , ["livereload"]);
+  gulp.watch("./*.html"              , ["livereload"]);
 });
 
 gulp.task("livereload", function() {
