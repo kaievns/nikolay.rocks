@@ -16,20 +16,32 @@
 
 @image-backdrop: "/app/assets/backdrop.jpg";
 
-html, body {
+html {
   background-color: #3d3d3d;
-  position: relative;
-  -webkit-font-smoothing: subpixel-antialiased;
 
   @media (max-width: @phone-width) {
     overflow-x: hidden;
   }
-}
 
-body {
   &:after {
     display:none;
 		content: url(@image-backdrop) url("/app/assets/author.jpg");
+  }
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  &.loading {
+    background: rgb(200,200,200) radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.4));
+    justify-content: center;
+    align-items: center;
+
+    .spinner {
+      font-size: 2em;
+    }
   }
 
   > header {
@@ -84,6 +96,17 @@ body > main aside {
   }
 
   @media (max-width: @phone-width) {
+    &:before {
+      content:    " ";
+      position:   absolute;
+      width:      100vw;
+      height:     100%;
+      top:        0;
+      right:      100%;
+      background: transparent;
+      pointer-events: none;
+    }
+
     a.toggler {
       display: block;
       width: 2em;
@@ -116,30 +139,15 @@ body > main aside {
     &.open {
       transform: translateX(0px);
 
+      &:before {
+        background: rgba(0,0,0,0.5);
+        pointer-events: all;
+      }
+
       a.toggler {
         transform: rotate(90deg);
       }
-
-      &:before {
-        content: " ";
-        position: absolute;
-        width:    100vw;
-        height:   100%;
-        top:      0;
-        right:    100%;
-        background: rgba(0,0,0,0.5);
-      }
     }
-  }
-}
-
-body.loading {
-  background: rgb(200,200,200) radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.4));
-  justify-content: center;
-  align-items: center;
-
-  .spinner {
-    font-size: 2em;
   }
 }
 
@@ -232,11 +240,17 @@ article.pages {
   pre {
     code {
       border-radius: 0;
+      white-space: pre;
     }
 
     @media (max-width: @phone-width) {
       margin-left: -1em;
       width: ~"calc(100% + 2em)";
+
+      code {
+        padding-left: 1.2em;
+        padding-right: 1em;
+      }
     }
   }
 
