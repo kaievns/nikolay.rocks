@@ -24,7 +24,7 @@ export default class Sidebar extends React.Component {
         <section className="about">
           <h3>About the author</h3>
 
-          <img src="/app/assets/author.jpg" className="author" />
+          <div className="author"></div>
 
           <p>
             Nikolay Nemshilov

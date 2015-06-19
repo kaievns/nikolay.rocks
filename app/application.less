@@ -15,18 +15,19 @@
 @icon-github:  'data:image/svg+xml;utf8,<svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M351.5,448.365h-192c-88.375,0-160-71.625-160-160v-64c0-35.75,12.125-68.5,32-95.125V80.365c0-26.5,5.5-48,32-48   c22.375,0,51.25,15.625,60.125,36.375c11.563-2.688,23.5-4.375,35.875-4.375h192c12.375,0,24.313,1.688,35.875,4.375   c8.875-20.75,37.75-36.375,60.125-36.375c26.5,0,32,21.5,32,48v48.875c19.875,26.625,32,59.375,32,95.125v64   C511.5,376.74,439.875,448.365,351.5,448.365z M351.5,224.365h-192c-53,0-96,43-96,96s43,96,96,96h192c53,0,96-43,96-96   S404.5,224.365,351.5,224.365z M351.5,369.365c-26.5,0-32-21.5-32-48v-17c0-26.5,5.5-48,32-48s32,21.5,32,48v17   C383.5,347.865,378,369.365,351.5,369.365z M159.5,369.365c-26.5,0-32-21.5-32-48v-17c0-26.5,5.5-48,32-48s32,21.5,32,48v17   C191.5,347.865,186,369.365,159.5,369.365z"/></g></svg>';
 
 @image-backdrop: "/app/assets/backdrop.jpg";
+@image-author: "/app/assets/author.jpg";
 
 html {
   background-color: #3d3d3d;
   overflow: auto;
-  
+
   @media (max-width: @phone-width) {
     overflow-x: hidden;
   }
 
   &:after {
     display:none;
-		content: url(@image-backdrop) url("/app/assets/author.jpg");
+		content: url(@image-backdrop) url(@image-author);
   }
 }
 
@@ -300,8 +301,13 @@ section.about {
     margin-top: 0em;
   }
 
-  img.author {
-    width: 100%;
+  div.author {
+    position: relative;
+    background: yellow;
+    padding-bottom: 100%;
+    background: url(@image-author);
+    background-size: cover;
+    background-position: center center;
   }
 }
 
