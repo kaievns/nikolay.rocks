@@ -1,5 +1,5 @@
 import LegacyMappings from "../stores/old_routes";
-import PagesStore from "../stores/pages_store";
+import PageStore from "../stores/pages";
 import PageView from "../components/page";
 
 export default class LegacyPage extends React.Component {
@@ -11,7 +11,7 @@ export default class LegacyPage extends React.Component {
   }
 
   findPage(file) {
-    return PagesStore.inst().pages.filter(function(page) {
+    return PageStore.pages.filter(function(page) {
       return page.file.replace("/pages/", "") == file;
     })[0];
   }

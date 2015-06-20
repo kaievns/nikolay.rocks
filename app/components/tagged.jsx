@@ -1,4 +1,4 @@
-import PagesStore from "../stores/pages_store";
+import PageStore from "../stores/pages";
 import PagesList from "./pages";
 
 export default class TaggedPages extends React.Component {
@@ -16,7 +16,7 @@ export default class TaggedPages extends React.Component {
   }
 
   findPages(tag) {
-    return PagesStore.inst().pages.filter(function(page) {
+    return PageStore.pages.filter(function(page) {
       return page.tags.indexOf(tag) !== -1;
     });
   }

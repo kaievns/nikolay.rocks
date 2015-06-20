@@ -1,4 +1,4 @@
-import PagesStore from "../stores/pages_store";
+import PageStore from "../stores/pages";
 import PagesList from "./pages";
 
 export default class CategoryPages extends React.Component {
@@ -11,13 +11,13 @@ export default class CategoryPages extends React.Component {
       <article className="pages categorized">
         <h1>Pages in category: {category}</h1>
 
-          <PagesList pages={this.pagesIn(category)} />
+        <PagesList pages={this.pagesIn(category)} />
       </article>
     );
   }
 
   pagesIn(category) {
-    return PagesStore.inst().pages.filter(function(page) {
+    return PageStore.pages.filter(function(page) {
       return page.category.toLowerCase() === category;
     });
   }

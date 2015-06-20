@@ -1,4 +1,4 @@
-import PagesStore from "../stores/pages_store";
+import PageStore from "../stores/pages";
 import PostContent from "./content";
 import PostDate from "./date";
 import Locker from "./locker";
@@ -8,7 +8,7 @@ import NotFound from "./404";
 export default class PageView extends React.Component {
 
   componentWillMount() {
-    var page = PagesStore.currentPage();
+    var page = PageStore.currentPage();
 
     if (this.props.hasOwnProperty("page")) {
       page = this.props.page;

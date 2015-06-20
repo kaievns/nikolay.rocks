@@ -18,8 +18,8 @@ of confidence.
 
 Secondly, keeping markup simple kind of forces you to think more about
 the context of those elements; and good cascading styles are all about
-context. It does, on average makes you write more #CSS, but it makes
-you write better, more flexible CSS. In the end it really pays off in
+context. It does, on average, make you write more #CSS, but it makes
+you write better, more flexible CSS. In the end, it really pays off in
 cases like #responsive design or graceful degradation in older browsers.
 
 Let me demonstrate. If you look at this page via an inspector, you'll

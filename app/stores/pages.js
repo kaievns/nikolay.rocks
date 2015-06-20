@@ -2,14 +2,24 @@ import {EventEmitter} from "events";
 import Request from "../utils/request";
 import Page from "./page";
 
-export default class PagesStore extends EventEmitter {
+var pages = [];
+
+export default class PageStore extends EventEmitter {
+
+  static get pages() {
+    return pages;
+  }
+
   static inst() {
-    !this._inst && (this._inst = new PagesStore());
-    return this._inst;
+    return this._inst = this._inst || new PageStore();
+  }
+
+  static on(event, callback) {
+    this.inst().on(event, callback);
   }
 
   static find(path) {
-    return this.inst().pages.filter(function(page) {
+    return this.pages.filter(function(page) {
       return page.path == path;
     })[0];
   }
@@ -20,15 +30,14 @@ export default class PagesStore extends EventEmitter {
 
   constructor() {
     super();
-    this.pages = null;
     this.load();
   }
 
   load() {
     new Request("/atom.xml").get(function(data, xhr) {
       var urls = xhr.responseXML.querySelectorAll("entry");
-      this.pages = [].slice.call(urls).map(function(url) {
-        return new Page(this.extractData(url));
+      [].forEach.call(urls, function(url) {
+        pages.push(new Page(this.extractData(url)));
       }.bind(this));
       this.emit("load");
     }.bind(this));

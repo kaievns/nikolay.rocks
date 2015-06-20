@@ -1,25 +1,16 @@
 import Router from "../dispatchers/router";
 import settings from "../stores/settings";
-import PagesStore from "../stores/pages_store";
+import PageStore from "../stores/pages";
 import Sidebar from "./sidebar";
 import CategoryLink from "./category";
 
 export default class Layout extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      title:  settings.title,
-      promo:  settings.promo,
-      author: settings.author
-    };
-  }
 
   render() {
-    document.title = this.state.title;
+    document.title = settings.title;
 
-    var page  = PagesStore.currentPage();
-    var intro = this.state.promo;
+    var page  = PageStore.currentPage();
+    var intro = settings.promo;
 
     if (page && page.category) {
       intro = <CategoryLink name={page.category} />;

@@ -1,6 +1,7 @@
 import TagsList from "./tags";
-import PagesStore from "../stores/pages_store";
 import CategoryLink from "./category";
+import TagsStore from "../stores/tags";
+import CategoriesStore from "../stores/categories";
 
 export default class Sidebar extends React.Component {
   constructor() {
@@ -17,6 +18,9 @@ export default class Sidebar extends React.Component {
   }
 
   render() {
+    var tags       = TagsStore.all();
+    var categories = CategoriesStore.all();
+
     return (
       <aside className={this.state.open ? 'open' : null}>
         <a href="#" className="toggler" onClick={this.toggleState}></a>
@@ -45,7 +49,7 @@ export default class Sidebar extends React.Component {
 
           <ul>
             {
-              this.allCategories().map(function(category, i) {
+              categories.map(function(category, i) {
                 return <li>
                   <CategoryLink name={category} key={i} />
                 </li>;
@@ -57,58 +61,9 @@ export default class Sidebar extends React.Component {
         <section className="tags">
           <h3>Tags</h3>
 
-          <TagsList tags={this.allTags().slice(0, 25)} />
+          <TagsList tags={tags.slice(0, 25)} />
         </section>
       </aside>
     );
-  }
-
-  allTags() {
-    var tag_counts    = {};
-    var weighted_tags = [];
-
-    PagesStore.inst().pages.forEach(function(page) {
-      page.tags.forEach(function(tag) {
-        !tag_counts[tag] && (tag_counts[tag] = 0);
-        tag_counts[tag] += 1;
-      });
-    });
-
-    for (var tag in tag_counts) {
-      weighted_tags.push({t: tag, c: tag_counts[tag]});
-    }
-
-    weighted_tags.sort(function(a, b) {
-      return a.c > b.c ? -1 : a.c === b.c ? 0 : 1;
-    });
-
-    return weighted_tags.map(function(entry) {
-      return entry.t;
-    });
-  }
-
-  allCategories() {
-    var category_counts     = {};
-    var weighted_categories = [];
-
-    PagesStore.inst().pages.forEach(function(page) {
-      if (!page.category) { return; }
-
-      var category = page.category;
-      !category_counts[category] && (category_counts[category] = 0);
-      category_counts[category] += 1;
-    });
-
-    for (var category in category_counts) {
-      weighted_categories.push({n: category, c: category_counts[category]});
-    }
-
-    weighted_categories.sort(function(a, b) {
-      return a.c > b.c ? -1 : a.c === b.c ? 0 : 1;
-    });
-
-    return weighted_categories.map(function(entry) {
-      return entry.n;
-    });
   }
 }

@@ -53,8 +53,7 @@ function custom_fallback(production) {
         res.write(data);
         res.end();
       } else {
-        data = require('fs').readFileSync("./index.html").toString();
-        res.write(data.replace('</html>', '<script src="//localhost:35729/livereload.js?snipver=1"><\/script>\n</html>'));
+        res.write(require('fs').readFileSync("./index.html").toString());
         res.end();
       }
     } else {

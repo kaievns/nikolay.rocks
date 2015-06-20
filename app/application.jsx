@@ -1,6 +1,6 @@
 import Router from "./dispatchers/router";
 import Layout from "./components/layout";
-import PagesStore from "./stores/pages_store";
+import PageStore from "./stores/pages";
 
 class App extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class App extends React.Component {
 }
 
 // waiting for the index to load
-PagesStore.inst().on("load", function() {
+PageStore.on("load", function() {
   Router.connect(App, function(Handler) {
     document.body.className = "";
     React.render(<Handler/>, document.body);
