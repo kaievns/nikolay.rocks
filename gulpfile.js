@@ -32,7 +32,7 @@ gulp.task("stylesheets", function() {
   gulp.src("app/application.less")
     .pipe(sourcemaps.init())
     .pipe(less({paths: ["./app", "./bower_components/pain.less.css/src"]}))
-    .pipe(autoprefixer({browsers: ['last 1 version']}))
+    .pipe(autoprefixer({browsers: ['last 2 version']}))
     .pipe(minifyCss())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./"));
