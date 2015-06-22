@@ -24,7 +24,7 @@ export default class PageStore extends EventEmitter {
     })[0];
   }
 
-  static currentPage() {
+  static current() {
     return this.find(document.location.pathname);
   }
 

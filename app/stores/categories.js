@@ -1,4 +1,5 @@
 import PageStore from "./pages";
+import Router from "../dispatchers/router";
 
 export default {
   all() {
@@ -24,5 +25,18 @@ export default {
     return weighted_categories.map(function(entry) {
       return entry.n;
     });
+  },
+
+  current() {
+    var page = PageStore.current();
+    return page ? page.category : listed_category(this.all());
   }
+}
+
+function listed_category(all) {
+  var match = decodeURIComponent(document.location.href.toString()).match(/\/categories\/([^\/]+)/);
+
+  return match && all.filter((category) => {
+    return category.toLowerCase().replace(/ /g, "+") == match[1];
+  })[0];
 }

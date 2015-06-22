@@ -8,7 +8,7 @@ import NotFound from "./404";
 export default class PageView extends React.Component {
 
   componentWillMount() {
-    var page = PageStore.currentPage();
+    var page = PageStore.current();
 
     if (this.props.hasOwnProperty("page")) {
       page = this.props.page;

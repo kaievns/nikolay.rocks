@@ -1,18 +1,18 @@
 import settings from "../stores/settings";
-import PageStore from "../stores/pages";
+import Categories from "../stores/categories";
 import CategoryLink from "./category";
 
 export default class Intro extends React.Component {
 
   render() {
-    var page  = PageStore.currentPage();
-    var intro = settings.promo;
+    var intro    = settings.promo;
+    var category = Categories.current();
 
     document.title = settings.title;
 
-    if (page && page.category) {
-      intro = <CategoryLink name={page.category} />;
-      document.title += " > "+ page.category;
+    if (category) {
+      intro = <CategoryLink name={category} />;
+      document.title += " > "+ category;
     }
 
     return(
