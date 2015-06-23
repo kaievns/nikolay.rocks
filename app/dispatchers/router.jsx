@@ -33,10 +33,16 @@ document.addEventListener("click", function(event) {
   var meta_key = event.metaKey || event.altKey || event.ctrlKey || event.shiftKey;
 
   if (event.button === 0 && !meta_key && link.tagName === "A" && url[0] === "/") {
-    fix_scrollers();
     event.preventDefault();
-    Router.HistoryLocation.push(url);
+    fix_scrollers();
 
+    var scroll = document.body.scrollTop;
+    document.body.className = 'flip';
+    window.setTimeout(function() {
+      Router.HistoryLocation.push(url);
+      document.body.className = '';
+      document.body.scrollTop = scroll > 500 ? 500 : scroll;
+    }, 100);
     window.ga && ga('send', 'pageview', {page: url});
   }
 }, false);
