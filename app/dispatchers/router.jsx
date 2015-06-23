@@ -37,12 +37,9 @@ document.addEventListener("click", function(event) {
     fix_scrollers();
 
     var scroll = document.body.scrollTop;
-    document.body.className = 'flip';
-    window.setTimeout(function() {
-      Router.HistoryLocation.push(url);
-      document.body.className = '';
-      document.body.scrollTop = scroll > 500 ? 500 : scroll;
-    }, 100);
+    Router.HistoryLocation.push(url);
+    document.body.scrollTop = scroll > 500 ? 500 : scroll;
+    
     window.ga && ga('send', 'pageview', {page: url});
   }
 }, false);
