@@ -75,7 +75,7 @@ So, in this case I'm using a media query with `max-width: 768px`
 ```css
 @media (max-width: 768px) {
   main aside {
-    position:   absoulte;
+    position:   absolute;
     top:        0;
     right:      0;
     min-height: 100%;
@@ -135,7 +135,7 @@ toggle the `open` class on the `ASIDE` element.
 ```css
 @media (max-width: 768px) {
   main aside {
-    position:   absoulte;
+    position:   absolute;
     top:        0;
     right:      0;
     min-height: 100%;
