@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-06-23T14:00:00.000Z</updated>
+  <updated>2015-06-27T14:00:00.000Z</updated>
 
+  <entry>
+    <title>IELTS: Accepting The Defeat</title>
+    <link href="http://nikolay.rocks/2015-06-28-ielts-accepting-the-defeat" />
+    <published>2015-06-27T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[In the past 5 months I did a strange thing, I attempted to pass
+the [IELTS](https://en.wikipedia.org/wiki/International_English_Language_Testing_System)
+exam with a minimal score of `8` (out of `9`) in every sub-task. I had
+_7_ attempts and the best results look like that:]]></summary>
+    <file>/pages/Silly Thoughts/2015-06-28-ielts-accepting-the-defeat.md</file>
+  </entry>
   <entry>
     <title>Responsive Elements With a Fixed Aspect Ratio</title>
     <link href="http://nikolay.rocks/2015-06-24-responsive-fixed-ratio" />

@@ -12,7 +12,7 @@ export default class Intro extends React.Component {
 
     if (category) {
       intro = <CategoryLink name={category} />;
-      document.title += " > "+ category;
+      document.title += " » "+ category;
     }
 
     return(
