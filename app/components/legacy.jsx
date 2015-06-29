@@ -1,5 +1,5 @@
 import LegacyMappings from "../stores/old_routes";
-import PageStore from "../stores/pages";
+import PageStore from "unicorn-farts/stores/pages";
 import PageView from "../components/page";
 
 export default class LegacyPage extends React.Component {

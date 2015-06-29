@@ -1,6 +1,6 @@
-import Markdown from "../utils/markdown";
-import Tagger from "../utils/tagger";
-import TagLink from "./tag";
+import Markdown from "unicorn-farts/utils/markdown";
+import Tagger from "unicorn-farts/utils/tagger";
+import TagLink from "unicorn-farts/components/tag_link";
 
 export default class PostContent extends React.Component {
   componentDidMount() {

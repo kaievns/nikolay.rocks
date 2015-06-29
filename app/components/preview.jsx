@@ -1,4 +1,4 @@
-import PostDate from "./date";
+import PostDate from "unicorn-farts/components/date_block";
 import PostContent from "./content";
 import TagsList from "./tags";
 

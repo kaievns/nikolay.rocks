@@ -1,4 +1,3 @@
-import Router from "../dispatchers/router";
 import settings from "../stores/settings";
 import Sidebar from "./sidebar";
 import Intro from "./intro";
@@ -16,7 +15,7 @@ export default class Layout extends React.Component {
         </header>
         <main>
           <div className="paddings">
-            <Router.Handler />
+            {this.props.article}
             <Sidebar />
           </div>
         </main>

@@ -1,7 +1,7 @@
-import PageStore from "../stores/pages";
+import PageStore from "unicorn-farts/stores/pages";
 import PostContent from "./content";
-import PostDate from "./date";
-import Locker from "./locker";
+import PostDate from "unicorn-farts/components/date_block";
+import Locker from "unicorn-farts/components/locker";
 import TagsList from "./tags";
 import NotFound from "./404";
 
