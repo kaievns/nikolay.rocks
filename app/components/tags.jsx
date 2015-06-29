@@ -1,4 +1,4 @@
-import TagLink from "./tag";
+import TagLink from "unicorn-farts/components/tag_link";
 
 export default class TagsList extends React.Component {
   render() {

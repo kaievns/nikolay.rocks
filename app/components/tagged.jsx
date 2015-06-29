@@ -1,4 +1,4 @@
-import PageStore from "../stores/pages";
+import PageStore from "unicorn-farts/stores/pages";
 import PagesList from "./pages";
 
 export default class TaggedPages extends React.Component {

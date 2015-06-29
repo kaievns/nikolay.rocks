@@ -39,7 +39,7 @@ gulp.task("stylesheets", function() {
 });
 
 gulp.task("atomfeed", function() {
-  var atomfeed = require('./app/utils/atomfeed');
+  var atomfeed = require('unicorn-farts/utils/atomfeed');
   var settings = require('./app/stores/settings');
 
   gulp.src(['./pages/**/*.md'])

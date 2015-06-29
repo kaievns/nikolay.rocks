@@ -1,7 +1,7 @@
 import TagsList from "./tags";
-import CategoryLink from "./category";
-import TagsStore from "../stores/tags";
-import CategoriesStore from "../stores/categories";
+import CategoryLink from "unicorn-farts/components/category_link";
+import TagsStore from "unicorn-farts/stores/tags";
+import CategoriesStore from "unicorn-farts/stores/categories";
 
 export default class Sidebar extends React.Component {
   constructor() {

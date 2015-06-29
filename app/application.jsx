@@ -1,19 +1,20 @@
-import Router from "./dispatchers/router";
+import App from "unicorn-farts/application";
 import Layout from "./components/layout";
-import PageStore from "./stores/pages";
+import PagesIndex from "./components/index";
+import PageView from "./components/page";
+import TaggedPages from "./components/tagged";
+import CategoryPages from "./components/categorized";
+import LegacyPage from "./components/legacy";
 
-class App extends React.Component {
-  render() {
-    return(
-      <Layout></Layout>
-    );
-  }
-}
+App.route({
+  "/"                     : PagesIndex,
+  "/p/:sha"               : LegacyPage,
+  "/tags/:tag"            : TaggedPages,
+  "/categories/:category" : CategoryPages,
+  "*"                     : PageView
+});
 
-// waiting for the index to load
-PageStore.on("load", function() {
-  Router.connect(App, function(Handler) {
-    document.body.className = "";
-    React.render(<Handler/>, document.body);
-  });
+App.boot(function(Article) {
+  document.body.className = "";
+  return <Layout article={Article}></Layout>;
 });

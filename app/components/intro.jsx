@@ -1,6 +1,6 @@
 import settings from "../stores/settings";
-import Categories from "../stores/categories";
-import CategoryLink from "./category";
+import Categories from "unicorn-farts/stores/categories";
+import CategoryLink from "unicorn-farts/components/category_link";
 
 export default class Intro extends React.Component {
 

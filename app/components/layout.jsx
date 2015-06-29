@@ -1,4 +1,3 @@
-import Router from "../dispatchers/router";
 import settings from "../stores/settings";
 import Sidebar from "./sidebar";
 import Intro from "./intro";
@@ -6,6 +5,8 @@ import Intro from "./intro";
 export default class Layout extends React.Component {
 
   render() {
+    var Article = this.props.article;
+
     return (
       <body>
         <header>
@@ -16,7 +17,7 @@ export default class Layout extends React.Component {
         </header>
         <main>
           <div className="paddings">
-            <Router.Handler />
+            <Article />
             <Sidebar />
           </div>
         </main>

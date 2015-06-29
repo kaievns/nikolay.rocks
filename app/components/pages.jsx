@@ -1,6 +1,6 @@
 import PagePreview from "./preview";
-import InfiniteScroll from "./scroller";
-import Locker from "./locker";
+import InfiniteScroll from "unicorn-farts/components/infinite_scroll";
+import Locker from "unicorn-farts/components/locker";
 
 export default class PagesList extends React.Component {
 
