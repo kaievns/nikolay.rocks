@@ -75,30 +75,5 @@ gulp.task("connect", function() {
   });
 });
 
-gulp.task("shaify", function() {
-  var fs          = require("fs");
-  var crypto      = require("crypto");
-  var scripts     = fs.readFileSync("./application.js");
-  var styles      = fs.readFileSync("./application.css");
-  var scripts_sha = crypto.createHash("sha1").update(scripts);
-  var styles_sha  = crypto.createHash("sha1").update(styles);
-  var scripts_id  = scripts_sha.digest("base64").replace(/[^a-z0-9]+/g, "").substr(0,6);
-  var styles_id   = styles_sha.digest("base64").replace(/[^a-z0-9]+/g, "").substr(0,6);
-  var new_scripts = "application-"+scripts_id+".js";
-  var new_styles  = "application-"+styles_id+".css";
-
-
-  fs.writeFile(new_scripts, scripts.toString().replace("\n//# sourceMappingURL=application.js.map", ""));
-  fs.writeFile(new_styles, styles.toString().replace("\n/*# sourceMappingURL=application.css.map */", ""));
-
-  fs.readFile("./index.html", function(err, data) {
-    data = data.toString();
-    data = data.replace("/application.js", "/"+ new_scripts);
-    data = data.replace("/application.css", "/"+ new_styles);
-
-    fs.writeFile("./index.html", data);
-  });
-});
-
 gulp.task("build", ["scripts", "stylesheets", "atomfeed"]);
 gulp.task("default", ["build", "connect", "watch"]);
