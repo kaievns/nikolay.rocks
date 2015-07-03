@@ -41,7 +41,7 @@ function assets_compression() {
   return compression({
     level:  9,
     filter: function(req, res) {
-      return /\.(css|js|xml|json)$/.test(req.url);
+      return /\.(css|js|xml|json|md)$/.test(req.url);
     }
   });
 }
