@@ -1,1 +1,1 @@
-web: NODE_ENV=production ./node_modules/.bin/gulp connect
+web: NODE_ENV=production node ./server.js
