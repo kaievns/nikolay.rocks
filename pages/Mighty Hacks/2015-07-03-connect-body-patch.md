@@ -14,14 +14,14 @@ fast and easily extendible.
 
 But, the problem is that it's an one direction pipeline. If some
 piece of middleware piped some data into the response and called
-`res.end()`, your own middleware won't have an easy way modify that
+`res.end()`, your own middleware won't have an easy way to modify that
 response.
 
 For example, `nikolay.rocks` is built with [react](http://reactjs.com).
 And I'm kind of being naughty and rendering the whole app directly into
 the `document.body`. So, when [gulp-connect](https://github.com/AveVlad/gulp-connect)
 injects the livereload script, it embeds it on the inside of the `BODY`.
-But then the react app completely wipes the `BODY` content and breaks everything.
+But then the react app completely wipes the `BODY` content and and breaks everything.
 Hence I needed to post-process the response body and move the livereload
 script outside of `BODY`.
 
@@ -47,7 +47,7 @@ The `super_patch`, as any other connect middleware will take three params
 with what we need. It looks kind of like that:
 
 ```js
-function (req, res, next) {
+function super_patch(req, res, next) {
   var real_end = res.end;
 
   res.end = function(string, encoding) {
