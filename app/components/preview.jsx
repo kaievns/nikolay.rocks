@@ -10,7 +10,7 @@ export default class PagePreview extends React.Component {
       <section className="page preview">
         <PostDate date={page.createdAt}/>
 
-        <h2><a href={page.path}>{page.title}</a></h2>
+        <h2>{page.title}</h2>
 
         <PostContent body={page.extract} />
 
