@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-04T14:00:00.000Z</updated>
+  <updated>2015-07-06T14:00:00.000Z</updated>
 
+  <entry>
+    <title>How To Load Private Images Via Ajax</title>
+    <link href="http://nikolay.rocks/2015-07-07-load-private-images-via-ajax" />
+    <published>2015-07-06T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, here is a fun problem. Lets say you have a website where
+users can upload some images and then access them privately
+when signed in. For example you might be using a simple #rails
+controller kind of like this one:]]></summary>
+    <tags>rails,authentication,angularjs,javascript,css</tags>
+    <file>/pages/Mighty Hacks/2015-07-07-load-private-images-via-ajax.md</file>
+  </entry>
   <entry>
     <title>Prototype Matching</title>
     <link href="http://nikolay.rocks/2015-07-05-prototype-matching" />
