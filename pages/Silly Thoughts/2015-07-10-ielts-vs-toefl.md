@@ -44,18 +44,18 @@ you're doing.
 
 In TOEFL, on the other hand, questions are much harder and they
 really test your detailed understanding of the text. More of that
-they have sections of questions when they ask you to pick a closest
+they have sections of questions where they ask you to pick a closest
 in meaning word from a list. The differences between the options
 can be blurry at times. So you really need to know the precise
-meaning of words to answer everything right.
+meaning of words to answer everything correctly.
 
 ## Listening Section
 
 Generally speaking, IELTS listening section is easier. You just
 listen to some conversations and write down the answers in a paper
 as you hear them. But, the problem is that they always try to
-trick you with some weird accents or a poor sound quality. Some
-times a person can unexpectedly fire up a mobile phone number
+trick you with some weird accents or a poor sound quality. Sometimes
+a person can unexpectedly fire up a mobile phone number
 or a 10-digits bank account, and you supposed to write it down.
 I think that is a very specific skill that doesn't have much to
 do with your understanding of spoken English.
@@ -128,7 +128,7 @@ you write it on a computer screen, so you can edit and fine polish
 the text without messing it up. Thirdly, you are actually granted
 extra points if you write more text! (in IELTS no one cares)
 
-You will still have to follow a proper text structure in TOEFL
+You will still have to follow a formal essay structure in TOEFL
 though. But that is a good, proper skill anyways.
 
 
