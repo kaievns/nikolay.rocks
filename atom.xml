@@ -5,8 +5,21 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-06T14:00:00.000Z</updated>
+  <updated>2015-07-09T14:00:00.000Z</updated>
 
+  <entry>
+    <title>IELTS vs. TOEFL, Things You Need To Know</title>
+    <link href="http://nikolay.rocks/2015-07-10-ielts-vs-toefl" />
+    <published>2015-07-09T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[As I [mentioned before](/2015-06-28-ielts-accepting-the-defeat), in
+the last few months I took the [IELTS](https://en.wikipedia.org/wiki/International_English_Language_Testing_System)
+test several times in order to score 8 (out of 9) in every section
+of the test. Then, for a comparison, I took the American
+[TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language)
+exam, where I scored 109 (out of 120). And now I just want to write a
+bit to compare those two and maybe give some suggestions which you might want to take.]]></summary>
+    <file>/pages/Silly Thoughts/2015-07-10-ielts-vs-toefl.md</file>
+  </entry>
   <entry>
     <title>How To Load Private Images Via Ajax</title>
     <link href="http://nikolay.rocks/2015-07-07-load-private-images-via-ajax" />
