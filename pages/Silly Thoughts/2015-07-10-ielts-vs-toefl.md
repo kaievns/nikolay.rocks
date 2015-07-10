@@ -6,7 +6,7 @@ test several times in order to score 8 (out of 9) in every section
 of the test. Then, for a comparison, I took the American
 [TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language)
 exam, where I scored 109 (out of 120). And now I just want to write a
-bit to compare those two and maybe give some suggestions which you might want to take.
+bit to compare those two and maybe give some suggestions which one you might want to take.
 
 Generally speaking, both IELTS and TOEFL are English language exams
 and measure relatively the same thing. You can even find some
