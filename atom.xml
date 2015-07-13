@@ -5,8 +5,26 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-09T14:00:00.000Z</updated>
+  <updated>2015-07-12T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Meet The MeowTV App</title>
+    <link href="http://nikolay.rocks/2015-07-13-meet-the-meowtv-app" />
+    <published>2015-07-12T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[A few months ago, my wife and I, we adopted a cat. Say "hi" to Muffin!
+
+![](/images/2015/07/muffin-11.jpg)]]></summary>
+    <file>/pages/Rocket Shed/2015-07-13-meet-the-meowtv-app.md</file>
+  </entry>
+  <entry>
+    <title>Welcome To The Shed</title>
+    <link href="http://nikolay.rocks/2015-07-11-welcome-to-the-shed" />
+    <published>2015-07-10T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I'm starting a new section here called "the rocket shed". This
+will be a section for posts related to my work on some of my
+personal projects and probably some business related blabing.]]></summary>
+    <file>/pages/Rocket Shed/2015-07-11-welcome-to-the-shed.md</file>
+  </entry>
   <entry>
     <title>IELTS vs. TOEFL, Things You Need To Know</title>
     <link href="http://nikolay.rocks/2015-07-10-ielts-vs-toefl" />
@@ -17,7 +35,7 @@ test several times in order to score 8 (out of 9) in every section
 of the test. Then, for a comparison, I took the American
 [TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language)
 exam, where I scored 109 (out of 120). And now I just want to write a
-bit to compare those two and maybe give some suggestions which you might want to take.]]></summary>
+bit to compare those two and maybe give some suggestions which one you might want to take.]]></summary>
     <file>/pages/Silly Thoughts/2015-07-10-ielts-vs-toefl.md</file>
   </entry>
   <entry>
