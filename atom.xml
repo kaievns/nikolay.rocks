@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-12T14:00:00.000Z</updated>
+  <updated>2015-07-13T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Startupland</title>
+    <link href="http://nikolay.rocks/2015-07-14-startupland" />
+    <published>2015-07-13T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Firstly, a bit of a word of disclaimer. I generally don't
+like auto-biographies that much. I find them rather melodramatic
+and full of half-truths. Given that, my views on this sort
+of books tend to be skewed by this perceptional filter. So,
+please take whatever I write in here with an extra grain of salt.]]></summary>
+    <file>/pages/Book Worm/2015-07-14-startupland.md</file>
+  </entry>
   <entry>
     <title>Meet The MeowTV App</title>
     <link href="http://nikolay.rocks/2015-07-13-meet-the-meowtv-app" />

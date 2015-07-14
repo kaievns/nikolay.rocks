@@ -2,5 +2,9 @@
   "title":  "Nikolay.Rocks",
   "promo":  "Life of Wonder",
   "author": "Nikolay Nemshilov",
-  "domain": "nikolay.rocks"
+  "domain": "nikolay.rocks",
+  "less"   : {
+    "paths"    : ["./app", "./bower_components/pain.less.css/src"],
+    "browsers" : ["last 1 version"]
+  }
 }
