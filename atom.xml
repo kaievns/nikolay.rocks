@@ -5,8 +5,22 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-13T14:00:00.000Z</updated>
+  <updated>2015-07-17T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Easy Peasy Vector Icons</title>
+    <link href="http://nikolay.rocks/2015-07-18-easy-peasy-vector-icons" />
+    <published>2015-07-17T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[There are a few techniques we used through the history of
+web development in order to add icons to the UI. Individual GIF
+files with IMG tags, PNG icons and backgrounds in #css, font icons
+and `content` properties. But, there is one another, quite simple
+and lean technique that is not that well known. It uses #css with
+embedded #svg content. I've been using it quite extensively lately
+on my projects, so I thought I could share the idea.]]></summary>
+    <tags>css,svg,html,less</tags>
+    <file>/pages/Mighty Hacks/2015-07-18-easy-peasy-vector-icons.md</file>
+  </entry>
   <entry>
     <title>Startupland</title>
     <link href="http://nikolay.rocks/2015-07-14-startupland" />
