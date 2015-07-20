@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-17T14:00:00.000Z</updated>
+  <updated>2015-07-19T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Fancy Checkboxes Out Of Nothing</title>
+    <link href="http://nikolay.rocks/2015-07-20-fancy-checkboxes-out-of-nothing" />
+    <published>2015-07-19T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[We are continuing our series of posts about minimalistic markup
+and #css black voodoo. And today I'm showing, how to convert
+this:]]></summary>
+    <tags>css,html</tags>
+    <file>/pages/Mighty Hacks/2015-07-20-fancy-checkboxes-out-of-nothing.md</file>
+  </entry>
   <entry>
     <title>Easy Peasy Vector Icons</title>
     <link href="http://nikolay.rocks/2015-07-18-easy-peasy-vector-icons" />
