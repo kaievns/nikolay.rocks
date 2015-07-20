@@ -257,8 +257,9 @@ the colors in `rgba` values, like so
 
 ```css
 input[type="checkbox"] {
-  radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 54%),
-  radial-gradient(circle, rgba(0,0,0,.3) 54%, rgba(0,0,0,0) 56%);
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 54%),
+    radial-gradient(circle, rgba(0,0,0,.3) 54%, rgba(0,0,0,0) 56%);
 }
 ```
 
@@ -278,8 +279,8 @@ input[type="checkbox"] {
     transition: background .2s linear;
     background-repeat: no-repeat;
     background-image:
-      radial-gradient(circle, white 50%, transparent 54%),
-      radial-gradient(circle, grey 54%, transparent 56%);
+      radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 54%),
+      radial-gradient(circle, rgba(0,0,0,.3) 54%, rgba(0,0,0,0) 56%);
     background-size: 100% 100%, 100% 100%;
     background-position: -1em 0, -0.95em 0.1em;
   }
@@ -316,8 +317,8 @@ input[type="checkbox"] {
     transition: background .2s linear;
     background-repeat: no-repeat;
     background-image:
-      radial-gradient(circle, white 50%, transparent 54%),
-      radial-gradient(circle, grey 54%, transparent 56%);
+      radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 54%),
+      radial-gradient(circle, rgba(0,0,0,.3) 54%, rgba(0,0,0,0) 56%);
     background-size: 100% 100%, 100% 100%;
     background-position: -1em 0, -0.95em 0.1em;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
