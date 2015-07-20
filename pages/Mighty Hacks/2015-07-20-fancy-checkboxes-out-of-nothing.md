@@ -300,6 +300,38 @@ input[type="checkbox"] {
 }
 ```
 
+<p class="step-6">
+  <input type="checkbox" />
+  <input type="checkbox" checked="checked" />
+</p>
+
+<style class="text/css">
+  .step-6 input[type="checkbox"] {
+    appearance: none;
+    outline: none;
+    width:  6em;
+    height: 4em;
+    border: .15em solid rgba(0,0,0,.1);
+    border-radius: 2em;
+    transition: background .2s linear;
+    background-repeat: no-repeat;
+    background-image:
+      radial-gradient(circle, white 50%, transparent 54%),
+      radial-gradient(circle, grey 54%, transparent 56%);
+    background-size: 100% 100%, 100% 100%;
+    background-position: -1em 0, -0.95em 0.1em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  .step-6 input[type="checkbox"]:checked {
+    background-color: rgba(0,255,0, .5);
+    background-position: 0.95em -0.0em, 1em 0.1em;
+  }
+  .step-6 input[type="checkbox"]:checked:before {
+    display: none;
+  }
+</style>
+
+
 This will remove a weir flickering on mobile devices when a user
 taps the switch box. Normally a browser will try to highlight the
 tap, this hack will disable it and the user will see a smooth,
