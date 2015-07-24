@@ -142,7 +142,7 @@ I think I should write some cons here as well. This way of blogging might
 not be everyone's cup of tea, for sure. The workflow is programmer oriented.
 And the entire thing requires javascript enabled browser to run. But, to
 me personally those issues are quite minor. The overwhelming majority of
-users have javascript enabled. Event google bots analyze and index the
+users have javascript enabled. Even google bots analyze and index the
 content perfectly. So, overall  I'm pretty happy with this arrangement at
 the moment. And so can you!
 
