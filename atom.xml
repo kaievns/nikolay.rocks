@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-19T14:00:00.000Z</updated>
+  <updated>2015-07-23T14:00:00.000Z</updated>
 
+  <entry>
+    <title>How I Blog Now</title>
+    <link href="http://nikolay.rocks/2015-07-24-how-i-blog-now" />
+    <published>2015-07-23T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I'm open-sourcing the guts of [nikolay.rocks](https://github.com/MadRabbit/nikolay.rocks)
+today. And, as it is quite a bit unconventional way to blog, I thought
+I should write about it a bit.]]></summary>
+    <tags>javascript,nodejs,ajax,blogging</tags>
+    <file>/pages/Rocket Shed/2015-07-24-how-i-blog-now.md</file>
+  </entry>
   <entry>
     <title>Fancy Checkboxes Out Of Nothing</title>
     <link href="http://nikolay.rocks/2015-07-20-fancy-checkboxes-out-of-nothing" />
