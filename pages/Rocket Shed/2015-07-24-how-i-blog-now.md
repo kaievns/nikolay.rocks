@@ -138,9 +138,13 @@ GitHub, which will serve as a backup for all my data, as well as an opportunity
 for people to contribute. Anyone can submit a pull request to my work, or
 create a feature request in [GitHub issues](https://github.com/MadRabbit/nikolay.rocks/issues).
 
-I think I should write some cons here as well, but I can't quite figure any
-at the moment. This way of blogging might not be everyone's cup of tea, for sure.
-But, I'm pretty happy with this arrangement at the moment. And so can you!
+I think I should write some cons here as well. This way of blogging might
+not be everyone's cup of tea, for sure. The workflow is programmer oriented.
+And the entire thing requires javascript enabled browser to run. But, to
+me personally those issues are quite minor. The overwhelming majority of
+users have javascript enabled. Event google bots analyze and index the
+content perfectly. So, overall  I'm pretty happy with this arrangement at
+the moment. And so can you!
 
 Either way, if you are curious and maybe want to build something like that of
 your own, or maybe you want to participate in the new era of collaborative
