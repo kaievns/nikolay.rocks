@@ -1,14 +1,12 @@
 import PagePreview from "./preview";
-import InfiniteScroll from "unicorn-farts/components/infinite_scroll";
-import Locker from "unicorn-farts/components/locker";
 
 export default class PagesList extends React.Component {
 
   constructor() {
     super();
 
-    this.state   = { size: 8, page: 1 };
-    this.setPage = this.setPage.bind(this);
+    this.state    = { size: 8, page: 1 };
+    this.nextPage = this.nextPage.bind(this);
   }
 
   componentDidMount() {
@@ -33,15 +31,25 @@ export default class PagesList extends React.Component {
     return this.allPages().slice(0, this.currentSize());
   }
 
+  nextPage() {
+    this.setPage(this.state.page + 1);
+  }
+
   render() {
     return (
-      <InfiniteScroll loader={<Locker/>} setPage={this.setPage} hasMore={this.state.more}>
+      <div>
         {
           this.getPages().map(function(page, index) {
             return <PagePreview page={page} key={index} />;
           })
         }
-      </InfiniteScroll>
+        {
+          this.state.more ?
+            <button onClick={this.nextPage} className="load-more">
+              Load more
+            </button> : null
+        }
+      </div>
     );
   }
 }
