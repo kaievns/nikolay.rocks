@@ -15,6 +15,5 @@ App.route({
 });
 
 App.boot(function(Article) {
-  document.body.className = "";
   return <Layout article={Article}></Layout>;
 });
