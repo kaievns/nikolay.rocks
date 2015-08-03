@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-26T14:00:00.000Z</updated>
+  <updated>2015-07-29T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Why Lovely.IO Failed</title>
+    <link href="http://nikolay.rocks/2015-07-30-why-lovely-io-failed" />
+    <published>2015-07-29T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[[Lovely.IO](http://lovely.io) was a project of mine in 2010-2012. It is
+kind of a mix of a modular #javascript framework, a CDN and a package
+management system for the front-end modules. Although it was heavily
+pushing the boundaries of possible in the area at the time, the project
+didn't pick up much of momentum and was eventually scrapped.]]></summary>
+    <tags>javascript,failure,rails</tags>
+    <file>/pages/Rocket Shed/2015-07-30-why-lovely-io-failed.md</file>
+  </entry>
   <entry>
     <title>CSS Secrets by Lea Verou</title>
     <link href="http://nikolay.rocks/2015-07-27-css-secrets" />
