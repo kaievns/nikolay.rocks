@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-07-29T14:00:00.000Z</updated>
+  <updated>2015-08-05T14:00:00.000Z</updated>
 
+  <entry>
+    <title>How To Make Rails Dev Server To Load Pages Faster</title>
+    <link href="http://nikolay.rocks/2015-08-06-unslow-rails-dev" />
+    <published>2015-08-05T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[There is a #rails hack that most of #ruby devs don't know. It can,
+in some circumstances, greatly improve the pages loading time in
+development environment and make your dev life somewhat more pleasant.]]></summary>
+    <tags>rails,ruby,json,api,spa,rack</tags>
+    <file>/pages/Mighty Hacks/2015-08-06-unslow-rails-dev.md</file>
+  </entry>
   <entry>
     <title>Why Lovely.IO Failed</title>
     <link href="http://nikolay.rocks/2015-07-30-why-lovely-io-failed" />
