@@ -11,9 +11,9 @@ a single page application, which then simultaneously hits several
 or make some slow ajax requests. There are plenty of cases like that.
 
 For example on my current project at [ninefold](http://ninefold.com)
-we have a #SPA that lets you manage your virtual pages, networks, etc.
+we have a #SPA that lets you manage your virtual servers, networks, etc.
 On page boot it makes several JSON API calls to get the data from the
-server. In normal rails setup, the loading will look kind of like
+server. In a normal rails setup the page loading will look kind of like
 that:
 
 ![](/images/2015/08/06-before.png)
@@ -47,12 +47,12 @@ have done everything right, you should see something like that:
 ![](/images/2015/08/06-after.png)
 
 As you can see, instead of `~2+seconds`, now the app boots in `~0.5s`.
-If you also look a bit closely to the image you will notice that all the
+Also, if you look a bit closer at the image, you will notice that all the
 http requests — both, json api and image assets — are loaded in parallel.
 Images don't wait on JSON API calls anymore and appear whenever they are
 ready.
 
-Rails is more than capable to run several requests in parallel in a
+Rails is more than capable of handling several requests in parallel in a
 multi-threaded setup. That is what happens in an actual production
 environment.
 
@@ -72,7 +72,7 @@ group :development do
 end
 ```
 
-Then bundle and try again! Now rails will handle all the incoming
+Then bundle and try again! Now rails will still handle all the incoming
 requests in parallel, but `sweet-logger` will spit them out into the
 terminal one by one, so you could make sense of what's going on in the app.
 
@@ -90,6 +90,6 @@ config.eager_load = true # was false before
 
 Rails server hot-reload doesn't quite work nicely in a multi-threaded
 environment, so you need to tell rails to eager load your code. Don't
-worry, thanks to `spring` it is not gonna add to much to the loading time.
+worry, thanks to `spring` it is not gonna add too much to the loading time.
 
 And that is pretty much all about the hack. Enjoy!
