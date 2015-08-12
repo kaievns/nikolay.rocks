@@ -5,8 +5,22 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-08-05T14:00:00.000Z</updated>
+  <updated>2015-08-11T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Not Your Daddy's Links Highlighting</title>
+    <link href="http://nikolay.rocks/2015-08-12-not-your-daddys-link-highlight" />
+    <published>2015-08-11T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Back in 1999, the only thing you really needed to know to impress someone
+with #css was this:
+
+```css
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+```]]></summary>
+    <tags>css</tags>
+    <file>/pages/Mighty Hacks/2015-08-12-not-your-daddys-link-highlight.md</file>
+  </entry>
   <entry>
     <title>How To Make Rails Dev Server To Load Pages Faster</title>
     <link href="http://nikolay.rocks/2015-08-06-unslow-rails-dev" />
