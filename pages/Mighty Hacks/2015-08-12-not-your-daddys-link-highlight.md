@@ -16,6 +16,10 @@ dreams, people still use mouses and trackpads, technology changed rather
 dramatically. And, in this environment, it is just a crime to keep adding
 `text-decoration` to `a:hover` styles. We can do so much better!
 
+__NOTE__: As per usual, all the code I post in here is mostly runs on `webkit`,
+you will need to put it through a proper [css autoprefixer](https://github.com/postcss/autoprefixer)
+in order to make it work on most of the browsers.
+
 ## The Basic Principle
 
 The basic principle of all the examples I'll post here is to generate an
@@ -162,9 +166,9 @@ And the last but not least example. Rainbows!
   }
   a.example-5:hover {
     background-size:  100% 0.1em;
-    animation: rotate-bg 10s infinite linear;
+    -webkit-animation: rotate-bg 10s infinite linear;
   }
-  @keyframes rotate-bg {
+  @-webkit-keyframes rotate-bg {
     0% { background-position: 0 100%; }
     100% { background-position: 50em 100%; }
   }
