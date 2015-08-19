@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-08-11T14:00:00.000Z</updated>
+  <updated>2015-08-18T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Force Long String Line Breaks In Pure CSS</title>
+    <link href="http://nikolay.rocks/2015-08-19-pure-css-line-breaks" />
+    <published>2015-08-18T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[When someone says "pure #css", somehow an image of potato puree pops up in my mind.
+
+![Mmm, yummy!](http://thumb7.shutterstock.com/display_pic_with_logo/238252/238252,1329318553,1/stock-photo-potato-puree-95242723.jpg)]]></summary>
+    <tags>css</tags>
+    <file>/pages/Mighty Hacks/2015-08-19-pure-css-line-breaks.md</file>
+  </entry>
   <entry>
     <title>Not Your Daddy's Links Highlighting</title>
     <link href="http://nikolay.rocks/2015-08-12-not-your-daddys-link-highlight" />
