@@ -1,6 +1,6 @@
 # Elixir: First Impressions
 
-I've been starring at [elixir](http://elixir-lang.org) for a while now.
+I've been staring at [elixir](http://elixir-lang.org) for a while now.
 It kind of looked good, but I just couldn't find a good enough excuse to
 give it an actual try beyond reading books and playing in REPL. But,
 recently, I started a small toy project which needs to process quite a lot
@@ -12,7 +12,7 @@ think I need to record my first impressions of the language.
 
 ## Who is this guy?
 
-And before we start, I guess it's a good idea to say a bit about my
+Before we start, I guess it's a good idea to say a bit about my
 background. So that when you don't like what I'm saying you could blame
 my previous experiences.
 

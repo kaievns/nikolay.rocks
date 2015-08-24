@@ -11,7 +11,7 @@
     <title>Elixir: First Impressions</title>
     <link href="http://nikolay.rocks/2015-08-24-elixir-first-impressions" />
     <published>2015-08-23T14:00:00.000Z</published>
-    <summary type="markdown"><![CDATA[I've been starring at [elixir](http://elixir-lang.org) for a while now.
+    <summary type="markdown"><![CDATA[I've been staring at [elixir](http://elixir-lang.org) for a while now.
 It kind of looked good, but I just couldn't find a good enough excuse to
 give it an actual try beyond reading books and playing in REPL. But,
 recently, I started a small toy project which needs to process quite a lot
