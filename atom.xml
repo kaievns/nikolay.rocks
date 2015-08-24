@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-08-18T14:00:00.000Z</updated>
+  <updated>2015-08-23T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Elixir: First Impressions</title>
+    <link href="http://nikolay.rocks/2015-08-24-elixir-first-impressions" />
+    <published>2015-08-23T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I've been starring at [elixir](http://elixir-lang.org) for a while now.
+It kind of looked good, but I just couldn't find a good enough excuse to
+give it an actual try beyond reading books and playing in REPL. But,
+recently, I started a small toy project which needs to process quite a lot
+of sequential data, and I thought it might be a good fit.]]></summary>
+    <tags>elixir,ruby,javascript,lua,swift,rust</tags>
+    <file>/pages/Silly Thoughts/2015-08-24-elixir-first-impressions.md</file>
+  </entry>
   <entry>
     <title>Force Long String Line Breaks In Pure CSS</title>
     <link href="http://nikolay.rocks/2015-08-19-pure-css-line-breaks" />
