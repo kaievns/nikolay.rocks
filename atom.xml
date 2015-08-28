@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-08-23T14:00:00.000Z</updated>
+  <updated>2015-08-27T14:00:00.000Z</updated>
 
+  <entry>
+    <title>A Guide to the good life by Irvine William</title>
+    <link href="http://nikolay.rocks/2015-08-28-guite-to-good-life" />
+    <published>2015-08-27T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Well, yeah. This book has such a cheesy name that for a long time
+I was considering not to write anything about it. More of that, it
+is written in just as cheesy language as well. But, it is a good
+thing to read nevertheless.]]></summary>
+    <file>/pages/Book Worm/2015-08-28-guite-to-good-life.md</file>
+  </entry>
   <entry>
     <title>Elixir: First Impressions</title>
     <link href="http://nikolay.rocks/2015-08-24-elixir-first-impressions" />
