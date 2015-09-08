@@ -3,8 +3,8 @@
 Most of the last year I spent trying to bring a young developer up to speed. It
 is an interesting thing to do actually as you get to look at your everyday cases
 from a different perspective. I'm not a big fun of existing dogmatism in the
-software industry myself, but for a new to the profession person it just doesn't
-make any freaking sense:
+software industry myself, but to a new to the profession person it just doesn't
+make any sense:
 
 > Nikolay, why is it bad to write `smth = Smth.smth.smth.smth`?<br>
 > Coz, the Demeter Law<br>
@@ -23,7 +23,7 @@ into the vicious cycle of describing abstractions via abstractions?
 
 But then, recently, I've been reading this book about human behavioral patterns. It
 is actually fascinating how well they can describe group dynamics through a set
-of basic behavior styles. And there, it occurred to me that different pieces of
+of basic behavior styles. And there it occurred to me that different pieces of
 a complex software system behave in a much the same way. Let me go through some
 examples to demonstrate what I mean:
 
@@ -32,7 +32,7 @@ examples to demonstrate what I mean:
 There are four basic behavioral patterns: *passive*, *aggresive*, *passive-agressive*
 and *assertive*. *Passive* is the kind of a person who takes shit from everyone.
 Such person does whatever he was told to do, and constantly tries to
-cope with all (often unreasonable demands) people throw at them.
+cope with all (often unreasonable) demands people throw at them.
 
 In the world of #ruby-on-rails the classical example of passive behavior would
 be `ActiveRecord::Base`. That thing does everything:
@@ -54,7 +54,7 @@ when a program tries to be a peg to every whole it just creates a mess. And then
 neither the piece of code nor people who use it are capable of stopping and
 making things right.
 
-That's why #activerecord is crap. It is just too convenient to throw everything
+That's why #activerecord are bad. It is just too convenient to throw everything
 at it and it rarely complains.
 
 ## Aggressive
@@ -64,9 +64,9 @@ someone's views/options on other people. A person with an aggressive behavioral
 style often thinks that everyone around them are unreliable idiots and hence they
 try to fix the "problem" by making rules and getting their way by force.
 
-There is not that many truly aggressive pieces in #rails per say (thanks to our
+There is not that many truly aggressive pieces in #rails per se (thanks to our
 lord and savior DHH). But, you can quite often see people building aggressive
-pieces of code in the services layer. I often call this a `hitler class` pattern.
+pieces of code in the services layer. I usually call this a *hitler class* pattern.
 
 ```ruby
 class Hitler
@@ -77,7 +77,7 @@ end
 
 class ApplicationController < ActionController::Base
   before_action do
-    Hitler.hail? current_user
+    Hitler.new.hail? current_user
   end
 end
 ```
@@ -85,8 +85,9 @@ end
 It can be called many things that sound something like `SecurityEnforcer` or
 `ResourcesSupervizor` or `AccesssHandler`. It often looks innocent, like "oh it
 is a strategy pattern!". You kind of doing the right thing and encapsulate the
-decision making code in one place, but then you don't count in the fact that
-it makes other code's life terrible.
+decision making code in one place, but then you don't count in the fact much
+the code that calls it needs to dance around and go into self-denial just to
+work with the jerk.
 
 The problem with aggressive people is that they justify their shit by thinking
 that others are idiots. But in fact they build unnecessary barriers and make
@@ -102,7 +103,7 @@ thing. Which is never healthy for any code environment.
 
 *Passive-aggressive* is a type of a person who exhibits both sides of the passive
 and aggressive behavioral styles. Upfront they seem like they take everything
-other people throw at them, but then, if it doesn't fit their plans, they just
+other people throw at them. But then, if it doesn't fit their plans, they just
 flush other requests down the toilet and do what they want either way.
 
 In case of #ruby such behavior can be described through `rescue nil`
@@ -116,24 +117,25 @@ end
 ```
 
 Passive-aggressive people are quite frustrating to deal with. They just do what
-they want, when they want. They are quite unreliable, so if you need to cooperate
+they want, when they want. They are quite unreliable. So, if you need to cooperate
 with them you need to keep various scenarios in mind. In the end, some edge case
 happens and everything goes down to the toilet.
 
 The same goes for the code. When a program does unexpected things and produces
-weird artifacts, that is just frustrating.
+weird artifacts, that is just frustrating. More of that, it makes other pieces
+of code's lives harder than it has to be.
 
 ## Assertive
 
-Here we are coming to the meat of it. *Assertive* style is based on two basic
-principles.
+Here we are coming to the meat of it. *Assertive* is a positive style that is
+based on two basic principles.
 
 1. a person clearly states his opinion about a situation
 2. a person acts based on the situation without imposing his views on other people
 
 A proper functional programming code is usually a good example of assertive
-behavior. Every function does its little things with what was given to them,
-and leave the integration part to something else.
+behavior. Every function does its little thing with what was given to it,
+and leaves the integration part to something else.
 
 In case of #rails one could argue that controllers, when not overdone are quite
 assertive.
