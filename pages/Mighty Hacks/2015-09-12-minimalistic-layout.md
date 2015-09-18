@@ -82,8 +82,8 @@ This will build you a structure kind of like this:
 .examplish .artcl { background: rgb(255, 255, 200); }
 .examplish .asd   { background: rgb(200, 255, 255); }
 
-.example-1 { display: flex; flex-direction: column; }
-.example-1 > .mn { flex: 1; }
+.example-1 { display: flex; display: -webkit-flex;flex-direction: column; -webkit-flex-direction: column; }
+.example-1 > .mn { flex: 1; -webkit-flex: 1; }
 </style>
 
 Again, you can achieve the same with more traditional css tools, but
@@ -126,9 +126,9 @@ This will render you a nice looking sidebar with `300px` width.
 </div>
 
 <style>
-.example-2 { display: flex; flex-direction: column; }
-.example-2 > .mn { flex: 1; display: flex; }
-.example-2 > .mn > .artcl { flex: 1; }
+.example-2 { display: flex; display: -webkit-flex;flex-direction: column; -webkit-flex-direction: column; }
+.example-2 > .mn { flex: 1; -webkit-flex: 1; display: flex; display: -webkit-flex; }
+.example-2 > .mn > .artcl { flex: 1; -webkit-flex: 1; }
 .example-2 > .mn > .asd { width: 200px; }
 </style>
 
@@ -177,9 +177,9 @@ make it look kind of like that:
 </div>
 
 <style>
-.example-3 { display: flex; flex-direction: column; }
-.example-3 > .mn { flex: 1; display: flex; }
-.example-3 > .mn > .artcl { flex: 1; }
+.example-3 { display: flex; display: -webkit-flex;flex-direction: column; -webkit-flex-direction: column; }
+.example-3 > .mn { flex: 1; -webkit-flex: 1; display: flex; display: -webkit-flex; }
+.example-3 > .mn > .artcl { flex: 1; -webkit-flex: 1; }
 .example-3 > .mn > .asd { width: 200px; }
 .example-3 > * { padding: 1em calc(50% - 80% / 2); }
 </style>
@@ -269,7 +269,7 @@ body {
   > main
     flex: 1;
 
-    > article { flex: 1; }
+    > article { flex: 1; -webkit-flex: 1; }
     > aside { width: 300px; }
   }
 }
