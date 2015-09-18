@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-09-07T14:00:00.000Z</updated>
+  <updated>2015-09-11T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Minimalistic Yet Fully Featured HTML Layout</title>
+    <link href="http://nikolay.rocks/2015-09-12-minimalistic-layout" />
+    <published>2015-09-11T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I'm continuing my mini series of articles about minimalistic #html markup and pure
+#css hackery. And, today we are talking about building a very simple, yet fully
+featured fixed-width page layout. So, get the homies, lets do this!]]></summary>
+    <tags>html,css,flexbox</tags>
+    <file>/pages/Mighty Hacks/2015-09-12-minimalistic-layout.md</file>
+  </entry>
   <entry>
     <title>Programs Are People Too My Friend</title>
     <link href="http://nikolay.rocks/2015-09-08-programs-are-people-too" />
