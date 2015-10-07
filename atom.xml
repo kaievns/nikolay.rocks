@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-10-01T14:00:00.000Z</updated>
+  <updated>2015-10-06T13:00:00.000Z</updated>
 
+  <entry>
+    <title>GeoIP Checks On Front-End</title>
+    <link href="http://nikolay.rocks/2015-10-07-front-end-geoip" />
+    <published>2015-10-06T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[When it comes to GeoIP checks, we often tend to think of it as an explicitly
+server-side process. You take the request IP address, run it through some database
+or an external service, and then switch on/off certain pieces of UI through
+HTML rendering. It is generally fine, but rendering HTML on the server side? Eww...]]></summary>
+    <tags>javascript</tags>
+    <file>/pages/Mighty Hacks/2015-10-07-front-end-geoip.md</file>
+  </entry>
   <entry>
     <title>Learning The Right Lesson</title>
     <link href="http://nikolay.rocks/2015-10-02-learning-the-right-lesson" />
