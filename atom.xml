@@ -5,8 +5,16 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-10-06T13:00:00.000Z</updated>
+  <updated>2015-10-11T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Being Obsessive</title>
+    <link href="http://nikolay.rocks/2015-10-12-being-obsessive" />
+    <published>2015-10-11T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, here are three, easily reproducible, steps how to make your life miserable
+and how to make your friends hate you:]]></summary>
+    <file>/pages/Mind Fucks/2015-10-12-being-obsessive.md</file>
+  </entry>
   <entry>
     <title>GeoIP Checks On Front-End</title>
     <link href="http://nikolay.rocks/2015-10-07-front-end-geoip" />
