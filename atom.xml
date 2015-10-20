@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-10-11T13:00:00.000Z</updated>
+  <updated>2015-10-13T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Rebuilding MeowTV App With ReactNative</title>
+    <link href="http://nikolay.rocks/2015-10-14-rebuilding-meowtv" />
+    <published>2015-10-13T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, I've decided to give [react-native](https://facebook.github.io/react-native/)
+a more real shot and rebuild the [MeowTV](http://meowtvapp.com) app from 100%
+swift + xcode into 100%-ish react-native. The goal here is to evaluate react-native
+as a valid option for real live apps, and, check how the #react + #flux architecture
+scales outside of the web dev context.]]></summary>
+    <tags>react,flux,ruby,swift,react native,javascript</tags>
+    <file>/pages/Rocket Shed/2015-10-14-rebuilding-meowtv.md</file>
+  </entry>
   <entry>
     <title>Being Obsessive</title>
     <link href="http://nikolay.rocks/2015-10-12-being-obsessive" />
