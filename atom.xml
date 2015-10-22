@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-10-13T13:00:00.000Z</updated>
+  <updated>2015-10-21T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Get Out Of Your Own Way: by Mark Goulston</title>
+    <link href="http://nikolay.rocks/2015-10-22-get-out-of-your-way" />
+    <published>2015-10-21T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Life can be hard. Like you know, you find yourself badly hurt
+deep inside the woods. It's a beginning of a winter and your
+blood looks vividly red on the atlas whiteness of fresh snow.
+Your left arm goes limp.]]></summary>
+    <file>/pages/Book Worm/2015-10-22-get-out-of-your-way.md</file>
+  </entry>
   <entry>
     <title>Rebuilding MeowTV App With ReactNative</title>
     <link href="http://nikolay.rocks/2015-10-14-rebuilding-meowtv" />
