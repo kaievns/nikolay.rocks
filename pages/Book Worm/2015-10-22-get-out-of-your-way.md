@@ -7,7 +7,7 @@ Your left arm goes limp.
 
 It's a 10 kilometers hike to home. But, you have two good legs,
 so you should make it. You just need to make sure that wolves
-won't sniff your blood, or you're in for a whole world of troubles.
+don't smell your blood, or you're in for a whole world of troubles.
 
 Life can be hard like that. But then it's dead simple. You need
 to get your shit together, patch yourself up and walk straight
@@ -25,7 +25,7 @@ yourself _who am i? and, what am i doing wrong?_
 This book is, hands down, one of the most depressing but true
 books on self-defeating behavior patterns i've read in ages.
 It's funny how learning works. At first you think you know things,
-then you learn, and then you actually know things.
+but then you learn, and then you actually know things.
 
 Dealing with humans can be hard. Being a human can be even harder.
 Don't listen when people say "_you can't run from yourself_", i've
@@ -40,7 +40,7 @@ And the worst thing is that what he says makes total sense.
 This book is like a glimpse of life outside of that Berlin wall
 that you built around your soul. Because part of you still
 didn't return from those snow filled woods; still running circles
-being afraid that wolves will feel your blood.
+being afraid that wolves will smell your blood.
 
 But now you know. Now you actually know things and can work
 on getting back home.
