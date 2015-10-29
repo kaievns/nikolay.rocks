@@ -157,7 +157,7 @@ image kind of like this one:
 Each wave in this situation is shifted by `120deg`. If you present them in a
 circle, it will look kind of like a flux capacitor:
 
-![](http://2.media.bustedtees.cvcdn.com/f/-/bustedtees.49d8193f-536e-42c3-a009-c493535c.gif)
+![](/images/2015/10/flux-capacitor.gif)
 
 Now all you need to do is to replace those brightness levels in every phase with
 `red`, `green` and `blue` channels!
