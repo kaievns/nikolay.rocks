@@ -13,6 +13,7 @@ export default class PostContent extends React.Component {
     this.highlightCode();
     this.rewrapImages();
     this.rewrapVideos();
+    this.evalAllScripts();
   }
 
   render() {
@@ -69,6 +70,14 @@ export default class PostContent extends React.Component {
         video.className = "video";
         paragraph.replaceChild(video, frame);
         video.appendChild(frame);
+      }
+    });
+  }
+
+  evalAllScripts() {
+    this.forEvery("script", function(script) {
+      if (!script._evaled) { script._evaled = true;
+        setTimeout(function() { eval(script.innerHTML); }, 10);
       }
     });
   }

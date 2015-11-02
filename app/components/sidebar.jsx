@@ -42,7 +42,8 @@ export default class Sidebar extends React.Component {
           <p>
             <a href="https://twitter.com/nemshilov" className="twitter" target="_blank">@nemshilov</a> <br/>
             <a href="https://github.com/MadRabbit" className="github" target="_blank">GitHub/MadRabbit</a> <br/>
-            <a href="https://au.linkedin.com/pub/nikolay-nemshilov/14/78b/78" className="linkedin">LinkedIn</a>
+            <a href="https://au.linkedin.com/pub/nikolay-nemshilov/14/78b/78" className="linkedin">LinkedIn</a><br/>
+            <a href="/resume" className="resume">Resume</a>
           </p>
         </section>
 

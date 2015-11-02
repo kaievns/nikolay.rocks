@@ -61,7 +61,7 @@ for (var i=0; i < size; i++) {
 
   hex.length === 1 && (hex = "0"+hex); // adding a leading `0`
 
-  rainbow[i] = "#"+hex+hex+hex; // a proper hex 0011ff color
+  rainbow[i] = "#"+hex+hex+hex; // a proper hex #0011ff color
 }
 ```
 

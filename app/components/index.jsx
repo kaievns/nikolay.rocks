@@ -5,8 +5,12 @@ export default class PagesIndex extends React.Component {
   render() {
     return (
       <article className="pages">
-        <PagesList pages={PageStore.pages} />
+        <PagesList pages={this.blogPages()} />
       </article>
     );
+  }
+
+  blogPages() {
+    return PageStore.pages.filter((page)=> !isNaN(page.createdAt) );
   }
 }

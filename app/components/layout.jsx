@@ -4,6 +4,14 @@ import Intro from "./intro";
 
 export default class Layout extends React.Component {
 
+  componentWillMount() {
+    if (document.location.pathname == "/resume") {
+      document.body.classList.add("resume");
+    } else {
+      document.body.classList.remove("resume");
+    }
+  }
+
   render() {
     var Article = this.props.article;
 
