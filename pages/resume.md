@@ -1,18 +1,41 @@
 # Nikolay Nemshilov
 
-Hello, I'm Nikolay. I'm
+Hi, I'm Nikolay, I'm what you might call a technical technical lead.
+I help companies that are passionate about tech to build the best
+products possible and ship them fast and reliably.
 
-blah!
+I come from a rather eclectic background that includes: engineering,
+science, economics, art and even pedagogy. This uniq set of experiences
+gives me a very strong foundation of skills that are necessary to
+perform exceptionally in the drastically dynamic world of modern
+software development.
+
+## Primary Skill Set
+
+* Building best products possible
+* Overall applications architecture
+* Analytics, research & optimization
+* Extended full-stack development
+* Great empathy and people skills
 
 ## Programming Languages
 
 * Ruby ~10 years
 * JavaScript ~15 years
-* Swift ~1 year
+* Swift ~7 years
 * Python ~2 years
 * PHP ~5 years
 
-Was exposed at various degrees to: Java, Lua, Elixir, C++/C, Haskell, Lisp, Elm.
+Also, i was exposed at various degrees to: Java, Lua, Elixir,
+C++/C, Haskell, Lisp, Elm.
+
+## Web Related Tech
+
+* RubyOnRails ~10 years, an early adopter
+* NodeJS ~5 years, an early adopter
+* AngularJS ~2 years
+* ReactJS ~1 year
+* BackboneJS ~3 years
 
 ## Databases
 
@@ -66,18 +89,30 @@ Was exposed at various degrees to: Java, Lua, Elixir, C++/C, Haskell, Lisp, Elm.
 * `2000-2001` All-Russian Finance & Economics Institute - Accounting and Statistics
 * `1996-1999` Barnaul Industrial College - Electrical Engineering and Pedagogics
 
+## Contacts
+
+* <a href="mailto:&#110;&#101;&#109;&#115;&#104;&#105;&#108;&#111;&#118;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#110;&#101;&#109;&#115;&#104;&#105;&#108;&#111;&#118;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+* <a href="https://github.com/MadRabbit">GitHub/MadRabbit</a>
+* <a href="https://twitter.com/nemshilov">@nemshilov</a>
+* <a href="https://au.linkedin.com/pub/nikolay-nemshilov/14/78b/78">LinkedIn</a>
+
+<div class="controls-space">
+  <a href="#" class="exit-button">exit</a>
+</div>
 
 <script type="text/javascript">
 (function() {
   var timer, i = 0;
+  document.body.scrollTop = 0;
 
   if (document.body.classList.contains("resume")) {
     var headers = [].slice.call(document.querySelectorAll("main article h2")),
         lists   = [].slice.call(document.querySelectorAll("main article h2 ~ ul"));
 
-    timer = setInterval(next_block, 15000); next_block();
-    //next_block();
+    timer = setInterval(next_block, 11000); next_block();
   }
+
+  lists[lists.length-1].className += " slide-in-contacts";
 
   function next_block() {
     for (var j=0; j < headers.length; j++) {
@@ -85,8 +120,17 @@ Was exposed at various degrees to: Java, Lua, Elixir, C++/C, Haskell, Lisp, Elm.
       lists[j].classList[lists[j] == lists[i] ? 'add' : 'remove']('active');
     }
 
-    if (!headers[++i]) { i = 0; }
+    if (++i > headers.length - 2) { // don't show contacts
+      clearInterval(timer);
+    }
   }
+
+  var exit = document.querySelector(".exit-button");
+  exit.addEventListener("click", function(event) {
+    event.preventDefault();
+    document.body.classList.remove("resume");
+    clearInterval(timer);
+  });
 })();
 
 </script>

@@ -408,7 +408,7 @@ body.resume {
     color:       inherit;
   }
 
-  a { border-bottom: 0.1em solid white; }
+  a { border-bottom: 0.1em solid; border-color: inherit; }
 
   main {
     background: black;
@@ -421,32 +421,54 @@ body.resume {
         white-space: nowrap;
         width:       100vw;
         text-align:  center;
-        color:       rgb(33,74,117);
-        filter:      blur(2px);
+        color:       rgb(12,22,34);
+        filter:      blur(3px);
         font-weight: 900;
-        opacity:     0.3;
         left:        0;
         top:         0;
         font-size:   5rem;
         transform:   translate(50vw, 24rem);
         transform-origin: left center;
-        animation:   headermove 70s linear forwards;
+        animation:   headermove 90s linear forwards;
+      }
+
+      ul.slide-in-contacts {
+        position:        absolute;
+        animation:       slide-into-centre 1s forwards;
+        animation-delay: 89s; // --^ look at the H1 animation length
+        top:             26rem;
+        left:            calc(50vw - 11rem);
+        color:           white;
+        border-color:    white;
+        list-style:      none;
+        width:           16rem;
+        text-align:      center;
+        font-size:       1.5rem;
+        padding:         0;
+        transform:       translateY(50vh);
+
+        li { width: 100%; margin-bottom: 1em; }
+        a { border-bottom: none; }
       }
 
       p, blockquote, a[href="/"] {
-        display: none;
+        position:  absolute;
+        top:      -999em;
       }
       h2, ul {
-        display: none;
+        position:  absolute;
+        top:       -999em;
 
         &.active {
-          display: block;
+          position: relative;
+          top:      auto;
         }
       }
 
       h2.active {
-        margin-top: 30vh !important;
+        margin-top:    30vh !important;
         margin-bottom: 2em;
+        margin-left:   1em;
       }
 
       ul.active {
@@ -456,9 +478,8 @@ body.resume {
 
         li {
           position:      absolute;
-          left:         -1em;
           font-size:     1.5em;
-          animation:     typing 2s steps(60, end) forwards;
+          animation:     typing 1.5s steps(60, end) forwards;
           white-space:   nowrap;
           margin-bottom: .5em;
           clip:          rect(0, 1em, 2em, 1em);
@@ -475,26 +496,45 @@ body.resume {
             opacity:          0.9;
           }
 
-          &:nth-child(1) { top: 0em;  animation-delay: 0;   }
-          &:nth-child(2) { top: 2em;  animation-delay: 2s;  }
-          &:nth-child(3) { top: 4em;  animation-delay: 4s;  }
-          &:nth-child(4) { top: 6em;  animation-delay: 6s;  }
-          &:nth-child(5) { top: 8em;  animation-delay: 8s;  }
-          &:nth-child(6) { top: 10em; animation-delay: 10s; }
-          &:nth-child(7) { top: 12em; animation-delay: 12s; }
-          &:nth-child(8) { top: 14em; animation-delay: 14s; }
-          &:nth-child(9) { top: 16em; animation-delay: 16s; }
+          &:nth-child(1) { top: 0em;  animation-delay: 0.5s;   }
+          &:nth-child(2) { top: 2em;  animation-delay: 2.0s;  }
+          &:nth-child(3) { top: 4em;  animation-delay: 3.5s;  }
+          &:nth-child(4) { top: 6em;  animation-delay: 5.0s;  }
+          &:nth-child(5) { top: 8em;  animation-delay: 6.5s;  }
+          &:nth-child(6) { top: 10em; animation-delay: 8.0s; }
+          &:nth-child(7) { top: 12em; animation-delay: 9.5s; }
+          &:nth-child(8) { top: 14em; animation-delay: 11.0s; }
+          &:nth-child(9) { top: 16em; animation-delay: 12.5s; }
         }
       }
 
       h2.active, ul.active {
         color:           white;
+        border-color:    white;
         position:        relative;
-        animation:       disappear 1.5s forwards;
-        animation-delay: 12s;
+        animation:       disappear 1s forwards;
+        animation-delay: 9s;
       }
     }
   }
+
+  a.exit-button, a.exit-button:hover {
+    display:         block;
+    position:        fixed;
+    right:           1em;
+    bottom:          1em;
+    color:           green;
+    border:          none;
+    background:      none;
+    text-decoration: none;
+    opacity:         0.1;
+    animation:       blink-exit 2s linear infinite;
+    animation-delay: 5s;
+  }
+}
+
+body {
+  a.exit-button { display: none; }
 }
 
 @keyframes headermove {
@@ -506,7 +546,6 @@ body.resume {
     font-size: 5rem;
     transform: translate(0, 20rem);
     color:     rgb(47,99,147);
-    opacity:   1;
     filter:    blur(0);
   }
 }
@@ -518,7 +557,17 @@ body.resume {
 }
 
 @keyframes disappear {
-  0%   { color: green; border-color: green; filter: blur(0px); opacity: 1; }
-  80%  { filter: blur(4px); opacity: 1; }
-  100% { opacity: 0; }
+  0%   { color: green; border-color: green; filter: blur(1px); opacity: 1; }
+  80%  { filter: blur(3px); opacity: 1; }
+  100% { color: green; opacity: 0; }
+}
+
+@keyframes blink-exit {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 0.9; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes slide-into-centre {
+  100% { transform: translateY(0); }
 }
