@@ -77,7 +77,13 @@ export default class PostContent extends React.Component {
   evalAllScripts() {
     this.forEvery("script", function(script) {
       if (!script._evaled) { script._evaled = true;
-        setTimeout(function() { eval(script.innerHTML); }, 10);
+        if (script.src) {
+          var load = document.createElement("script");
+          load.src = script.src;
+          document.querySelector("head").appendChild(load);
+        } else {
+          setTimeout(function() { eval(script.innerHTML); }, 10);
+        }
       }
     });
   }

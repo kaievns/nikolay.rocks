@@ -132,5 +132,4 @@ C++/C, Haskell, Lisp, Elm.
     clearInterval(timer);
   });
 })();
-
 </script>
