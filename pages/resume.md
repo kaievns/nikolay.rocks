@@ -16,7 +16,7 @@ software development.
 * Overall applications architecture
 * Analytics, research & optimization
 * Extended full-stack development
-* Great empathy and people skills
+* Great personality and people skills
 
 ## Programming Languages
 
