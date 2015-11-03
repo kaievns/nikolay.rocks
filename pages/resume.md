@@ -10,6 +10,8 @@ gives me a very strong foundation of skills that are necessary to
 perform exceptionally in the drastically dynamic world of modern
 software development.
 
+<a href="#" class="start-prezo">Watch the prezo</a>
+
 ## Primary Skill Set
 
 * Building best products possible
@@ -102,17 +104,28 @@ C++/C, Haskell, Lisp, Elm.
 
 <script type="text/javascript">
 (function() {
-  var timer, i = 0;
-  document.body.scrollTop = 0;
+  var timer, i, headers, lists;
 
   if (document.body.classList.contains("resume")) {
-    var headers = [].slice.call(document.querySelectorAll("main article h2")),
-        lists   = [].slice.call(document.querySelectorAll("main article h2 ~ ul"));
-
-    timer = setInterval(next_block, 11000); next_block();
+    start_the_prezo();
   }
 
-  lists[lists.length-1].className += " slide-in-contacts";
+  var start_link = document.querySelector("a.start-prezo");
+  start_link && start_link.addEventListener("click", function(event) {
+    event.preventDefault();
+    start_the_prezo();
+  });
+
+  function start_the_prezo() {
+    i       = 0;
+    headers = [].slice.call(document.querySelectorAll("main article h2")),
+    lists   = [].slice.call(document.querySelectorAll("main article h2 ~ ul"));
+
+    timer = setInterval(next_block, 11000); next_block();
+    lists[lists.length-1].className += " slide-in-contacts";
+    document.body.classList.add("resume");
+    document.body.scrollTop = 0;
+  }
 
   function next_block() {
     for (var j=0; j < headers.length; j++) {
