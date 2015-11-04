@@ -5,7 +5,7 @@ I help companies that are passionate about tech to build the best
 products possible and ship them fast and reliably.
 
 I come from a rather eclectic background that includes: engineering,
-science, economics, art and even pedagogy. This uniq set of experiences
+science, economics, art and even pedagogy. This unique set of experiences
 gives me a very strong foundation of skills that are necessary to
 perform exceptionally in the drastically dynamic world of modern
 software development.
