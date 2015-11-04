@@ -18,7 +18,7 @@ export default class CategoryPages extends React.Component {
 
   pagesIn(category) {
     return PageStore.pages.filter(function(page) {
-      return page.category.toLowerCase() === category;
+      return (page.category || "").toLowerCase() === category;
     });
   }
 }
