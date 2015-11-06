@@ -393,182 +393,25 @@ section.tags {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron:300,900');
-
-body.resume {  
-
-  header, footer, aside {
-    display: none;
-  }
-
-  background: black;
-
-  * {
-    font-family: 'Orbitron', Arial, sans-serif;
-    font-weight: 300;
-    color:       inherit;
-  }
-
-  a { border-bottom: 0.1em solid; border-color: inherit; }
-
-  main {
-    background: black;
-
-    article {
-      min-height: 100vh;
-
-      h1 {
-        position:    absolute;
-        white-space: nowrap;
-        width:       100vw;
-        text-align:  center;
-        color:       rgb(12,22,34);
-        filter:      blur(3px);
-        font-weight: 900;
-        left:        0;
-        top:         0;
-        font-size:   5rem;
-        transform:   translate(50vw, 24rem);
-        transform-origin: left center;
-        animation:   headermove 90s linear forwards;
+// resume page duppels
+body {
+  div.duppel {
+    > div {
+      position: relative;
+      width:    49%;
+      display:  inline-block;
+      
+      label {
+        width: 100%;
+        text-align: center;
       }
+    }
 
-      ul.slide-in-contacts {
-        position:        absolute;
-        animation:       slide-into-centre 1s forwards;
-        animation-delay: 89s; // --^ look at the H1 animation length
-        top:             26rem;
-        left:            calc(50vw - 11rem);
-        color:           white;
-        border-color:    white;
-        list-style:      none;
-        width:           16rem;
-        text-align:      center;
-        font-size:       1.5rem;
-        padding:         0;
-        transform:       translateY(70vh);
-
-        li { width: 100%; margin-bottom: 1em; }
-        a { border-bottom: none; }
-      }
-
-      p, blockquote, a[href="/"] {
-        position:  absolute;
-        top:      -999em;
-      }
-      h2, ul {
-        position:  absolute;
-        top:       -999em;
-
-        &.active {
-          position: relative;
-          top:      auto;
-        }
-      }
-
-      h2.active {
-        margin-top:    30vh !important;
-        margin-bottom: 2em;
-        margin-left:   1em;
-      }
-
-      ul.active {
-        list-style: none;
-        padding:    0;
-        margin:     0;
-
-        li {
-          position:      absolute;
-          font-size:     1.5em;
-          animation:     typing 1.5s steps(60, end) forwards;
-          white-space:   nowrap;
-          margin-bottom: .5em;
-          clip:          rect(0, 1em, 2em, 1em);
-
-          &:before {
-            content:          "";
-            position:         relative;
-            display:          inline-block;
-            width:            0.5em;
-            height:           0.75em;
-            background-color: white;
-            border-radius:    1px;
-            margin-right:     .5em;
-            opacity:          0.9;
-          }
-
-          &:nth-child(1) { top: 0em;  animation-delay: 0.5s;   }
-          &:nth-child(2) { top: 2em;  animation-delay: 2.0s;  }
-          &:nth-child(3) { top: 4em;  animation-delay: 3.5s;  }
-          &:nth-child(4) { top: 6em;  animation-delay: 5.0s;  }
-          &:nth-child(5) { top: 8em;  animation-delay: 6.5s;  }
-          &:nth-child(6) { top: 10em; animation-delay: 8.0s; }
-          &:nth-child(7) { top: 12em; animation-delay: 9.5s; }
-          &:nth-child(8) { top: 14em; animation-delay: 11.0s; }
-          &:nth-child(9) { top: 16em; animation-delay: 12.5s; }
-        }
-      }
-
-      h2.active, ul.active {
-        color:           white;
-        border-color:    white;
-        position:        relative;
-        animation:       disappear 1s forwards;
-        animation-delay: 9s;
+    @media (max-width: @phone-width) {
+      > div {
+        display: block;
+        width: 100%;
       }
     }
   }
-
-  a.exit-button, a.exit-button:hover {
-    display:         block;
-    position:        fixed;
-    right:           1em;
-    bottom:          1em;
-    color:           green;
-    border:          none;
-    background:      none;
-    text-decoration: none;
-    opacity:         0.1;
-    animation:       blink-exit 2s linear infinite;
-    animation-delay: 5s;
-  }
-}
-
-body {
-  a.exit-button { display: none; }
-}
-
-@keyframes headermove {
-  0% { font-size: 160rem; }
-  50% {
-    transform: translate(-15rem, 35rem);
-  }
-  100% {
-    font-size: 5rem;
-    transform: translate(0, 20rem);
-    color:     rgb(47,99,147);
-    filter:    blur(0);
-  }
-}
-
-@keyframes typing {
-  0.1%  { clip: rect(0, 1em,  2em, 0em); }
-  99.9% { clip: rect(0, 50em, 2em, 0em); }
-  100%  { clip: rect(0, 50em, 2em, 1em); }
-}
-
-@keyframes disappear {
-  0%   { color: green; border-color: green; filter: blur(1px); opacity: 1; }
-  80%  { filter: blur(3px); opacity: 1; }
-  100% { color: green; opacity: 0; }
-}
-
-@keyframes blink-exit {
-  0%   { opacity: 0.4; }
-  50%  { opacity: 0.9; }
-  100% { opacity: 0.4; }
-}
-
-@keyframes slide-into-centre {
-  100% { transform: translateY(0); }
 }

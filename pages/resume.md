@@ -1,51 +1,78 @@
 # Nikolay Nemshilov
 
 Hi, I'm Nikolay, I'm what you might call a technical technical lead.
-I help companies that are passionate about tech to build the best
-products possible and ship them fast and reliably.
+I help companies that are passionate about technology to build
+outstanding products and stay nimble when it comes to shipping.
 
-I come from a rather eclectic background that includes: engineering,
-science, economics, art and even pedagogy. This unique set of experiences
-gives me a very strong foundation of skills that are necessary to
-perform exceptionally in the drastically dynamic world of modern
-software development.
+My primary strength is in a broad experience in web development related
+areas. I built fully front-end projects, like the ChromeBooks ratail
+app for Google for example. And then I built quite complicated government
+documents processing server-side code for JobReady. And I also built
+a massive JSON API based app for Ninefold that handles the server-side
+infrastructure. Oh, and I have my very own iOS app on the
+[app store](http://meowtvapp.com).
 
-<a href="#" class="start-prezo">Watch the prezo</a>
+My passion for creating things doesn't leave me after work hours either.
+I launched a number of open-source projects (see the list below); and I
+constantly build fun projects and follow my passions.
 
-## Primary Skill Set
+<div class="duppel">
+  <div>
+    <iframe style="width:100%; margin:0" src="https://www.youtube.com/embed/_whiCEywodw" frameborder="0" allowfullscreen></iframe>
+    <label>Street Fighter II in Ruby</label>
+  </div>
+  <div>
+    <iframe style="width:100%;margin:0" src="https://www.youtube.com/embed/OPqRkP07RHg" frameborder="0" allowfullscreen></iframe>
+    <label>Custom built Fender Telecaster</label>
+  </div>
+</div>
 
-* Building best products possible
-* Overall applications architecture
-* Analytics, research & optimization
-* Extended full-stack development
-* Great personality and people skills
+And then the burning desire to share my knowledge and experiences
+leads me to conferences, writing, and, sometimes, tops of the hacker news
 
-## Programming Languages
+<div class="duppel">
+  <div>
+    <iframe src="https://www.youtube.com/embed/6UTcz-_WvXk" frameborder="0" allowfullscreen></iframe>
+    <label>Rocky Mountains Ruby 2014</label>
+  </div>
+  <div>
+    <figure>
+      <a href="/images/resume/hacker-news.png" target="_blank" b="_">
+        <img src="/images/resume/hacker-news.png" />
+      </a>
+    </figure>
+    <label>Tops of hacker news</label>
+  </div>
+</div>
 
-* Ruby ~10 years
-* JavaScript ~15 years
-* Swift ~7 years
-* Python ~2 years
-* PHP ~5 years
+<p>&nbsp;</p>
 
-Also, i was exposed at various degrees to: Java, Lua, Elixir,
-C++/C, Haskell, Lisp, Elm.
+## Technical Skills
 
-## Web Related Tech
+I am lucky to be an early adopter of RubyOnRails and an early adopter
+of NodeJS. This helped me to get involved professionally with almost
+every major piece of technology that came out of those two great hubs
+in the last 10 years.
 
-* RubyOnRails ~10 years, an early adopter
-* NodeJS ~5 years, an early adopter
-* AngularJS ~2 years
-* ReactJS ~1 year
-* BackboneJS ~3 years
+Then, before getting my first MacBook, I lived 100% on Linux for a number
+of years, which made me acquainted with Unix systems. I have designed
+infrastructures for high-load web applications. And I helped hundreds
+of rails projects to deploy on Ninefold.
 
-## Databases
+And then, the mobile development wave swooped me as well, leading me
+to build several large iOS projects and apps. Check out the
+[under-os](http://under-os.com) project for example.
 
-* Mysql
-* PostreSQL
-* MongoDB
-* ElasticSearch
-* InfluxDB
+
+## Personal Background
+
+It happened that I have a rather eclectic background. I was born in Siberia,
+and I can tell you everything about fishing through a meter sick layer of ice.
+I lived in Saint Petersburg for many years and I cant talk for hours about
+post-impressionism art and my admiration for van Gogh paintings. I had
+spent almost a year in South-East Asia, traveling from place to place
+every few weeks. And I also had been to California and passionate about
+the startup culture.
 
 
 ## Open-Source Projects
@@ -97,52 +124,3 @@ C++/C, Haskell, Lisp, Elm.
 * <a href="https://github.com/MadRabbit">GitHub/MadRabbit</a>
 * <a href="https://twitter.com/nemshilov">@nemshilov</a>
 * <a href="https://au.linkedin.com/pub/nikolay-nemshilov/14/78b/78">LinkedIn</a>
-
-<div class="controls-space">
-  <a href="#" class="exit-button">exit</a>
-</div>
-
-<script type="text/javascript">
-(function() {
-  var timer, i, headers, lists;
-
-  if (document.body.classList.contains("resume")) {
-    start_the_prezo();
-  }
-
-  var start_link = document.querySelector("a.start-prezo");
-  start_link && start_link.addEventListener("click", function(event) {
-    event.preventDefault();
-    start_the_prezo();
-  });
-
-  function start_the_prezo() {
-    i       = 0;
-    headers = [].slice.call(document.querySelectorAll("main article h2")),
-    lists   = [].slice.call(document.querySelectorAll("main article h2 ~ ul"));
-
-    timer = setInterval(next_block, 11000); next_block();
-    lists[lists.length-1].className += " slide-in-contacts";
-    document.body.classList.add("resume");
-    document.body.scrollTop = 0;
-  }
-
-  function next_block() {
-    for (var j=0; j < headers.length; j++) {
-      headers[j].classList[headers[j] == headers[i] ? 'add' : 'remove']('active');
-      lists[j].classList[lists[j] == lists[i] ? 'add' : 'remove']('active');
-    }
-
-    if (++i > headers.length - 2) { // don't show contacts
-      clearInterval(timer);
-    }
-  }
-
-  var exit = document.querySelector(".exit-button");
-  exit.addEventListener("click", function(event) {
-    event.preventDefault();
-    document.body.classList.remove("resume");
-    clearInterval(timer);
-  });
-})();
-</script>
