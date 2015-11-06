@@ -67,7 +67,7 @@ to build several large iOS projects and apps. Check out the
 ## Personal Background
 
 It happened that I have a rather eclectic background. I was born in Siberia,
-and I can tell you everything about fishing through a meter sick layer of ice.
+and I can tell you everything about fishing through a meter thick layer of ice.
 I lived in Saint Petersburg for many years and I cant talk for hours about
 post-impressionism art and my admiration for van Gogh paintings. I had
 spent almost a year in South-East Asia, traveling from place to place
