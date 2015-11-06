@@ -400,18 +400,28 @@ body {
       position: relative;
       width:    49%;
       display:  inline-block;
-      
+
       label {
         width: 100%;
         text-align: center;
       }
     }
 
-    @media (max-width: @phone-width) {
+    @media (max-width: @phone-width) and not print {
       > div {
         display: block;
         width: 100%;
       }
+    }
+  }
+}
+
+@media print {
+  body {
+    font-size: 12px;
+
+    > header, > footer, > main aside, a.other-posts {
+      display: none;
     }
   }
 }

@@ -33,7 +33,7 @@ export default class PageView extends React.Component {
 
           {!page.body && <Locker/>}
 
-          <a href="/">&lt;- Other posts</a>
+          <a href="/" className="other-posts">&lt;- Other posts</a>
           <TagsList tags={page.tags} />
         </article>
       );
