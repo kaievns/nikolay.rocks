@@ -5,8 +5,21 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-11-22T13:00:00.000Z</updated>
+  <updated>2015-12-07T13:00:00.000Z</updated>
 
+  <entry>
+    <title>The Dark Side of Lightchasers</title>
+    <link href="http://nikolay.rocks/2015-12-08-light-chasers" />
+    <published>2015-12-07T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I kind of have weird role models in life. I remember, when I was growing, they
+would try to hook you up with the classical list, like: "oh, you like rockets,
+you should try to be like Gagarin and brush your teeth. coz all astronauts brush
+their teeth before bed." And I'm still a huge nerd, I mean, let me touch an
+exhaust of a rocket engine and I'll be your friend forever, but Gagarin? He is
+a brave guy and totally brushes his teeth twice a day, but I'm kind of more
+interested in how rockets work rather than who gets the ride.]]></summary>
+    <file>/pages/Book Worm/2015-12-08-light-chasers.md</file>
+  </entry>
   <entry>
     <title>Why I RethinkDB And So Can You!</title>
     <link href="http://nikolay.rocks/2015-11-23-why-rethinkdb" />
