@@ -19,7 +19,7 @@ things in the world.
 The consciousness you kind of can understand—that is what you think you are. The
 collective-consciousness you can kind of grasp as well as a collection of your
 experiences and expectations based on your social context. But, what is
-sub-consciousness really? How does it look and how do I poke it with a stick?
+sub-consciousness really? How does it look like and how do I poke it with a stick?
 
 Well, sub-consciousness is kind of the weird part. That is where your emotions
 and instincts live. It doesn't really communicate that well in words. More of
@@ -54,5 +54,5 @@ make them special.
 Wanna really piss off a ruby developer? Write something awesome in javascript! :)
 
 Either way. That is a cool theory an it definitely helped me to look at my own
-reactions and judgments more clearly and encouraged me to look of the answers
+reactions and judgments more clearly and encouraged me to look for the answers
 within. I hope it will help you too.
