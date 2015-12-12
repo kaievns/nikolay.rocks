@@ -1,7 +1,7 @@
 # Defensive Ego Projections
 
 I am kinda excited about learning this one. Have you ever seen a person saying
-something like "I don't care who you are, if you don't write tests you are not
+something like "I don't care who you are, if you don't write tests you are not a
 professional!"; or say you were mangling with MongoDB and someone said "did you
 try /dev/null?"; or, my favorite, "eww, javascript!". Of course you have! Wanna
 know why people do that? Keep reading
@@ -37,18 +37,18 @@ so that you didn't notice that there is something off the beam. I mean, you have
 more interesting things in life than contemplating about an existential crisis
 after all, don't you? So, how do you see it at work?
 
-Well, in our pursuit to understand the human mind, we have figured this effect
+Well, in our pursuit for understanding the human mind, we have figured this effect
 called "defensive ego projections" or just "psychological projections". It works
 kind of like blame shifting. Your sub-consciousness makes your consciousness
-to think that you don't have certain (usually negative) traits, while at the
+think that you don't have certain (usually negative) traits, while at the
 same time it attributes (or "projects") those qualities on people around you.
 
 According to this theory, one's hate for people who don't write tests is actually
 a result of this person's fear of inadequacy. It is their sub-conscious desire
 to prove that they are tough professionals that makes them emotionally respond
 to people who don't fit their image of an IT-professional. Same others might
-have hate for, let call them "less adequate" programming languages. It is nothing
-really but the reflection of one's fear that their programming language doesn't
+have hate for, lets call them "less adequate" programming languages. It is nothing
+really but a reflection of one's fear that their programming language doesn't
 make them special.
 
 Wanna really piss off a ruby developer? Write something awesome in javascript! :)

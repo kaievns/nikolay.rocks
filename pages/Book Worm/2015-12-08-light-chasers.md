@@ -2,7 +2,7 @@
 
 I kind of have weird role models in life. I remember, when I was growing, they
 would try to hook you up with the classical list, like: "oh, you like rockets,
-you should try to be like Gagarin and brush your teeth. coz all astronauts brush
+you should try to be like Gagarin and brush your teeth; coz all astronauts brush
 their teeth before bed." And I'm still a huge nerd, I mean, let me touch an
 exhaust of a rocket engine and I'll be your friend forever, but Gagarin? He is
 a brave guy and totally brushes his teeth twice a day, but I'm kind of more
