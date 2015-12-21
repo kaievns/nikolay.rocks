@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-12-20T13:00:00.000Z</updated>
+  <updated>2015-12-21T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Colemak, First Impressions</title>
+    <link href="http://nikolay.rocks/2015-12-22-colemak-first-impressions" />
+    <published>2015-12-21T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, I've spend a few days learning the #colemak keyboard layout. And I think,
+I should write down some thoughts and impressions. Which are strange, good and
+bad at the same time.]]></summary>
+    <tags>colemak</tags>
+    <file>/pages/Learn Colemak/2015-12-22-colemak-first-impressions.md</file>
+  </entry>
   <entry>
     <title>When I Say No, I Feel Guilty, by Manuel Smith</title>
     <link href="http://nikolay.rocks/2015-12-21-i-feel-guilty" />
