@@ -1,6 +1,6 @@
 # "The" Colemak Problem and Workman
 
-So, as I was continuing with my Colemak keyboard layout journey, I discovered
+So, as I was continuing with my Colemak #keyboard layout journey, I discovered
 a problem with the layout, that you might call "The" problem. Which consequently
 made me to research #Colemak improved variations and led to the
 [Workman keyboard layout](http://www.workmanlayout.com). But lets get to it

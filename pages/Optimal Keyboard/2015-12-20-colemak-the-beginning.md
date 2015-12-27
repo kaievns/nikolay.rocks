@@ -4,7 +4,7 @@ Long story short, I've decided to learn the [colemak](http://colemak.com)
 keyboard layout. And being so, I'm starting a new section in my blog where I
 intend to post updates on my progress.
 
-So, you might ask yourself, why learn new keyboard layout, and why #colemak?
+So, you might ask yourself, why learn new #keyboard layout, and why #colemak?
 Well, I kind of was curious about keyboard layouts. I learned two Russian keyboard
 layouts early in the days—which is completely different from English—and I also
 work every day on a standard PC layout. So, you can say I was pre-exposed to

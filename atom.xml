@@ -5,8 +5,31 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-12-23T13:00:00.000Z</updated>
+  <updated>2015-12-27T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Programmer's Layout</title>
+    <link href="http://nikolay.rocks/2015-12-28-programmers-layout" />
+    <published>2015-12-27T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, while I am still going through the learning curve of the
+[workman keyboard layout](http://www.workmanlayout.com), I thought I should
+write a bit about a thing I found while was researching #keyboard layouts.
+This thing is called "programmer's layout".]]></summary>
+    <tags>keyboard</tags>
+    <file>/pages/Optimal Keyboard/2015-12-28-programmers-layout.md</file>
+  </entry>
+  <entry>
+    <title>"The" Colemak Problem and Workman</title>
+    <link href="http://nikolay.rocks/2015-12-24-the-colemak-problem" />
+    <published>2015-12-23T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, as I was continuing with my Colemak #keyboard layout journey, I discovered
+a problem with the layout, that you might call "The" problem. Which consequently
+made me to research #Colemak improved variations and led to the
+[Workman keyboard layout](http://www.workmanlayout.com). But lets get to it
+in order.]]></summary>
+    <tags>keyboard,colemak</tags>
+    <file>/pages/Optimal Keyboard/2015-12-24-the-colemak-problem.md</file>
+  </entry>
   <entry>
     <title>Game Programming Patterns by Robert Nystrom</title>
     <link href="http://nikolay.rocks/2015-12-24-game-programming-patterns" />
@@ -17,26 +40,14 @@ awesome and totally worth to be mentioned.]]></summary>
     <file>/pages/Book Worm/2015-12-24-game-programming-patterns.md</file>
   </entry>
   <entry>
-    <title>"The" Colemak Problem and Workman</title>
-    <link href="http://nikolay.rocks/2015-12-24-the-colemak-problem" />
-    <published>2015-12-23T13:00:00.000Z</published>
-    <summary type="markdown"><![CDATA[So, as I was continuing with my Colemak keyboard layout journey, I discovered
-a problem with the layout, that you might call "The" problem. Which consequently
-made me to research #Colemak improved variations and led to the
-[Workman keyboard layout](http://www.workmanlayout.com). But lets get to it
-in order.]]></summary>
-    <tags>colemak</tags>
-    <file>/pages/Learn Colemak/2015-12-24-the-colemak-problem.md</file>
-  </entry>
-  <entry>
     <title>Colemak, First Impressions</title>
     <link href="http://nikolay.rocks/2015-12-22-colemak-first-impressions" />
     <published>2015-12-21T13:00:00.000Z</published>
-    <summary type="markdown"><![CDATA[So, I've spend a few days learning the #colemak keyboard layout. And I think,
+    <summary type="markdown"><![CDATA[So, I've spend a few days learning the #colemak #keyboard layout. And I think,
 I should write down some thoughts and impressions. Which are strange, good and
 bad at the same time.]]></summary>
-    <tags>colemak</tags>
-    <file>/pages/Learn Colemak/2015-12-22-colemak-first-impressions.md</file>
+    <tags>colemak,keyboard</tags>
+    <file>/pages/Optimal Keyboard/2015-12-22-colemak-first-impressions.md</file>
   </entry>
   <entry>
     <title>When I Say No, I Feel Guilty, by Manuel Smith</title>
@@ -55,8 +66,8 @@ approach in communication. This thing actually blew my mind a bit.]]></summary>
     <summary type="markdown"><![CDATA[Long story short, I've decided to learn the [colemak](http://colemak.com)
 keyboard layout. And being so, I'm starting a new section in my blog where I
 intend to post updates on my progress.]]></summary>
-    <tags>colemak</tags>
-    <file>/pages/Learn Colemak/2015-12-20-colemak-the-beginning.md</file>
+    <tags>keyboard,colemak</tags>
+    <file>/pages/Optimal Keyboard/2015-12-20-colemak-the-beginning.md</file>
   </entry>
   <entry>
     <title>How To Permutate Arrays in JavaScript</title>

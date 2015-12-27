@@ -1,6 +1,6 @@
 # Colemak, First Impressions
 
-So, I've spend a few days learning the #colemak keyboard layout. And I think,
+So, I've spend a few days learning the #colemak #keyboard layout. And I think,
 I should write down some thoughts and impressions. Which are strange, good and
 bad at the same time.
 
