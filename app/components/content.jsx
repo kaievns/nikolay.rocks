@@ -89,7 +89,7 @@ export default class PostContent extends React.Component {
   }
 
   forEvery(css_rule, callback) {
-    var domNode = React.findDOMNode(this);
+    var domNode = ReactDOM.findDOMNode(this);
     var nodes = domNode.querySelectorAll(css_rule);
 
     for (var i=0; i < nodes.length; i++) {
