@@ -5,8 +5,17 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2015-12-29T13:00:00.000Z</updated>
+  <updated>2016-12-02T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Workman, The First Impressions</title>
+    <link href="http://nikolay.rocks/2016-12-03-workman-first-impressions" />
+    <published>2016-12-02T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, it's been roughly two weeks after I had started with my
+[Workman layout](http://www.workmanlayout.com) training. Time to put some of
+my initial impressions into words.]]></summary>
+    <file>/pages/Optimal Keyboard/2016-12-03-workman-first-impressions.md</file>
+  </entry>
   <entry>
     <title>End Of The Year</title>
     <link href="http://nikolay.rocks/2015-12-30-end-of-the-year" />
@@ -27,15 +36,6 @@ This thing is called "programmer's layout".]]></summary>
     <file>/pages/Optimal Keyboard/2015-12-28-programmers-layout.md</file>
   </entry>
   <entry>
-    <title>Game Programming Patterns by Robert Nystrom</title>
-    <link href="http://nikolay.rocks/2015-12-24-game-programming-patterns" />
-    <published>2015-12-23T13:00:00.000Z</published>
-    <summary type="markdown"><![CDATA[I keep forgetting to write about this book. Not because it was so unmemorable,
-but because life was a bit busy in the last couple of months. But, the book is
-awesome and totally worth to be mentioned.]]></summary>
-    <file>/pages/Book Worm/2015-12-24-game-programming-patterns.md</file>
-  </entry>
-  <entry>
     <title>"The" Colemak Problem and Workman</title>
     <link href="http://nikolay.rocks/2015-12-24-the-colemak-problem" />
     <published>2015-12-23T13:00:00.000Z</published>
@@ -46,6 +46,15 @@ made me to research #Colemak improved variations and led to the
 in order.]]></summary>
     <tags>keyboard,colemak</tags>
     <file>/pages/Optimal Keyboard/2015-12-24-the-colemak-problem.md</file>
+  </entry>
+  <entry>
+    <title>Game Programming Patterns by Robert Nystrom</title>
+    <link href="http://nikolay.rocks/2015-12-24-game-programming-patterns" />
+    <published>2015-12-23T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I keep forgetting to write about this book. Not because it was so unmemorable,
+but because life was a bit busy in the last couple of months. But, the book is
+awesome and totally worth to be mentioned.]]></summary>
+    <file>/pages/Book Worm/2015-12-24-game-programming-patterns.md</file>
   </entry>
   <entry>
     <title>Colemak, First Impressions</title>
