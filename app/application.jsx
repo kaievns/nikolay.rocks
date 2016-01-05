@@ -1,20 +1,14 @@
-import App from "unicorn-farts/application";
+import boot from "unicorn-farts/application";
 import Layout from "./components/layout";
-import PagesIndex from "./components/index";
-import PageView from "./components/page";
-import TaggedPages from "./components/tagged";
-import CategoryPages from "./components/categorized";
-import LegacyPage from "./components/legacy";
 
-App.route({
-  "/"                     : PagesIndex,
-  "/p/:sha"               : LegacyPage,
-  "/tags/:tag"            : TaggedPages,
-  "/categories/:category" : CategoryPages,
-  "*"                     : PageView
-});
+const MainIndex     = () => { return <article>Index page!</article> };
+const TaggedIndex   = () => { return <article>Tagged index</article> };
+const CategoryIndex = () => { return <article>Category index</article> };
+const PageView      = () => { return <article>page view</article> };
 
-App.boot(function(Article) {
-  document.body.className = "";
-  return <Layout article={Article}></Layout>;
+boot(Layout, {
+  "/":                     MainIndex,
+  "/tags/:tag":            TaggedIndex,
+  "/categories/:category": CategoryIndex,
+  "/*page":                PageView
 });

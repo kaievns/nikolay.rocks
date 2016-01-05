@@ -1,22 +1,31 @@
 import settings from "../stores/settings";
-import Categories from "unicorn-farts/stores/categories";
+import connect from "unicorn-farts/store/connect";
+import TagLink from "unicorn-farts/components/tag_link";
 import CategoryLink from "unicorn-farts/components/category_link";
 
-export default class Intro extends React.Component {
+const Intro = ({ category, tag }) => {
+  let intro = settings.promo;
+  let title = settings.title;
 
-  render() {
-    var intro    = settings.promo;
-    var category = Categories.current();
-
-    document.title = settings.title;
-
-    if (category) {
-      intro = <CategoryLink name={category} />;
-      document.title += " » "+ category;
-    }
-
-    return(
-      <h1 className="intro">{intro}</h1>
-    )
+  if (category) {
+    intro = <CategoryLink name={category} />;
+    title = title +" » "+ category;
+  } else if (tag) {
+    intro = <TagLink name={tag} />;
+    title = title +" » "+ tag;
   }
-}
+
+  document.title = title;
+
+  return <h1 className="intro">{intro}</h1>;
+};
+
+export default connect(Intro, (state)=> {
+  const { category, tag } = state.route.params;
+
+  if (category) {
+    return { category: category };
+  } else if (tag) {
+    return { tag: "#"+ tag };
+  }
+});
