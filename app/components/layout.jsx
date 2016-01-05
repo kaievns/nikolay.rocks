@@ -1,5 +1,5 @@
 import settings from "../stores/settings";
-// import Sidebar from "./sidebar";
+import Sidebar from "./sidebar";
 import Intro from "./intro";
 
 export default ({ Article }) => {
@@ -16,7 +16,7 @@ export default ({ Article }) => {
       <main>
         <div className="paddings">
           <Article />
-          <aside>sidebar</aside>
+          <Sidebar />
         </div>
       </main>
       <footer>

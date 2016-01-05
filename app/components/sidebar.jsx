@@ -1,9 +1,8 @@
-import TagsList from "./tags";
+import connect from "unicorn-farts/store/connect";
+import TagLink from "unicorn-farts/components/tag_link";
 import CategoryLink from "unicorn-farts/components/category_link";
-import TagsStore from "unicorn-farts/stores/tags";
-import CategoriesStore from "unicorn-farts/stores/categories";
 
-export default class Sidebar extends React.Component {
+class Sidebar extends React.Component {
   constructor() {
     super();
 
@@ -13,16 +12,15 @@ export default class Sidebar extends React.Component {
 
   toggleState(event) {
     event.preventDefault();
-
     this.setState({open: !this.state.open});
   }
 
   render() {
-    var tags       = TagsStore.all();
-    var categories = CategoriesStore.all();
+    const tags       = this.props.tags || [];
+    const categories = this.props.categories || [];
 
     return (
-      <aside className={this.state.open ? 'open' : null}>
+      <aside className={this.state ? 'open' : null}>
         <a href="#" className="toggler" onClick={this.toggleState}></a>
 
         <section className="about">
@@ -50,23 +48,30 @@ export default class Sidebar extends React.Component {
         <section className="categories">
           <h3>Categories</h3>
 
-          <ul>
-            {
-              categories.map(function(category, i) {
-                return <li>
-                  <CategoryLink name={category} key={i} />
-                </li>;
-              })
-            }
+          <ul className="categories">
+            { categories.map((name,i) => {
+              return <li>
+                <CategoryLink name={name} key={i} />
+              </li>
+            }) }
           </ul>
         </section>
 
         <section className="tags">
           <h3>Tags</h3>
 
-          <TagsList tags={tags.slice(0, 25)} />
+          <div className="tags">
+            { tags.map((tag, i) => { return <TagLink name={tag} key={i} /> }) }
+          </div>
         </section>
       </aside>
     );
   }
 }
+
+export default connect(Sidebar, (state)=> {
+  return {
+    categories: state.categories,
+    tags:       state.tags.slice(0, 24)
+  };
+});
