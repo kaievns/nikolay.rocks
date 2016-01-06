@@ -1,22 +1,18 @@
-import PostDate from "unicorn-farts/components/date_block";
-import PostContent from "./content";
+import PageDate from "unicorn-farts/components/page_date";
+import PageContent from "unicorn-farts/components/page_content";
 import TagsList from "./tags";
 
-export default class PagePreview extends React.Component {
-  render() {
-    var page = this.props.page;
+export default ({ page }) => {
+  return (
+    <section className="page preview">
+      <PageDate date={page.createdAt}/>
 
-    return (
-      <section className="page preview">
-        <PostDate date={page.createdAt}/>
+      <h2>{page.title}</h2>
 
-        <h2>{page.title}</h2>
+      <PageContent text={page.summary} />
 
-        <PostContent body={page.extract} />
-
-        <a href={page.path}>Keep reading -&gt;</a>
-        <TagsList tags={page.tags} />
-      </section>
-    );
-  }
+      <a href={page.path}>Keep reading -&gt;</a>
+      <TagsList tags={page.tags} />
+    </section>
+  );
 }
