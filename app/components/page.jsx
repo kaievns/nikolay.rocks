@@ -1,48 +1,41 @@
-import PageStore from "unicorn-farts/stores/pages";
-import PostContent from "./content";
-import PostDate from "unicorn-farts/components/date_block";
+import PageDate from "unicorn-farts/components/page_date";
+import PageContent from "unicorn-farts/components/page_content";
 import Locker from "unicorn-farts/components/locker";
+import connect from "unicorn-farts/store/connect";
+import { loadPage } from "unicorn-farts/store/actions";
 import TagsList from "./tags";
 import NotFound from "./404";
 
-export default class PageView extends React.Component {
+const PageView = ({ page }) => {
+  if (page) {
+    return (
+      <article className="page preview">
+        <PageDate date={page.createdAt}/>
 
-  componentWillMount() {
-    var page = PageStore.current();
+        {page.text && <PageContent text={page.text} />}
 
-    if (this.props.hasOwnProperty("page")) {
-      page = this.props.page;
-    }
+        {!page.text && <h1>{page.title}</h1>}
+        {!page.text && <PageContent text={page.summary} />}
+        {!page.text && <Locker/>}
 
-    if (page) {
-      page.on("load", this._pageLoaded.bind(this));
-      page.load();
-    }
-
-    this.setState({page: page});
-  }
-
-  render() {
-    var page = this.state.page;
-
-    if (page) {
-      return (
-        <article className="page">
-          <PostDate date={page.createdAt}/>
-          <PostContent body={page.body||page.extract} />
-
-          {!page.body && <Locker/>}
-
-          <a href="/" className="other-posts">&lt;- Other posts</a>
-          <TagsList tags={page.tags} />
-        </article>
-      );
-    } else {
-      return <NotFound />;
-    }
-  }
-
-  _pageLoaded() {
-    this.setState({loaded: true});
+        <a href="/" className="other-posts">&lt;- Other posts</a>
+        <TagsList tags={page.tags} />
+      </article>
+    );
+  } else if (page === false) {
+    return <NotFound />;
+  } else {
+    return <article></article>; // still waiting
   }
 }
+
+export default connect(PageView, (store, dispatch) => {
+  const page = store.page;
+
+  if (!page.text && !page.loading) {
+    page.loading = true;
+    dispatch(loadPage(page));
+  }
+
+  return { page: page };
+});

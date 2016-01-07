@@ -36,6 +36,15 @@ This thing is called "programmer's layout".]]></summary>
     <file>/pages/Optimal Keyboard/2015-12-28-programmers-layout.md</file>
   </entry>
   <entry>
+    <title>Game Programming Patterns by Robert Nystrom</title>
+    <link href="http://nikolay.rocks/2015-12-24-game-programming-patterns" />
+    <published>2015-12-23T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I keep forgetting to write about this book. Not because it was so unmemorable,
+but because life was a bit busy in the last couple of months. But, the book is
+awesome and totally worth to be mentioned.]]></summary>
+    <file>/pages/Book Worm/2015-12-24-game-programming-patterns.md</file>
+  </entry>
+  <entry>
     <title>"The" Colemak Problem and Workman</title>
     <link href="http://nikolay.rocks/2015-12-24-the-colemak-problem" />
     <published>2015-12-23T13:00:00.000Z</published>
@@ -46,15 +55,6 @@ made me to research #Colemak improved variations and led to the
 in order.]]></summary>
     <tags>keyboard,colemak</tags>
     <file>/pages/Optimal Keyboard/2015-12-24-the-colemak-problem.md</file>
-  </entry>
-  <entry>
-    <title>Game Programming Patterns by Robert Nystrom</title>
-    <link href="http://nikolay.rocks/2015-12-24-game-programming-patterns" />
-    <published>2015-12-23T13:00:00.000Z</published>
-    <summary type="markdown"><![CDATA[I keep forgetting to write about this book. Not because it was so unmemorable,
-but because life was a bit busy in the last couple of months. But, the book is
-awesome and totally worth to be mentioned.]]></summary>
-    <file>/pages/Book Worm/2015-12-24-game-programming-patterns.md</file>
   </entry>
   <entry>
     <title>Colemak, First Impressions</title>
@@ -113,7 +113,7 @@ period that is milliseconds into a human friendly text?]]></summary>
     <summary type="markdown"><![CDATA[Although #JavaScript doesn't have a builtin method for randomizing array items,
 there are plenty of ways to do it manually. Unfortunately, people usually go
 after the brute-force solution and it looks somewhat like so:]]></summary>
-    <tags>java script</tags>
+    <tags>javascript</tags>
     <file>/pages/Mighty Hacks/2015-12-11-javascript-randomize-array.md</file>
   </entry>
   <entry>
@@ -147,7 +147,7 @@ interested in how rockets work rather than who gets the ride.]]></summary>
     <summary type="markdown"><![CDATA[A few weeks ago I started a new project, and I had picked [RethinkDB](https://www.rethinkdb.com)
 as its primary database. I'm having some really good time with it and thought
 I should share some of my experiences.]]></summary>
-    <tags>rethinkdb,java script</tags>
+    <tags>rethinkdb,javascript</tags>
     <file>/pages/Silly Thoughts/2015-11-23-why-rethinkdb.md</file>
   </entry>
   <entry>
@@ -518,7 +518,7 @@ that goes through the main steps of the process.]]></summary>
 allegedly, will congregate all the other background job queues under one unified API.
 While that is a totally awesome and long awaited feature, there is one gray area
 issue that you might run into. The arguments that an active job instance might take.]]></summary>
-    <tags>rails,ruby,active job</tags>
+    <tags>rails,ruby,activejob</tags>
     <file>/pages/Mighty Hacks/2015-06-15-marshalized-jobs.md</file>
   </entry>
   <entry>
@@ -643,7 +643,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
     <link href="http://nikolay.rocks/2014-01-30-how-to-make-rubygem-post-instal-hook" />
     <published>2014-01-29T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[So here is a little hack which not everyone knows. Sometimes you need to run some scriptery after your #rubygem was installed, like say generate some templates or so. For example in [under-os](under-os.com) i needed to put the #RubyMotion templates in place. But unfortunately in gemspecs you can only specify `post_install_message`, which doesn't let you do anything really but print a string on the screen.]]></summary>
-    <tags>rubygem,ruby motion,ruby</tags>
+    <tags>rubygem,rubymotion,ruby</tags>
     <file>/pages/Mighty Hacks/2014-01-30-how-to-make-rubygem-post-instal-hook.md</file>
   </entry>
   <entry>
@@ -768,7 +768,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <link href="http://nikolay.rocks/2013-02-09-lovelyio-kicks-ass" />
     <published>2013-02-08T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[In case you're not up to date with what's going on here. [lovely.io](http://lovely.io) is an HTML5/CSS3 centric fork of the [rightjs](http://rightjs.org) project, which is basically a #javascript library that was aiming for speed and novelty.]]></summary>
-    <tags>javascript,lovelyio,right js,rightjs,jquery</tags>
+    <tags>javascript,lovelyio,rightjs,jquery</tags>
     <file>/pages/Mighty Hacks/2013-02-09-lovelyio-kicks-ass.md</file>
   </entry>
   <entry>
@@ -1002,7 +1002,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <link href="http://nikolay.rocks/2012-05-07-getting-help-with-lovelyio" />
     <published>2012-05-06T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[I'd like to share a bit of the [lovely.io](http://lovely.io) practical awesomeness. #LovelyIO is my pet project, on which I've been working for the last year. In simple words, it's a modern, async and #html5 centric version of the [RightJS](http://rightjs.org) library.]]></summary>
-    <tags>lovely io,html5,javascript,html,rightjs</tags>
+    <tags>lovelyio,html5,javascript,html,rightjs</tags>
     <file>/pages/Mighty Hacks/2012-05-07-getting-help-with-lovelyio.md</file>
   </entry>
   <entry>
@@ -1073,7 +1073,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <link href="http://nikolay.rocks/2012-04-23-tailand-phuket-i-ebanyj-styd" />
     <published>2012-04-22T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Эта тема меня немного бесит, поэтому чтобы не возвращаться к ней снова и снова, я напишу один раз и с матерками.]]></summary>
-    <tags>таиланд,пхукет,pa tong,karon,kata</tags>
+    <tags>таиланд,пхукет,patong,karon,kata</tags>
     <file>/pages/В поисках дома/2012-04-23-tailand-phuket-i-ebanyj-styd.md</file>
   </entry>
   <entry>
@@ -1115,7 +1115,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <link href="http://nikolay.rocks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome" />
     <published>2012-04-05T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[This post is more for youngsters and intermediate #JavaScript developers. To get it you'll need to know how #OOP in #JavaScript works and what [prototype-based programming](http://en.wikipedia.org/wiki/Prototype-based_programming) is.]]></summary>
-    <tags>java script,oop,j query,right js</tags>
+    <tags>javascript,oop,jquery,rightjs</tags>
     <file>/pages/Mighty Hacks/2012-04-06-what-are-oo-dom-wrappers-and-why-are-they-so-awesome.md</file>
   </entry>
   <entry>
@@ -1123,7 +1123,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <link href="http://nikolay.rocks/2012-04-05-converting-numbers-to-currency-in-javascript" />
     <published>2012-04-04T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Just so I didn't forget it later on, here is a quick tip #how-to convert numbers into currencies in #JavaScript]]></summary>
-    <tags>how to,java script</tags>
+    <tags>how to,javascript</tags>
     <file>/pages/Mighty Hacks/2012-04-05-converting-numbers-to-currency-in-javascript.md</file>
   </entry>
   <entry>
@@ -1179,7 +1179,7 @@ Have you ever though why people procrastinate so much those days? I mean, someti
     <link href="http://nikolay.rocks/2012-02-12-heroku-cedar-lazy-assets-compilation-fix" />
     <published>2012-02-11T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[In case you're running a #Ruby-on-Rails app with #MongoID on #Heroku and all your attempts to make the lazy assets compilation work are futile, cheer up my friend, coz we've got a proper hack for you!]]></summary>
-    <tags>ruby on rails,mongo id,heroku</tags>
+    <tags>ruby on rails,mongoid,heroku</tags>
     <file>/pages/Mighty Hacks/2012-02-12-heroku-cedar-lazy-assets-compilation-fix.md</file>
   </entry>
   <entry>

@@ -4,9 +4,7 @@ import PagePreview from "./preview";
 class PagesIndex extends React.Component {
   constructor() {
     super();
-
-    this.state    = { size: 8, page: 1 };
-    this.nextPage = this.nextPage.bind(this);
+    this.state = { size: 8, page: 1 };
   }
 
   currentSize() {
@@ -35,7 +33,7 @@ class PagesIndex extends React.Component {
         }
         {
           has_more ?
-            <button onClick={this.nextPage} className="load-more">
+            <button onClick={this.nextPage.bind(this)} className="load-more">
               Load more
             </button> : null
         }
@@ -46,13 +44,13 @@ class PagesIndex extends React.Component {
 
 export default connect(PagesIndex, (store)=> {
   let { category, tag } = store.route.params;
-  let pages = store.pages.sort(function(a,b) {
-    return a.createdAt > b.createdAt ? -1 : 1;
-  });
+  let pages = store.pages.filter(page => page.createdAt);
+
+  pages.sort((a,b) => { return a.createdAt > b.createdAt ? -1 : 1; });
 
   if (category) {
     pages = pages.filter( page => {
-      return page.category == category;
+      return (page.category || "").toLowerCase() == category;
     });
   } else if (tag) {
     pages = pages.filter( page => {
