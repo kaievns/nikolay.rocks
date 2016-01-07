@@ -21,7 +21,7 @@ const Intro = ({ category, tag }) => {
 };
 
 export default connect(Intro, (state)=> {
-  const { category, tag } = state.route.params;
+  const { category, tag } = state;
 
   if (category) {
     return { category: category };

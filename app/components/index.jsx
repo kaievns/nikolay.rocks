@@ -42,20 +42,16 @@ class PagesIndex extends React.Component {
   }
 }
 
-export default connect(PagesIndex, (store)=> {
-  let { category, tag } = store.route.params;
-  let pages = store.pages.filter(page => page.createdAt);
+export default connect(PagesIndex, (state)=> {
+  let { category, tag, pages } = state;
 
-  pages.sort((a,b) => { return a.createdAt > b.createdAt ? -1 : 1; });
+  pages = pages.filter(page => page.createdAt)
+    .sort((a,b) => { return a.createdAt > b.createdAt ? -1 : 1; });
 
   if (category) {
-    pages = pages.filter( page => {
-      return (page.category || "").toLowerCase() == category;
-    });
+    pages = pages.filter( page => page.category === category );
   } else if (tag) {
-    pages = pages.filter( page => {
-      return page.tags.indexOf(tag) !== -1;
-    });
+    pages = pages.filter( page => page.tags.indexOf(tag) !== -1 );
   }
 
   return { pages: pages };

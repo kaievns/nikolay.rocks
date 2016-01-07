@@ -32,7 +32,7 @@ const PageView = ({ page }) => {
 export default connect(PageView, (store, dispatch) => {
   const page = store.page;
 
-  if (!page.text && !page.loading) {
+  if (page && !page.text && !page.loading) {
     page.loading = true;
     dispatch(loadPage(page));
   }
