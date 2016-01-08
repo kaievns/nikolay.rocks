@@ -4,7 +4,8 @@ import PagePreview from "./preview";
 class PagesIndex extends React.Component {
   constructor() {
     super();
-    this.state = { size: 8, page: 1 };
+    this.state    = { size: 8, page: 1 };
+    this.nextPage = this.nextPage.bind(this);
   }
 
   currentSize() {
@@ -33,7 +34,7 @@ class PagesIndex extends React.Component {
         }
         {
           has_more ?
-            <button onClick={this.nextPage.bind(this)} className="load-more">
+            <button onClick={this.nextPage} className="load-more">
               Load more
             </button> : null
         }

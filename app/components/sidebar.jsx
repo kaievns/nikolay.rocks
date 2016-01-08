@@ -20,7 +20,7 @@ class Sidebar extends React.Component {
     const categories = this.props.categories || [];
 
     return (
-      <aside className={this.state ? 'open' : null}>
+      <aside className={this.state.open ? 'open' : null}>
         <a href="#" className="toggler" onClick={this.toggleState}></a>
 
         <section className="about">
