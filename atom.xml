@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-01-02T13:00:00.000Z</updated>
+  <updated>2016-01-07T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Rebuilding Nikolay.Rocks with Redux</title>
+    <link href="http://nikolay.rocks/2016-01-08-nikolay-rocks-redux" />
+    <published>2016-01-07T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[As [you might now](/2015-07-24-how-i-blog-now), this project, `nikolay.rocks`
+is built as a fully static #react app. It doesn't really have any backend. It
+is just a bunch of static files in markdown and a #javascript app that renders
+everything on the front-end. And today I've shipped a major update of the app.]]></summary>
+    <tags>react,javascript,flux,redux</tags>
+    <file>/pages/Rocket Shed/2016-01-08-nikolay-rocks-redux.md</file>
+  </entry>
   <entry>
     <title>Workman, The First Impressions</title>
     <link href="http://nikolay.rocks/2016-01-03-workman-first-impressions" />
