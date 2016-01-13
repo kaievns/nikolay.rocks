@@ -5,8 +5,21 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-01-07T13:00:00.000Z</updated>
+  <updated>2016-01-12T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Connect Webpack Dev Server to Backend API</title>
+    <link href="http://nikolay.rocks/2016-01-13-connect-webpack-to-backend" />
+    <published>2016-01-12T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Webpack is alright. Maybe not exactly my cup of tea, as it has a strong
+configuration flavor, but it does what it supposed to and it does it well. Besides
+if you want all the #react hotness you need #webpack. The problem that I run
+into though, is how on earth do you connect the webpack dev server to the
+backend API server and make them run together? It took a bit of time to figure,
+so maybe this will help someone.]]></summary>
+    <tags>react,webpack</tags>
+    <file>/pages/Mighty Hacks/2016-01-13-connect-webpack-to-backend.md</file>
+  </entry>
   <entry>
     <title>Rebuilding Nikolay.Rocks with Redux</title>
     <link href="http://nikolay.rocks/2016-01-08-nikolay-rocks-redux" />
