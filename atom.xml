@@ -5,8 +5,17 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-01-12T13:00:00.000Z</updated>
+  <updated>2016-01-16T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Founders At Work, by Jessica Livingston</title>
+    <link href="http://nikolay.rocks/2016-01-17-founders-at-work" />
+    <published>2016-01-16T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[This one is a bit old book that was buried in my stack for a while now. Finally
+I got to read it and turned out it is a pretty decent book. Well, at least I
+can see why it is so popular.]]></summary>
+    <file>/pages/Book Worm/2016-01-17-founders-at-work.md</file>
+  </entry>
   <entry>
     <title>Connect Webpack Dev Server to Backend API</title>
     <link href="http://nikolay.rocks/2016-01-13-connect-webpack-to-backend" />
