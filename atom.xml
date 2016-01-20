@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-01-16T13:00:00.000Z</updated>
+  <updated>2016-01-19T13:00:00.000Z</updated>
 
+  <entry>
+    <title>The CarpalX Project</title>
+    <link href="http://nikolay.rocks/2016-01-20-carpalx-project" />
+    <published>2016-01-19T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[While I was digging around on the Internets about the new developments in the
+keyboard layouts optimization area, I inevitably run into the
+[carpalx project](http://mkweb.bcgsc.ca/carpalx/?home), which is one of the
+most solid projects in the field at the moment. They invented a set of metics to,
+well, measure performance of different layouts and stuff. So, I thought I should
+write it down.]]></summary>
+    <file>/pages/Optimal Keyboard/2016-01-20-carpalx-project.md</file>
+  </entry>
   <entry>
     <title>Founders At Work, by Jessica Livingston</title>
     <link href="http://nikolay.rocks/2016-01-17-founders-at-work" />
