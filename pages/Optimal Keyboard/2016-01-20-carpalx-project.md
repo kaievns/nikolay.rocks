@@ -31,15 +31,15 @@ for traveling distance, and yet it has as much penalties as QWERTY. I think
 that is the reason why many don't feel Dvorak to be an overall improvement over
 QWERTY.
 
-After they done the analysis, they obviously tried to create a new layout.
+After they had done the analysis, they obviously tried to create a new layout.
 Which is what it is all about right? After some trials they created a set of
 [fully optimized layouts](http://mkweb.bcgsc.ca/carpalx/?full_optimization),
 which seem to greatly improve on top of both colemak and workman.
 
 I particularly like their QGMLWY layout. Just like Colemak it keeps the ZXCV
 keys in place, but it also has the S and Q where they are on QWERTY. That's great!
-Also, I find it interesting that they had moved all the vows to one side and
-syllables to the other. I bet it helps alot with hands alteration.
+Also, I find it interesting that they had moved all the vowels to one side and
+consonants to the other. I bet it helps a lot with hands alteration.
 
 ![](http://mkweb.bcgsc.ca/carpalx/images/qgmlwy.png)
 
