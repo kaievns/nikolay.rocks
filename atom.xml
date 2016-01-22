@@ -5,8 +5,21 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-01-19T13:00:00.000Z</updated>
+  <updated>2016-01-21T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Testing ExpressJS Apps Like It's 2016</title>
+    <link href="http://nikolay.rocks/2016-01-22-testing-express-async" />
+    <published>2016-01-21T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I guess in 2016 no one needs an introduction into why testing is cool and
+awesome. Many of you wrote plenty of [expressjs](http://expressjs.com) apps
+(or similar). And some of you I'm sure wrote some testing for your JSON API's
+with something like [supertest](https://github.com/visionmedia/supertest). Today
+though I'd like to show how to make it so much betterer in the modern ES7
+async/await environment.]]></summary>
+    <tags>expressjs,supertest</tags>
+    <file>/pages/Mighty Hacks/2016-01-22-testing-express-async.md</file>
+  </entry>
   <entry>
     <title>The CarpalX Project</title>
     <link href="http://nikolay.rocks/2016-01-20-carpalx-project" />
