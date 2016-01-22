@@ -8,7 +8,7 @@ though I'd like to show how to make it so much betterer in the modern ES7
 async/await environment.
 
 I guess, I don't need to talk about the merits of the `async/await` functions
-in ES7. Developers are migrating there at mass, and our tools, including the
+in ES7 either. Developers are migrating there at mass, and our tools, including the
 testing environment, migrate there as well. The cool thing about it is that
 anything that is promises aware can be used with async/await almost right away.
 For example [mocha.js](https://mochajs.org) supports them out of box:
@@ -54,8 +54,8 @@ async/await business to say create database models before calling the API, and
 you end up in the world of pain and ugliness.
 
 Not to worry though. Everything you need to make your testing live enjoyable is
-already here, you just need wrap the `supertest` stuff into a promise! For
-example create a `helper.js` file somewhere in your testing environment that
+already here. You just need to wrap the `supertest` stuff into a promise! For
+example, create a `helper.js` file somewhere in your testing environment that
 has something like this:
 
 ```js
@@ -95,7 +95,7 @@ checking whether it had failed or not, and resolve/reject the promise based on
 that.
 
 Now, when you have this fancy helper, you can write your app testing code
-in async way like it is 2016!
+in an async way like it is 2016!
 
 ```js
 import { expect } from "chai";
