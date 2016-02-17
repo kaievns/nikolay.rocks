@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-02-12T13:00:00.000Z</updated>
+  <updated>2016-02-16T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Getting Better</title>
+    <link href="http://nikolay.rocks/2016-02-17-getting-better" />
+    <published>2016-02-16T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[A good session today. For the last couple of weeks we went through the low point
+and now the morning swells are finally starting to pick up. It was a bit windy
+today, so the norther part of Manly was a mess, but the southern one is sheltered
+from the winds so it was quite good actually.]]></summary>
+    <file>/pages/Surfing Journal/2016-02-17-getting-better.md</file>
+  </entry>
   <entry>
     <title>How To Split a Git Repo In Two</title>
     <link href="http://nikolay.rocks/2016-02-13-split-git-repo" />
