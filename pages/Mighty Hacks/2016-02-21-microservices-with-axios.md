@@ -31,7 +31,7 @@ you need to authenticate requests between services.
 ## With Authenticated Services
 
 Before you can make any calls to the chunky bacon factory, you need to get an
-authentication token from an authentication service. And here is what I wanted
+authentication token from an authentication service. And this is what I wanted
 to show in this post.
 
 In case of [expressjs](http://expressjs.com), the best way to deal with the
@@ -71,7 +71,7 @@ export function authenticate(req, res, next) {
       req.axios = axios.create({
         headers: {Authtoken: auth.token}
       });
-      next(); // <- handling over to the next middleware
+      next(); // <- handing over to the next middleware
     })
     .catch(error => {
       res.status(401).json({error: "authentication failed"});
