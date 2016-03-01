@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-02-25T13:00:00.000Z</updated>
+  <updated>2016-02-29T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Keyboard: Hand Movement Analysis</title>
+    <link href="http://nikolay.rocks/2016-03-01-measuring-hand-movements" />
+    <published>2016-02-29T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[The last few days I've been busy trying to build an accurate model of hand movements
+for my keyboard analysis program. The reason why I didn't use the existing ones
+is that the results I see on Workman/Colemak/CorpalX project websites are a bit
+conflicting. Not just between each other, but with my personal experience as
+well. Hence, I decided to build my own model.]]></summary>
+    <file>/pages/Optimal Keyboard/2016-03-01-measuring-hand-movements.md</file>
+  </entry>
   <entry>
     <title>Keyboard: Beyond the Rockstar Layout</title>
     <link href="http://nikolay.rocks/2016-02-26-beyond-rockstar" />
