@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-02-29T13:00:00.000Z</updated>
+  <updated>2016-03-04T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Over The Break</title>
+    <link href="http://nikolay.rocks/2016-03-05-over-the-break" />
+    <published>2016-03-04T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Today I managed to get over the break. Which is awesome! I tried to get there the
+last time and got just smacked around. After that I went home and watched a whole
+bunch of videos on YouTube. It's almost scary how much stuff you can learn from
+YouTube those days. And it pays off!]]></summary>
+    <file>/pages/Surfing Journal/2016-03-05-over-the-break.md</file>
+  </entry>
   <entry>
     <title>Keyboard: Hand Movement Analysis</title>
     <link href="http://nikolay.rocks/2016-03-01-measuring-hand-movements" />
