@@ -5,8 +5,16 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-03-11T13:00:00.000Z</updated>
+  <updated>2016-03-13T13:00:00.000Z</updated>
 
+  <entry>
+    <title>The Fear and Greed in Software Development</title>
+    <link href="http://nikolay.rocks/2016-03-14-fear-and-greed" />
+    <published>2016-03-13T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Just a fair warning. Some of this things might make you uncomfortable. Just take
+a deep breath, count to 10 and remember that this is not about you.]]></summary>
+    <file>/pages/Silly Thoughts/2016-03-14-fear-and-greed.md</file>
+  </entry>
   <entry>
     <title>Surfing: Get In Line</title>
     <link href="http://nikolay.rocks/2016-03-12-get-in-line" />
