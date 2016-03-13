@@ -16,12 +16,12 @@ so on. Now I got to the hard part, catching the actual real waves.
 
 Some time ago, a friend of mine told me that surfing is one of the hardest
 sports to learn. I was cocky back then, now I see what he meant. It is really
-hard to figure on our own. It takes a lot of practice and the long repetition
+hard to figure on my own. It takes a lot of practice and the long repetition
 cycle doesn't help much.
 
 Although, I'm starting to see patterns in swell, and a structure in the whole
 processes starts to emerge. But, the number of moving parts is just overwhelming
-at the beginning. So, I do what I do get best: I get smacked around a lot.
+at the beginning. So, I do what I do best: I get smacked around a lot.
 
 Sometimes I get lucky and things click and I get somewhat of a ride. But, mostly,
 I either miss it or I get washed. I'm not really in control of what's happening.

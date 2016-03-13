@@ -1,6 +1,6 @@
 # The Fear and Greed in Software Development
 
-Just a fair warning. Some of this things might make you uncomfortable. Just take
+Just a fair warning. Some of this text might make you uncomfortable. Just take
 a deep breath, count to 10 and remember that this is not about you.
 
 ## Assets and Liabilities
