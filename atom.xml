@@ -8,13 +8,13 @@
   <updated>2016-04-03T14:00:00.000Z</updated>
 
   <entry>
-    <title>How To Stop Babel And Start NodeJS</title>
+    <title>How To Stop Babeling And Start Enjoying NodeJS</title>
     <link href="http://nikolay.rocks/2016-04-04-how-to-stop-babel" />
     <published>2016-04-03T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Like many of you, I had also been bitten by the [babeljs](https://babeljs.io)
 bug. The promise is actually pretty neat: have all the futuristic twinky dinkies
 right now and deploy them anywhere. Just jack in a `postinstall` hook and it
-will be all magic and unicorns from now on! Destructurning, async/await, default
+will be all magic and unicorns from there. Destructurning, async/await, default
 parameters all the really nice things will be just waiting to be used for good
 and awesome.]]></summary>
     <tags>nodejs,javascript,es6,expressjs</tags>

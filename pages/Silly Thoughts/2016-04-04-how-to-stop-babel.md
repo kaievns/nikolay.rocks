@@ -1,14 +1,14 @@
-# How To Stop Babel And Start NodeJS
+# How To Stop Babeling And Start Enjoying NodeJS
 
 Like many of you, I had also been bitten by the [babeljs](https://babeljs.io)
 bug. The promise is actually pretty neat: have all the futuristic twinky dinkies
 right now and deploy them anywhere. Just jack in a `postinstall` hook and it
-will be all magic and unicorns from now on! Destructurning, async/await, default
+will be all magic and unicorns from there. Destructurning, async/await, default
 parameters all the really nice things will be just waiting to be used for good
 and awesome.
 
 The truth is, I kind of grew cold to it. Babel is great and a really impressive
-piece of work, but, I feel like it robs me of what I really liked about #nodejs;
+piece of work, but, I feel like it robs me of what I really like about #nodejs;
 its simplicity and nimbleness. I always loved how fast node is. How easy it
 is to prototype with. You just `npm init`, throw couple of packages together
 and you have a thing.
@@ -67,7 +67,7 @@ natively in C. So, it is much faster in node than in babel.
 ## Default & Rest Params
 
 Being someone who flips between ruby and javascript all the time, I really find
-the default and rest params syntax useful. So, I really liked it that babel allows
+the default and rest params syntax useful. I liked it very much that babel allows
 me to be in a similar mindset between languages.
 
 Well, actually, there are `--harmony_default_parameters` and `--harmony_rest_parameters`
@@ -81,8 +81,8 @@ implementation to the future versions than what is in babel.
 ## Spread Operators
 
 I really like spreads. Actually, recently, I become somewhat of an amateur
-artisan peanut butter maker. I freshly roast my peanuts, then use raw, unprocessed
-honey and himalayan salt in the process. So, good... (see what i did there?)
+artisan peanut butter maker. I freshly roast my peanuts, then use raw unprocessed
+honey and himalayan salt. So, good... (see what i did there?)
 
 Either way, you can turn on native array spreads with the `--harmony_spread_arrays`
 flag. As the name implies, at the moment, it only does arrays. But, you know what?
@@ -180,7 +180,7 @@ a good tests coverage in all of them to back me up. But, I was surprised how
 trivial it was and how much faster and more pleasant the projects become after
 the transition.
 
-I know I'm off the hook and I'm not doing back. I can have practically all the
+I know I'm off the hook now and I'm not doing back. I can have practically all the
 same things I have with babel in a fast native form directly in node. My
 dependencies list shrunk several times. Deployment become trivial — it's just
 the good old `npm start` now.
@@ -188,9 +188,12 @@ the good old `npm start` now.
 One thing though. All those harmonly flags is a bit of a drag to carry around. I
 really wish node had some sort of a `.noderc` file where I could specify all those
 flags in one place and then just call plain `node blah.js`. But, still it is
-a small price to pay for the returned agility and nimbliness of a pure nodejs
+a small price to pay for the returned agility and nimbleness of a pure nodejs
 project.
 
-And is pretty much all I have to say on the subject.
+And that is pretty much all I have to say on the subject.
 
 Love & kisses. Nikolay
+
+PS: I'm really stocked about Node 6. Apparently a good half of the features that
+I need will graduate to be production ready. Plus thar be Proxies!

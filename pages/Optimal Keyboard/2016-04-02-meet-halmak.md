@@ -102,7 +102,7 @@ marginal improvements from this point.
 To be completely honest, I was a bit surprised by the results. So, I went and
 verified them with a third party
 [keyboard layout analyzer](http://patorjk.com/keyboard-layout-analyzer/#/main)
-and have very close results from them as well:
+and have very close outcomes from them as well:
 
 ![](images/2016/04/halmak-results.png)
 
@@ -110,7 +110,7 @@ They obviously have a different model. They focused on the old distance + same
 finger/hand usage overheads system, so the scale is a bit different. But, never
 the less, `Halmak` showed on top in there as well.
 
-__NOTE__: if you decide to give a go as well, please use some more serious data
+__NOTE__: if you decide to give it a go as well, please use some more serious data
 source than they provide. A bunch of articles from NYT would be a good start.
 
 ## The Bottom Line
