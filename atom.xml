@@ -5,8 +5,21 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-01T13:00:00.000Z</updated>
+  <updated>2016-04-03T14:00:00.000Z</updated>
 
+  <entry>
+    <title>How To Stop Babel And Start NodeJS</title>
+    <link href="http://nikolay.rocks/2016-04-04-how-to-stop-babel" />
+    <published>2016-04-03T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Like many of you, I had also been bitten by the [babeljs](https://babeljs.io)
+bug. The promise is actually pretty neat: have all the futuristic twinky dinkies
+right now and deploy them anywhere. Just jack in a `postinstall` hook and it
+will be all magic and unicorns from now on! Destructurning, async/await, default
+parameters all the really nice things will be just waiting to be used for good
+and awesome.]]></summary>
+    <tags>nodejs,javascript,es6,expressjs</tags>
+    <file>/pages/Silly Thoughts/2016-04-04-how-to-stop-babel.md</file>
+  </entry>
   <entry>
     <title>Keyboard: Meet the Halmak</title>
     <link href="http://nikolay.rocks/2016-04-02-meet-halmak" />
