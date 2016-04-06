@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-03T14:00:00.000Z</updated>
+  <updated>2016-04-05T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Embracing The Kook</title>
+    <link href="http://nikolay.rocks/2016-04-06-embracing-the-kook" />
+    <published>2016-04-05T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[In surfing, kook is a term for a beginner. It is not a neutral term though and
+usually comes with "fucking" in front of it. Surfing can be exhilarating and a
+dangerous at the same time. An explosive mix. Add some idiot that gets in your
+way and you get a kook.]]></summary>
+    <file>/pages/Surfing Journal/2016-04-06-embracing-the-kook.md</file>
+  </entry>
   <entry>
     <title>How To Stop Babeling And Start Enjoying NodeJS</title>
     <link href="http://nikolay.rocks/2016-04-04-how-to-stop-babel" />
