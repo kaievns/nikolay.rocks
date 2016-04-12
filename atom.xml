@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-05T14:00:00.000Z</updated>
+  <updated>2016-04-11T14:00:00.000Z</updated>
 
+  <entry>
+    <title>You're Not Paid To Write Code</title>
+    <link href="http://nikolay.rocks/2016-04-12-coffee-code-machine" />
+    <published>2016-04-11T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[There is this anecdotal story about Ray Kroc, the founder of the McDonald. Once
+he gave a speech to a bunch of students about business strategies and then he
+asked them: "which business do you think i'm in?". At some point someone answered:
+"flipping burgers, obviously". To which he said: "wrong! i'm in the real-estate
+business".]]></summary>
+    <file>/pages/Silly Thoughts/2016-04-12-coffee-code-machine.md</file>
+  </entry>
   <entry>
     <title>Surfing: Embracing The Kook</title>
     <link href="http://nikolay.rocks/2016-04-06-embracing-the-kook" />
