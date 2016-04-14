@@ -107,17 +107,17 @@ into `function *() { yield }`. You can have exactly all the same results right
 now with generators and `yields`. It is mind bogglingly fast and production
 ready.
 
-More of that, most of high profile libraries out there already support generators.
-Here for example #expressjs:
+You can use generators with expresjs through the `co.wrap` function:
 
 ```js
-app.get("/users/:id", function *(req, res) {
+app.get("/users/:id", co.wrap(function *(req, res) {
   const user = yield User.find(req.params.id);
   res.json(user);
-});
+}));
 ```
 
-Here is mochajs:
+And mochajs can be used with generators directly when combined with the excellent
+[co-mocha](https://github.com/blakeembrey/co-mocha) package:
 
 ```js
 it("allows to access a user's data", function *() {
@@ -128,20 +128,7 @@ it("allows to access a user's data", function *() {
 });
 ```
 
-It works right now! More of that, unlike `async/await`, the modern implementation
-of generators works with both promises and node style callbacks. Which means
-that you don't need to drag around bluebird and promisify everything like a
-monkey:
-
-```js
-const fs = require("fs");
-const User = require("models/user");
-
-const data = yield fs.readFile("/blah"); // node style callback
-const user = yield User.find(123);  // a promise from some ORM
-```
-
-More of that, yields are actually so much betterer than promises when things
+Moreover, yields are actually so much betterer than promises when things
 come to errors handling. Raise your hand if you were in a situation where
 someone forgot to add a `.catch` section to a promise and all errors went unnoticed?
 Yeah, I think we've all been there. Doesn't happen with generators.
@@ -154,6 +141,16 @@ It is a lot of fun.
 Just open your heart to generators, it will worth your while. After all Promises
 don't go anywhere, you can mix and match them with generators too and have best
 of both worlds. But, you don't need async/await to get there.
+
+*UPDATE:* turned out some of you actually read this stuff I write here. So, I
+had some really great conversations in the last few days about generators and
+async/await. Yes, you're right, generators are generally considered the smaller
+uglier brother of async/await. Yes, generators were intended for async iteration
+and we just abuse them for control flow. And yes, I fucked up with `yield fs.readFile`
+a bit, turned out you actually do need to thunkify or promisify it. I really
+appreciate that you pointed it out, I have learned things. But, my point still
+stands. You can have the same style async control flow with generators as you
+would have with async/await and babel.
 
 ## ES6 Module Imports/Exports
 
