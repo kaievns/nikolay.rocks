@@ -5,8 +5,17 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-11T14:00:00.000Z</updated>
+  <updated>2016-04-19T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Back In The Line Up</title>
+    <link href="http://nikolay.rocks/2016-04-20-back-on-the-beach" />
+    <published>2016-04-19T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[The summer is over and the seasonal cold and flue wave is in the town. So, I've
+been lucky and caught some cold myself as well. Was sick the last week. Missed
+it a lot. Now I'm back to the morning line up. And it feels good.]]></summary>
+    <file>/pages/Surfing Journal/2016-04-20-back-on-the-beach.md</file>
+  </entry>
   <entry>
     <title>You're Not Paid To Write Code</title>
     <link href="http://nikolay.rocks/2016-04-12-coffee-code-machine" />
@@ -38,7 +47,7 @@ right now and deploy them anywhere. Just jack in a `postinstall` hook and it
 will be all magic and unicorns from there. Destructurning, async/await, default
 parameters all the really nice things will be just waiting to be used for good
 and awesome.]]></summary>
-    <tags>nodejs,javascript,es6,expressjs</tags>
+    <tags>nodejs,javascript,es6</tags>
     <file>/pages/Silly Thoughts/2016-04-04-how-to-stop-babel.md</file>
   </entry>
   <entry>
