@@ -5,8 +5,31 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-19T14:00:00.000Z</updated>
+  <updated>2016-04-26T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: It's All About Timing</title>
+    <link href="http://nikolay.rocks/2016-04-27-timing" />
+    <published>2016-04-26T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Surfing is a bit weird in this sense. It's all about timing. And it is not just
+about timing the waves. You need to time your schedule tightly, wake up at 6:45,
+15 minutes get your shit together and pack a bag. Run to the car and hit the
+road before the morning traffic kicks in. Get to the shore before all the good
+parking lots are taken. Quickly go into the water before crowds come in. Time
+your paddle out to fit between sets. And all that before you even see a wave.]]></summary>
+    <file>/pages/Surfing Journal/2016-04-27-timing.md</file>
+  </entry>
+  <entry>
+    <title>Switching From Ruby To 100% JavaScript, 6 Months Later</title>
+    <link href="http://nikolay.rocks/2016-04-26-six-months-on-javascript" />
+    <published>2016-04-25T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, interestingly enough, it was roughly 6 months since I wrote the last line of
+code in #ruby. As my job changed, I decided to go 100% #javascript for a change,
+and see what happens. And, as I reached this milestone, I thought this might be
+a good opportunity to reflect on the decision.]]></summary>
+    <tags>ruby,javascript</tags>
+    <file>/pages/Silly Thoughts/2016-04-26-six-months-on-javascript.md</file>
+  </entry>
   <entry>
     <title>Surfing: Back In The Line Up</title>
     <link href="http://nikolay.rocks/2016-04-20-back-on-the-beach" />
