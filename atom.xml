@@ -5,8 +5,31 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-04-26T14:00:00.000Z</updated>
+  <updated>2016-05-06T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: The City Is On Fire</title>
+    <link href="http://nikolay.rocks/2016-05-07-city-on-fire" />
+    <published>2016-05-06T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I woke up early today because the air smelled like bacon. I literally had a bacon
+egg roll in my dream. Turned out bushes are on fire again and the whole city
+was filled with smoke. Time to pack my stuff quickly and make a run for the beach.
+Like there is no tomorrow.]]></summary>
+    <file>/pages/Surfing Journal/2016-05-07-city-on-fire.md</file>
+  </entry>
+  <entry>
+    <title>A Case For ES6 Generators</title>
+    <link href="http://nikolay.rocks/2016-05-03-case-for-generators" />
+    <published>2016-05-02T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[For the last couple of months I was slowly converting all my #nodejs projects
+from babeljs to pure #javascript. I also [was advocating](/2016-04-04-how-to-stop-babel)
+other humans to do the same thing. What's interesting is that
+[ES6 generators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/function*)
+kept coming back into discussions. So, I thought I'd write about it and present a
+case in defense of generators.]]></summary>
+    <tags>nodejs,javascript</tags>
+    <file>/pages/Silly Thoughts/2016-05-03-case-for-generators.md</file>
+  </entry>
   <entry>
     <title>Surfing: It's All About Timing</title>
     <link href="http://nikolay.rocks/2016-04-27-timing" />

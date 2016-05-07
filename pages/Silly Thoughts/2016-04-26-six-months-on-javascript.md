@@ -115,13 +115,13 @@ Ok, this was already a pretty long rant. So, I'll wrap it up and leave you with
 this thought. As a developer, how much time do you actually spend writing code?
 I for one feel like it's roughly a 1/6 of my time; and I'm still a very active
 developer. So, considering that most programming languages are pretty much Turing
-complete and used in a very similar way, who much impact do you think a different
+complete and used in a very similar way, how much impact do you think a different
 programming language will make on your overall performance as a developer, once
 you master it? 2-5% I reckon?
 
 So, wouldn't it be a smarter approach to think how much everyday routine things
 a language solves for you, rather than fap on it's pure functional features? Not
-like I think that there is something wrong pure functional features, after all
+like I think that there is something wrong with pure functional features, after all
 I'm a nerd, just like you. I just want to make you understand why I think JavaScript,
 although being a terrible language, is the most practical option for a full stack
 developer at this given moment in time.

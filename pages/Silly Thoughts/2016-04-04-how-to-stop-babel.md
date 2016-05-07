@@ -107,13 +107,14 @@ into `function *() { yield }`. You can have exactly all the same results right
 now with generators and `yields`. It is mind bogglingly fast and production
 ready.
 
-You can use generators with expresjs through the `co.wrap` function:
+You can use generators with expresjs by pluging in the
+[express-yields](https://www.npmjs.com/package/express-yields) package:
 
 ```js
-app.get("/users/:id", co.wrap(function *(req, res) {
-  const user = yield User.find(req.params.id);
+app.get("/users/:id", function *(req, res) {
+  const user = yield User.find(req.params.id); // <- some Promise from an ORM
   res.json(user);
-}));
+});
 ```
 
 And mochajs can be used with generators directly when combined with the excellent
@@ -141,16 +142,6 @@ It is a lot of fun.
 Just open your heart to generators, it will worth your while. After all Promises
 don't go anywhere, you can mix and match them with generators too and have best
 of both worlds. But, you don't need async/await to get there.
-
-*UPDATE:* turned out some of you actually read this stuff I write here. So, I
-had some really great conversations in the last few days about generators and
-async/await. Yes, you're right, generators are generally considered the smaller
-uglier brother of async/await. Yes, generators were intended for async iteration
-and we just abuse them for control flow. And yes, I fucked up with `yield fs.readFile`
-a bit, turned out you actually do need to thunkify or promisify it. I really
-appreciate that you pointed it out, I have learned things. But, my point still
-stands. You can have the same style async control flow with generators as you
-would have with async/await and babel.
 
 ## ES6 Module Imports/Exports
 
