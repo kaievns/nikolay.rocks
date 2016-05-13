@@ -40,7 +40,7 @@ function* thing() {
 }
 ```
 Generator is a function that will pause itself at `yield` calls, wait for an
-operation to be completed and then resume it's operation.
+operation to be completed and then resume its course.
 
 Where the whole confusion about generators come from is that you can't just call
 it as a normal function. When you call a generator it returns _an iterator_.
@@ -101,7 +101,7 @@ Doesn't it look like this?:
 const promise = something_that_handles_callback(
   callback(callback());
 );
-promise.handle(finall_callback());
+promise.handle(final_callback());
 ```
 The way I look at it, a promise is an external handler for your _callback_. The
 core logic is described in the callback function and a promise is an interface
@@ -114,7 +114,7 @@ thing().then(() => { ... });
 ```
 
 Second, _"generators are actually for iteration as they return iterators"_. I can
-certainly see how generators can be seen this way. But, I think that is just a
+certainly understand how generators could be seen this way. But, I think that is just a
 surface and the problem is a bit deeper than that. The core issue here is the
 nature of JavaScript itself.
 
@@ -122,7 +122,7 @@ I actually think that generators is a really smart solution for the async contro
 flow issue in JavaScript. Yes, a generator returns an iterator, but that is a
 necessity due to JavaScript's single threaded nature.
 
-If you have a single thread and you have a pice of logic that needs to stop and
+If you have a single thread and you have a piece of logic that needs to stop and
 resume several times during it's course, it only makes sense to make it an iterator
 so that something else could iterate through those stops and have an opportunity
 to handle each result individually.
@@ -195,8 +195,8 @@ describe('JSON API GET /thing', () => {
   it('must return correct data', function* () {
     const response = yield api.get('/thing');
 
-    expect(result.status).to.eql(200);
-    expect(result.body).to.eql(THE_RIGHT_THING);
+    expect(response.status).to.eql(200);
+    expect(response.body).to.eql(THE_RIGHT_THING);
   });
 });
 ```
