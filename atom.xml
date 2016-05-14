@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-05-06T14:00:00.000Z</updated>
+  <updated>2016-05-13T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Technical Debt vs. Technical Disappointment</title>
+    <link href="http://nikolay.rocks/2016-05-14-debt-vs-disappointment" />
+    <published>2016-05-13T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[For the last 6 month, a friend of mine and I were working on a project that
+focuses on measuring efficiency of software development teams. We've spent
+endless number of days contemplating about the principles that make a great dev
+team. We also talked to a good number of people about those ideas.]]></summary>
+    <file>/pages/Rocket Shed/2016-05-14-debt-vs-disappointment.md</file>
+  </entry>
   <entry>
     <title>Surfing: The City Is On Fire</title>
     <link href="http://nikolay.rocks/2016-05-07-city-on-fire" />
