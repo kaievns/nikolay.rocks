@@ -90,6 +90,11 @@ body {
       position: relative;
       margin-top: 18%;
       line-height: 1.4em;
+
+      @media (max-width: @phone-width) {
+        font-size: 3em;
+      }
+
       a {
         background-image: linear-gradient(0deg, white, white);
       }
@@ -259,8 +264,9 @@ article.pages {
     text-align: center;
 
     @media (max-width: @phone-width) {
-      margin-left: -1em;
-      width: ~"calc(100% + 2em)";
+      margin-left: -2em;
+      transform: translateX(1em);
+      width: 100vw;
     }
 
     img {
@@ -274,13 +280,16 @@ article.pages {
   }
 
   pre {
+    position: relative;
     code {
       border-radius: 0;
+      white-space: pre;
     }
 
     @media (max-width: @phone-width) {
-      margin-left: -1em;
-      width: ~"calc(100% + 2em)";
+      margin-left: -2em;
+      transform: translateX(1em);
+      width: 100vw;
 
       code {
         padding-left: 1.2em;
@@ -304,8 +313,9 @@ article.pages {
     }
 
     @media (max-width: @phone-width) {
-      margin-left: -1em;
-      width: ~"calc(100% + 2em)";
+      margin-left: -2em;
+      transform: translateX(1em);
+      width: 100vw;
     }
   }
 
