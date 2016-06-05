@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-05-26T14:00:00.000Z</updated>
+  <updated>2016-06-04T14:00:00.000Z</updated>
 
+  <entry>
+    <title>How To Add RethinkDB Support On CircleCI</title>
+    <link href="http://nikolay.rocks/2016-06-05-rethinkdb-circleci" />
+    <published>2016-06-04T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I've been shopping around for a CI pipeline recently. I was mostly a TravisCI
+guy all this time. But, when it came to running my own private repos in a CI,
+$130/month vs. $0/month makes a lot of sense. So, I've decided to give
+[CircleCI](https://circleci.com) a shot.]]></summary>
+    <tags>rethinkdb,circleci,nodejs</tags>
+    <file>/pages/Mighty Hacks/2016-06-05-rethinkdb-circleci.md</file>
+  </entry>
   <entry>
     <title>Surfing: Existential Crisis</title>
     <link href="http://nikolay.rocks/2016-05-27-existential-crisis" />
