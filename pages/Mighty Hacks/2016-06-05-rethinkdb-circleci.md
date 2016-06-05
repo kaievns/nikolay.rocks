@@ -15,7 +15,7 @@ a service. But, it seems that they had thought it through and allow you to insta
 any software via `apt-get` before a test run. So, to add RethinkDB, you simply
 need to add the following to your `circle.yml` file:
 
-```yml
+```bash
 dependencies:
   pre:
     - source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list
