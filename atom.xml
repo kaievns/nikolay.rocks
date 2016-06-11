@@ -5,8 +5,17 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-06-04T14:00:00.000Z</updated>
+  <updated>2016-06-10T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: The Back Foot</title>
+    <link href="http://nikolay.rocks/2016-06-11-back-foot" />
+    <published>2016-06-10T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[It is officially winter now. We were spared this year and is still quite warm;
+13-15 degrees in the morning. Not that many sunny days though. So, now I need
+to plan my days carefully, take what I can and get the most out of them.]]></summary>
+    <file>/pages/Surfing Journal/2016-06-11-back-foot.md</file>
+  </entry>
   <entry>
     <title>How To Add RethinkDB Support On CircleCI</title>
     <link href="http://nikolay.rocks/2016-06-05-rethinkdb-circleci" />
