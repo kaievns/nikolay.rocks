@@ -17,6 +17,14 @@ to plan my days carefully, take what I can and get the most out of them.]]></sum
     <file>/pages/Surfing Journal/2016-06-11-back-foot.md</file>
   </entry>
   <entry>
+    <title>Book: Mythical Man-Month</title>
+    <link href="http://nikolay.rocks/2016-06-10-mythical-manmonth" />
+    <published>2016-06-09T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I keep forgetting to write about this book. So, I'll just put down some notes
+here, because the book is kind of good and worth mentioning.]]></summary>
+    <file>/pages/Book Worm/2016-06-10-mythical-manmonth.md</file>
+  </entry>
+  <entry>
     <title>How To Add RethinkDB Support On CircleCI</title>
     <link href="http://nikolay.rocks/2016-06-05-rethinkdb-circleci" />
     <published>2016-06-04T14:00:00.000Z</published>
