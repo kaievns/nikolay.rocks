@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-09-08T14:00:00.000Z</updated>
+  <updated>2016-09-19T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Dockerizing NodeJS App Like It Is 2016</title>
+    <link href="http://nikolay.rocks/2016-09-20-dockerizing-nodejs" />
+    <published>2016-09-19T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, obviously #docker is not a big news anymore. But, in the last couple of years
+it was through quite few iterations; and the way it's cool to do it in 2016 is
+not quite the same as it was. So, here is how I dockerize #nodejs apps those days
+so that they'd scale and not cause too much pain in dev.]]></summary>
+    <tags>docker,nodejs,mongodb</tags>
+    <file>/pages/Mighty Hacks/2016-09-20-dockerizing-nodejs.md</file>
+  </entry>
   <entry>
     <title>Responsive Charts With d3 and ReactJS</title>
     <link href="http://nikolay.rocks/2016-09-09-responsive-charts" />
