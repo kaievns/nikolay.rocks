@@ -5,8 +5,16 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-09-19T14:00:00.000Z</updated>
+  <updated>2016-09-21T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Going Head First</title>
+    <link href="http://nikolay.rocks/2016-09-22-head-first" />
+    <published>2016-09-21T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[The thing I love about learning surfing is that it's quite often seemingly illogical.
+Sometimes you need to do things that go against your expectations and gut feelings.]]></summary>
+    <file>/pages/Surfing Journal/2016-09-22-head-first.md</file>
+  </entry>
   <entry>
     <title>Dockerizing NodeJS App Like It Is 2016</title>
     <link href="http://nikolay.rocks/2016-09-20-dockerizing-nodejs" />
