@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-09-21T14:00:00.000Z</updated>
+  <updated>2016-09-27T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Keyboard: Hands Are Weird</title>
+    <link href="http://nikolay.rocks/2016-09-28-hands-are-weird" />
+    <published>2016-09-27T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, I didn't have any updates in this project for three months. I guess life
+was pretty busy lately. But, no update doesn't mean there wasn't anything
+happening. I actually have some new exciting developments to write about.]]></summary>
+    <tags>keyboard,halmak</tags>
+    <file>/pages/Optimal Keyboard/2016-09-28-hands-are-weird.md</file>
+  </entry>
   <entry>
     <title>Surfing: Going Head First</title>
     <link href="http://nikolay.rocks/2016-09-22-head-first" />
