@@ -25,11 +25,3 @@ important things.
 Well, there is a book out there that does a very god job at explaining the history
 of human thought, from Democritus to Sartre. It will get your head spinning in
 no time!
-
-PS: I still don't understand why they still consider Nietzsche a philosopher. I
-think he was just a giant loud a-hole who didn't really add anything useful to
-philosophy. Most of his work is just an exaggerated copypaste of existing at the
-time thoughts.
-
-PPS: Camus and Sartre make much more sense to me now. I wish I had time to
-re-read what they had to say all over again.
