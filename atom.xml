@@ -5,8 +5,18 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-10-11T13:00:00.000Z</updated>
+  <updated>2016-10-21T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Keyboard: The Reality Check</title>
+    <link href="http://nikolay.rocks/2016-10-22-keyboard-analytics" />
+    <published>2016-10-21T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, the last few weeks were actually fun and I've made some good progress on the
+project:
+
+![](/images/2016/10/hanger.jpg)]]></summary>
+    <file>/pages/Optimal Keyboard/2016-10-22-keyboard-analytics.md</file>
+  </entry>
   <entry>
     <title>Book: Sophie's World</title>
     <link href="http://nikolay.rocks/2016-10-12-sophies-world" />
