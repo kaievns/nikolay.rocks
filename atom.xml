@@ -5,8 +5,16 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-10-21T13:00:00.000Z</updated>
+  <updated>2016-12-09T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Surfing: Hitting The Plateau</title>
+    <link href="http://nikolay.rocks/2016-12-10-the-plateau" />
+    <published>2016-12-09T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I haven't been writing here much lately. I was going back and fourth about it,
+but I think I've hit a plateau in my surfing progress.]]></summary>
+    <file>/pages/Surfing Journal/2016-12-10-the-plateau.md</file>
+  </entry>
   <entry>
     <title>Keyboard: The Reality Check</title>
     <link href="http://nikolay.rocks/2016-10-22-keyboard-analytics" />
