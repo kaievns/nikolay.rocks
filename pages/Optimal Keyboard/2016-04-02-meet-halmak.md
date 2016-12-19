@@ -4,7 +4,7 @@ Ladies and gentlemen, we officially have a winner! Please meet
 [Halmak](https://github.com/MadRabbit/halmak) — the most efficient keyboard
 layout on this planet:
 
-![](https://github.com/MadRabbit/halmak/raw/master/screenshot.png)
+![](https://github.com/MadRabbit/halmak/blob/0a0e998067d7e5d63eb1f32ac4a0c1baf7b4e0c6/screenshot.png?raw=true)
 
 I guess there is no point in repeating all the whys and whats in here. So, I'll
 just jump directly to the final results and comparisons.
