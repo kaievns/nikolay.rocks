@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2016-12-25T13:00:00.000Z</updated>
+  <updated>2016-12-29T13:00:00.000Z</updated>
 
+  <entry>
+    <title>Halmak The Preso</title>
+    <link href="http://nikolay.rocks/2016-12-30-halmak-preso" />
+    <published>2016-12-29T13:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[So, ladies and gentlemen, this is it. As the finale of this year long journey,
+I've recorded a small presentation of the #Halmak keyboard layout, which features
+a more in depth analysis of the final result. Why Halmak the way it is and what
+it all means.]]></summary>
+    <tags>halmak</tags>
+    <file>/pages/Optimal Keyboard/2016-12-30-halmak-preso.md</file>
+  </entry>
   <entry>
     <title>Surfing: The New Board</title>
     <link href="http://nikolay.rocks/2016-12-26-the-new-board" />
