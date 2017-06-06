@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2017-04-30T14:00:00.000Z</updated>
+  <updated>2017-06-05T14:00:00.000Z</updated>
 
+  <entry>
+    <title>The Myth of an Open-Source Hero</title>
+    <link href="http://nikolay.rocks/2017-06-06-mythical-contributors" />
+    <published>2017-06-05T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[This article is a reflection on the interaction i had with some people on the
+Internet about the open-source culture. I'm amending the real names, because
+a) i don't want to personalize the problem and b) because it's not about specific
+people, it's a more systemic problem that we have in our industry. And i would
+like to talk about it.]]></summary>
+    <file>/pages/Silly Thoughts/2017-06-06-mythical-contributors.md</file>
+  </entry>
   <entry>
     <title>The Little Green Room</title>
     <link href="http://nikolay.rocks/2017-05-01-little-green-room" />
