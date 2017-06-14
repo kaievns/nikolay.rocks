@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2017-06-11T14:00:00.000Z</updated>
+  <updated>2017-06-13T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Debunking Mono-repos</title>
+    <link href="http://nikolay.rocks/2017-06-14-monorepo-opinion" />
+    <published>2017-06-13T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[There's been a lot of noise lately about mono-repos on the internets. And it's
+fine, we need to try new approaches to progress as engineers. But, funnily
+enough, I also spend the last 6 months reworking an inherited mono-repo project
+into a set of separate repos micro-services. And now I'd like to share my own
+experiences and thinking around the decision to go away from a mono-repo
+structure.]]></summary>
+    <file>/pages/Silly Thoughts/2017-06-14-monorepo-opinion.md</file>
+  </entry>
   <entry>
     <title>Surfing: The First Shortboard</title>
     <link href="http://nikolay.rocks/2017-06-12-first-shortboard" />
