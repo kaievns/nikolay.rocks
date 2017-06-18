@@ -5,8 +5,19 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2017-06-13T14:00:00.000Z</updated>
+  <updated>2017-06-17T14:00:00.000Z</updated>
 
+  <entry>
+    <title>A Better Way To Handle Loading State In Redux</title>
+    <link href="http://nikolay.rocks/2017-06-18-better-redux-loading" />
+    <published>2017-06-17T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[Loading data into single page apps—for example in react/redux—had become pretty
+much the standard trick in everyone skillset. Yet, there are more than one way
+to do this simple task. So, I'd like to share the one I've been using consistently
+in my #redux setups.]]></summary>
+    <tags>redux</tags>
+    <file>/pages/Mighty Hacks/2017-06-18-better-redux-loading.md</file>
+  </entry>
   <entry>
     <title>Debunking Mono-repos</title>
     <link href="http://nikolay.rocks/2017-06-14-monorepo-opinion" />
