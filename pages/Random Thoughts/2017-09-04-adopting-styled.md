@@ -43,7 +43,7 @@ const GreenButton = styled.button`
 ```
 
 Pause here for a second and consider the code above. It doesn't say: _"well it's
-a pair of <button /> tags with a className *green-button* which is composed of
+a pair of BUTTON tags with a className *green-button* which is composed of
 two tachions green-bg and white-fg"_. All it says is that it's a `button` _component_
 that has a green background and white text. See the difference? If tomorrow
 someone says: _"we need another button, just like this one, but red"_, you do
