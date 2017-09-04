@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2017-06-17T14:00:00.000Z</updated>
+  <updated>2017-09-03T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Adopting Styled Components at Shortlyster</title>
+    <link href="http://nikolay.rocks/2017-09-04-adopting-styled" />
+    <published>2017-09-03T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[I would like to share some positive experiences we had while adopting
+[styled components](https://www.styled-components.com) at my current day job.
+So far we've spent a month transitioning a rather large project from css-modules
+into #styled. It wasn't all rainbows and roses, not everything completed yet, but
+the team rather pleased with the dynamic and direction of the transformation.]]></summary>
+    <tags>styled,css,javascript</tags>
+    <file>/pages/Random Thoughts/2017-09-04-adopting-styled.md</file>
+  </entry>
   <entry>
     <title>A Better Way To Handle Loading State In Redux</title>
     <link href="http://nikolay.rocks/2017-06-18-better-redux-loading" />
@@ -15,7 +27,7 @@
 much the standard trick in everyone skillset. Yet, there are more than one way
 to do this simple task. So, I'd like to share the one I've been using consistently
 in my #redux setups.]]></summary>
-    <tags>redux</tags>
+    <tags>redux,flow</tags>
     <file>/pages/Mighty Hacks/2017-06-18-better-redux-loading.md</file>
   </entry>
   <entry>
@@ -28,7 +40,7 @@ enough, I also spend the last 6 months reworking an inherited mono-repo project
 into a set of separate repos micro-services. And now I'd like to share my own
 experiences and thinking around the decision to go away from a mono-repo
 structure.]]></summary>
-    <file>/pages/Silly Thoughts/2017-06-14-monorepo-opinion.md</file>
+    <file>/pages/Random Thoughts/2017-06-14-monorepo-opinion.md</file>
   </entry>
   <entry>
     <title>Surfing: The First Shortboard</title>
@@ -49,7 +61,7 @@ Internet about the open-source culture. I'm amending the real names, because
 a) i don't want to personalize the problem and b) because it's not about specific
 people, it's a more systemic problem that we have in our industry. And i would
 like to talk about it.]]></summary>
-    <file>/pages/Silly Thoughts/2017-06-06-mythical-contributors.md</file>
+    <file>/pages/Random Thoughts/2017-06-06-mythical-contributors.md</file>
   </entry>
   <entry>
     <title>The Little Green Room</title>
@@ -343,7 +355,7 @@ code in #ruby. As my job changed, I decided to go 100% #javascript for a change,
 and see what happens. And, as I reached this milestone, I thought this might be
 a good opportunity to reflect on the decision.]]></summary>
     <tags>ruby,javascript</tags>
-    <file>/pages/Silly Thoughts/2016-04-26-six-months-on-javascript.md</file>
+    <file>/pages/Random Thoughts/2016-04-26-six-months-on-javascript.md</file>
   </entry>
   <entry>
     <title>Surfing: Back In The Line Up</title>
@@ -363,7 +375,7 @@ he gave a speech to a bunch of students about business strategies and then he
 asked them: "which business do you think i'm in?". At some point someone answered:
 "flipping burgers, obviously". To which he said: "wrong! i'm in the real-estate
 business".]]></summary>
-    <file>/pages/Silly Thoughts/2016-04-12-coffee-code-machine.md</file>
+    <file>/pages/Random Thoughts/2016-04-12-coffee-code-machine.md</file>
   </entry>
   <entry>
     <title>Surfing: Embracing The Kook</title>
@@ -386,7 +398,7 @@ will be all magic and unicorns from there. Destructurning, async/await, default
 parameters all the really nice things will be just waiting to be used for good
 and awesome.]]></summary>
     <tags>nodejs,javascript,es6</tags>
-    <file>/pages/Silly Thoughts/2016-04-04-how-to-stop-babel.md</file>
+    <file>/pages/Random Thoughts/2016-04-04-how-to-stop-babel.md</file>
   </entry>
   <entry>
     <title>Keyboard: Meet the Halmak</title>
@@ -445,7 +457,7 @@ by adding some look-up maps and magic and ended up with similar results.]]></sum
     <published>2016-03-13T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Just a fair warning. Some of this text might make you uncomfortable. Just take
 a deep breath, count to 10 and remember that this is not about you.]]></summary>
-    <file>/pages/Silly Thoughts/2016-03-14-fear-and-greed.md</file>
+    <file>/pages/Random Thoughts/2016-03-14-fear-and-greed.md</file>
   </entry>
   <entry>
     <title>Surfing: Get In Line</title>
@@ -704,7 +716,7 @@ my initial impressions into words.]]></summary>
     <published>2015-12-29T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Well, it is the time to continue my not so unique tradition to reflect a bit on
 the year passed. Write it down and give my future self a bit of a reference.]]></summary>
-    <file>/pages/Silly Thoughts/2015-12-30-end-of-the-year.md</file>
+    <file>/pages/Random Thoughts/2015-12-30-end-of-the-year.md</file>
   </entry>
   <entry>
     <title>Programmer's Layout</title>
@@ -830,7 +842,7 @@ interested in how rockets work rather than who gets the ride.]]></summary>
 as its primary database. I'm having some really good time with it and thought
 I should share some of my experiences.]]></summary>
     <tags>rethinkdb,javascript</tags>
-    <file>/pages/Silly Thoughts/2015-11-23-why-rethinkdb.md</file>
+    <file>/pages/Random Thoughts/2015-11-23-why-rethinkdb.md</file>
   </entry>
   <entry>
     <title>High Performance JavaScript (Book)</title>
@@ -948,7 +960,7 @@ from a different perspective. I'm not a big fun of existing dogmatism in the
 software industry myself, but to a new to the profession person it just doesn't
 make any sense:]]></summary>
     <tags>ruby on rails,activerecord,rails,ruby</tags>
-    <file>/pages/Silly Thoughts/2015-09-08-programs-are-people-too.md</file>
+    <file>/pages/Random Thoughts/2015-09-08-programs-are-people-too.md</file>
   </entry>
   <entry>
     <title>A Guide to the good life by Irvine William</title>
@@ -970,7 +982,7 @@ give it an actual try beyond reading books and playing in REPL. But,
 recently, I started a small toy project which needs to process quite a lot
 of sequential data, and I thought it might be a good fit.]]></summary>
     <tags>elixir,ruby,javascript,lua,swift,rust</tags>
-    <file>/pages/Silly Thoughts/2015-08-24-elixir-first-impressions.md</file>
+    <file>/pages/Random Thoughts/2015-08-24-elixir-first-impressions.md</file>
   </entry>
   <entry>
     <title>Force Long String Line Breaks In Pure CSS</title>
@@ -1104,7 +1116,7 @@ of the test. Then, for a comparison, I took the American
 [TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language)
 exam, where I scored 109 (out of 120). And now I just want to write a
 bit to compare those two and maybe give some suggestions which one you might want to take.]]></summary>
-    <file>/pages/Silly Thoughts/2015-07-10-ielts-vs-toefl.md</file>
+    <file>/pages/Random Thoughts/2015-07-10-ielts-vs-toefl.md</file>
   </entry>
   <entry>
     <title>How To Load Private Images Via Ajax</title>
@@ -1157,7 +1169,7 @@ It's your own fault.]]></summary>
 the [IELTS](https://en.wikipedia.org/wiki/International_English_Language_Testing_System)
 exam with a minimal score of `8` (out of `9`) in every sub-task. I had
 _7_ attempts and the best results look like that:]]></summary>
-    <file>/pages/Silly Thoughts/2015-06-28-ielts-accepting-the-defeat.md</file>
+    <file>/pages/Random Thoughts/2015-06-28-ielts-accepting-the-defeat.md</file>
   </entry>
   <entry>
     <title>Responsive Elements With a Fixed Aspect Ratio</title>
@@ -1208,7 +1220,7 @@ issue that you might run into. The arguments that an active job instance might t
     <link href="http://nikolay.rocks/2015-05-28-do-not-work-with-insecure-people" />
     <published>2015-05-27T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Most of us, at some point, read an article named something like "don't work with a-holes" or "don't hire jerks". And although, intuitively, most of the subjects those article cover make total sense, I personally find them quite unsciency.]]></summary>
-    <file>/pages/Silly Thoughts/2015-05-28-do-not-work-with-insecure-people.md</file>
+    <file>/pages/Random Thoughts/2015-05-28-do-not-work-with-insecure-people.md</file>
   </entry>
   <entry>
     <title>Error Avoidance</title>
@@ -1246,7 +1258,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
     <link href="http://nikolay.rocks/2015-02-19-the-year-of-the-horse" />
     <published>2015-02-18T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[It's probably a bit strange to write a year retrospective on a lunar new year, but I kinda missed the opportunity on the ISO new year, so I'll just pretend being fancy and do it now.]]></summary>
-    <file>/pages/Silly Thoughts/2015-02-19-the-year-of-the-horse.md</file>
+    <file>/pages/Random Thoughts/2015-02-19-the-year-of-the-horse.md</file>
   </entry>
   <entry>
     <title>AngularJS HTML5 Routes In Mixed Web-Site</title>
@@ -1268,7 +1280,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
     <link href="http://nikolay.rocks/2014-04-18-programmer-happiness-take-two" />
     <published>2014-04-17T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[But seriously, despite my recent rant about programmer's happiness, i really believe that happiness is not a pill, but a life choice. And programmer's happiness is not different. I'm convinced that you can be happy and productive with any, most horrendous language, or a framework, or an environment. The other way around is also true.]]></summary>
-    <file>/pages/Silly Thoughts/2014-04-18-programmer-happiness-take-two.md</file>
+    <file>/pages/Random Thoughts/2014-04-18-programmer-happiness-take-two.md</file>
   </entry>
   <entry>
     <title>Faster Tests Under MySQL</title>
@@ -1283,7 +1295,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
     <link href="http://nikolay.rocks/2014-04-05-programming-happiness-my-a55" />
     <published>2014-04-04T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[If you are a worthy programmer, then somewhere down in your soul, you probably have this nagging feeling that programming is an art, and you're this sort of a hidden artist in the rough who just happened to work in a bank and not really allowed to be artsy in your day job.]]></summary>
-    <file>/pages/Silly Thoughts/2014-04-05-programming-happiness-my-a55.md</file>
+    <file>/pages/Random Thoughts/2014-04-05-programming-happiness-my-a55.md</file>
   </entry>
   <entry>
     <title>Movie Style STDOUT in Ruby And Rails</title>
@@ -1303,7 +1315,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
 2. Work hard
 3. Remove anything that is not awesome
 4. Iterate]]></summary>
-    <file>/pages/Silly Thoughts/2014-02-18-how-to-be-awesome.md</file>
+    <file>/pages/Random Thoughts/2014-02-18-how-to-be-awesome.md</file>
   </entry>
   <entry>
     <title>Single Page Apps Access Handling With AngularJS</title>
@@ -1336,7 +1348,7 @@ I like people who didn't loose the sense of their souls. That makes them human.]
 
 It's probably a stupid thing to say, but I've been around the block for a while and I saw how #java went down and was replaced by #rails.]]></summary>
     <tags>nodejs,java,rails</tags>
-    <file>/pages/Silly Thoughts/2013-11-27-and-here-is-why-rails-is-gonna-loose.md</file>
+    <file>/pages/Random Thoughts/2013-11-27-and-here-is-why-rails-is-gonna-loose.md</file>
   </entry>
   <entry>
     <title>The Story Of IfNot And Unless</title>
@@ -1428,7 +1440,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <published>2013-04-10T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[The funny thing about programmers is that we spend years of our professional lives believing that our job is to tell computers what to do.]]></summary>
     <tags>computers,humans,programming</tags>
-    <file>/pages/Silly Thoughts/2013-04-11-the-trick-to-good-software.md</file>
+    <file>/pages/Random Thoughts/2013-04-11-the-trick-to-good-software.md</file>
   </entry>
   <entry>
     <title>Hacking Google I/0</title>
@@ -1459,7 +1471,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <published>2013-02-03T13:00:00.000Z</published>
     <summary type="markdown"><![CDATA[If you're young ambitious web-developer and you want to do it for long time, you should contribute to #nodejs, not to #ruby or #rails.]]></summary>
     <tags>nodejs,ruby,rails,javascript</tags>
-    <file>/pages/Silly Thoughts/2013-02-04-ruby-is-an-establishment.md</file>
+    <file>/pages/Random Thoughts/2013-02-04-ruby-is-an-establishment.md</file>
   </entry>
   <entry>
     <title>One Of The Ways To Deal With GitHub Tolls</title>
@@ -1484,7 +1496,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <summary type="markdown"><![CDATA[One smart man once told me a simple trick to being awesome
 
 > Get your ego out of the things you do]]></summary>
-    <file>/pages/Silly Thoughts/2013-01-21-get-your-dick-out-of-your-code.md</file>
+    <file>/pages/Random Thoughts/2013-01-21-get-your-dick-out-of-your-code.md</file>
   </entry>
   <entry>
     <title>Fix Ruby require</title>
@@ -1542,14 +1554,14 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <link href="http://nikolay.rocks/2012-10-04-open-source-is-a-game" />
     <published>2012-10-03T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Long time ago, when young Linus started hacking his first version of linux kernel, open source was like this little nerdy rebellion against corporate UNIX. And for a quite a long time it was the dominant idea, FSF meant OS, proprietary software companies fighted it then tried to lead it and everything looked exactly how it supposed to be.]]></summary>
-    <file>/pages/Silly Thoughts/2012-10-04-open-source-is-a-game.md</file>
+    <file>/pages/Random Thoughts/2012-10-04-open-source-is-a-game.md</file>
   </entry>
   <entry>
     <title>Unhappiness</title>
     <link href="http://nikolay.rocks/2012-09-29-unhappiness" />
     <published>2012-09-28T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[Okay, before we start a quick disclaimer, if you're getting through a rough patch or having some genuine bad stuff going on in your life, i might say some things that might sound offensive, don't take it personally. Those are just some silly thoughts that were nagging me for a while. Also, my condolences.]]></summary>
-    <file>/pages/Silly Thoughts/2012-09-29-unhappiness.md</file>
+    <file>/pages/Random Thoughts/2012-09-29-unhappiness.md</file>
   </entry>
   <entry>
     <title>Fixing NPM</title>
@@ -1564,7 +1576,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <link href="http://nikolay.rocks/2012-09-17-you-aint-no-artist" />
     <published>2012-09-16T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[I think programmers are often mislead into believing in their own artistic nature and then suffer from lack of ideal things in the world.]]></summary>
-    <file>/pages/Silly Thoughts/2012-09-17-you-aint-no-artist.md</file>
+    <file>/pages/Random Thoughts/2012-09-17-you-aint-no-artist.md</file>
   </entry>
   <entry>
     <title>Lovely 1.6.0, What Up?</title>
@@ -1594,7 +1606,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <link href="http://nikolay.rocks/2012-08-02-be-the-batman" />
     <published>2012-08-01T14:00:00.000Z</published>
     <summary type="markdown"><![CDATA[I think most of sane people realised by now that invention of the Internet is the most important and profound thing that happened to humans. (yeah i'm going this way).]]></summary>
-    <file>/pages/Silly Thoughts/2012-08-02-be-the-batman.md</file>
+    <file>/pages/Random Thoughts/2012-08-02-be-the-batman.md</file>
   </entry>
   <entry>
     <title>Procrastination</title>
@@ -1603,7 +1615,7 @@ For this project I bought a nice, official fender custom shop body. As I'm build
     <summary type="markdown"><![CDATA[![](/images/2012/07/1-zxP4.png)
 
 Have you ever though why people procrastinate so much those days? I mean, sometimes it goes beyond ridiculous, you might spent 4 hours procrastinating over 20 minutes of work. And it's not like you're lazy or burnt out, you just can't focus.]]></summary>
-    <file>/pages/Silly Thoughts/2012-07-16-procrastination.md</file>
+    <file>/pages/Random Thoughts/2012-07-16-procrastination.md</file>
   </entry>
   <entry>
     <title>The Magic clear:both Trick</title>
