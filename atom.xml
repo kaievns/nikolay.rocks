@@ -5,8 +5,20 @@
   <link href="http://nikolay.rocks" />
   <id>tag:nikolay.rocks</id>
   <author><name>Nikolay Nemshilov</name></author>
-  <updated>2017-09-03T14:00:00.000Z</updated>
+  <updated>2017-09-07T14:00:00.000Z</updated>
 
+  <entry>
+    <title>Consider Intellectual Pain</title>
+    <link href="http://nikolay.rocks/2017-09-08-intellectual-pain" />
+    <published>2017-09-07T14:00:00.000Z</published>
+    <summary type="markdown"><![CDATA[There is this long lasting theory that human behavior and decisions, in all their
+entirety, based on two simple factors: pleasure and pain. And, as a society, we
+talk about pain a lot. We're so hung up about the ideas of physical and emotional
+pain. There are thousands of books written on the topic, and billion dollars a
+year industries created to remedy the human condition. Yet, we seem to never
+talk about the intellectual pain.]]></summary>
+    <file>/pages/Mind Fucks/2017-09-08-intellectual-pain.md</file>
+  </entry>
   <entry>
     <title>Adopting Styled Components at Shortlyster</title>
     <link href="http://nikolay.rocks/2017-09-04-adopting-styled" />
