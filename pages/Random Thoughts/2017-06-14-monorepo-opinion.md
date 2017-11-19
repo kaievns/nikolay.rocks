@@ -70,7 +70,7 @@ the end a project looks like a bizarre mix of cross-project requires, sym-links
 and ad-hock grown libraries.
 
 Yes, you have all your codebase on a display and immediately accessible. But,
-when and engineer dives into the codebase there is no way to be sure about a
+when an engineer dives into the codebase there is no way to be sure about a
 specific project's surface area. Unless you're intimately familiar with the
 specific project code base there is no way of telling how and where it's
 wired to. Every project is like a snowflake. This makes finding an answer to the
