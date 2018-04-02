@@ -22,8 +22,5 @@
     "connect": "^3.4.0",
     "serve-favicon": "^2.3.0",
     "serve-static": "^1.10.0"
-  },
-  "devDependencies": {
-    "unicorn-farts": "/Users/nikolay/workspace/Projects/unicorn-farts.js"
   }
 }
